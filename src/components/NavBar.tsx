@@ -28,7 +28,7 @@ interface Props {
 export const NavBar = (props: Props) => {
   const { darkMode, setDarkMode } = props;
   const drawerWidth = 240;
-  const navItems = ['Home', 'Skills', 'Projects', 'Timeline', 'Contact'];
+  const navItems = ['Home', 'Skills', 'Projects', 'Contact'];
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activateSnackDownComponent, setActivateSnackDownComponent] = useState<boolean>(false);
 
