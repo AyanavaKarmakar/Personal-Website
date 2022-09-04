@@ -22,33 +22,29 @@ export const Home = (props: Props) => {
       <Box
         sx={{
           position: 'absolute',
-          top: '50%',
-          left: '50%',
+          top: '25%',
+          left: '53%',
           transform: 'translate(-50%,-50%)',
           width: '100vw',
-          textAlign: 'center',
+          textAlign: 'justify',
           zIndex: 1,
         }}
       >
-        <Typography
-          variant="h4"
-          color={`${darkMode === true ? 'secondary' : '#000000'}`}
-          sx={{ fontWeight: 'bold' }}
-        >
+        <Typography variant="h4" color={`${darkMode === true ? 'secondary' : 'secondary'}`}>
           <TypeAnimation
             sequence={['Ayanava Karmakar', 1000]}
-            speed={50}
+            speed={10}
             wrapper="span"
             repeat={0}
           />
         </Typography>
         <Typography
           variant="h5"
-          color={`${darkMode === true ? 'secondary' : '#00FFFF'}`}
+          color={`${darkMode === true ? 'secondary' : 'secondary'}`}
           sx={{ fontWeight: 'medium' }}
         >
           <TypeAnimation
-            sequence={['Frontend Developer &', 1000]}
+            sequence={['⇒ Frontend Developer', 1000]}
             speed={5}
             wrapper="span"
             repeat={Infinity}
@@ -56,11 +52,11 @@ export const Home = (props: Props) => {
         </Typography>
         <Typography
           variant="h5"
-          color={`${darkMode === true ? 'secondary' : '#00FFFF'}`}
+          color={`${darkMode === true ? 'secondary' : 'secondary'}`}
           sx={{ fontWeight: 'medium' }}
         >
           <TypeAnimation
-            sequence={['Technical Content Writer', 1000]}
+            sequence={['⇒ Technical Content Writer', 1000]}
             speed={5}
             wrapper="span"
             repeat={Infinity}
@@ -68,11 +64,11 @@ export const Home = (props: Props) => {
         </Typography>
         <Typography
           variant="h6"
-          color={`${darkMode === true ? 'secondary' : '#00FFFF'}`}
+          color={`${darkMode === true ? 'secondary' : 'secondary'}`}
           sx={{ fontWeight: 'light' }}
         >
           <TypeAnimation
-            sequence={['Based in Kolkata', 1000, 'Based in Kolkata, India', 1000]}
+            sequence={['⌂ Based in Kolkata', 1000, '⌂ Based in Kolkata, India', 1000]}
             speed={1}
             wrapper="span"
             repeat={0}
