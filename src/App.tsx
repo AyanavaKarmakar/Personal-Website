@@ -26,7 +26,7 @@ export const App = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Home />
+      <Home darkMode={darkMode} />
     </ThemeProvider>
   );
 };
