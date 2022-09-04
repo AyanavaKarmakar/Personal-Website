@@ -99,7 +99,7 @@ export const NavBar = (props: Props) => {
             </Typography>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               {navItems.map(item => (
-                <Button key={item} color="secondary">
+                <Button key={item} size="large" color="secondary">
                   {item}
                 </Button>
               ))}
