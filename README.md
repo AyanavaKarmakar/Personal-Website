@@ -6,5 +6,5 @@
 2. TypeScript
 3. Vite
 4. Material UI
-5. AWS Amplify
-6. Vercel
+5. Vercel (Production / Preview)
+6. AWS Amplify (Testing)
