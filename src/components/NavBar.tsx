@@ -144,7 +144,7 @@ export const NavBar = (props: Props) => {
           {drawer}
         </Drawer>
       </Box>
-      <Snackbar open={open} autoHideDuration={3500} onClose={handleClose}>
+      <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="info" sx={{ width: '100%' }}>
           {`Dark Mode Has Been Turned ${darkMode === true ? 'On' : 'Off'}!`}
         </Alert>
