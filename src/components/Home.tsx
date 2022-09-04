@@ -1,4 +1,4 @@
-import { Box, Paper, TextField, Typography } from '@mui/material';
+import { Box, Paper, Typography } from '@mui/material';
 import { TypeAnimation } from 'react-type-animation';
 
 interface Props {
@@ -30,13 +30,6 @@ export const Home = (props: Props) => {
           zIndex: 1,
         }}
       >
-        <TextField
-          id="outlined-basic"
-          label="Name"
-          color="secondary"
-          variant="outlined"
-          defaultValue={}
-        />
         <Typography
           variant="h4"
           color={`${darkMode === true ? 'secondary' : '#000000'}`}
