@@ -1,5 +1,4 @@
 import { Slide } from '@mui/material';
-import { useEffect, useState } from 'react';
 import { TimeLine } from './TimeLine';
 
 interface Props {
