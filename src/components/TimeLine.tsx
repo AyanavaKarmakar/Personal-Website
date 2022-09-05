@@ -15,10 +15,14 @@ import {
 import { Typography } from '@mui/material';
 import { Code, School } from '@mui/icons-material';
 
+interface Props {
+  darkMode: boolean;
+}
+
 /**
  * Refer: https://mui.com/material-ui/react-timeline/
  */
-export const TimeLine = () => {
+export const TimeLine = (props: Props) => {
   return (
     <Timeline position="right">
       <TimelineItem>
