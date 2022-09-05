@@ -24,7 +24,7 @@ export const Home = (props: Props) => {
       <Box
         sx={{
           position: 'absolute',
-          top: '35%',
+          top: '40%',
           left: '82%',
           transform: 'translate(-50%,-50%)',
           width: '100vw',
@@ -37,7 +37,7 @@ export const Home = (props: Props) => {
       <Box
         sx={{
           position: 'absolute',
-          top: '25%',
+          top: '22%',
           left: '53%',
           transform: 'translate(-50%,-50%)',
           width: '100vw',
@@ -57,6 +57,7 @@ export const Home = (props: Props) => {
             repeat={0}
           />
         </Typography>
+        <br />
         <Typography
           variant="h5"
           color={`${darkMode === true ? 'secondary' : 'secondary'}`}
@@ -81,6 +82,7 @@ export const Home = (props: Props) => {
             repeat={Infinity}
           />
         </Typography>
+        <br />
         <Typography
           variant="h6"
           color={`${darkMode === true ? 'secondary' : 'secondary'}`}
