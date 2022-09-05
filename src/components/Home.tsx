@@ -24,7 +24,7 @@ export const Home = (props: Props) => {
       <Box
         sx={{
           position: 'absolute',
-          top: '40%',
+          top: '45%',
           left: '82%',
           transform: 'translate(-50%,-50%)',
           width: '100vw',
@@ -37,7 +37,7 @@ export const Home = (props: Props) => {
       <Box
         sx={{
           position: 'absolute',
-          top: '22%',
+          top: '30%',
           left: '53%',
           transform: 'translate(-50%,-50%)',
           width: '100vw',
