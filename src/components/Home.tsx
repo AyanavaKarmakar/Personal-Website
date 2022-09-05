@@ -47,7 +47,7 @@ export const Home = (props: Props) => {
       >
         <Typography
           variant="h4"
-          color={`${darkMode === true ? 'secondary' : 'secondary'}`}
+          color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
           sx={{ fontWeight: 'bold' }}
         >
           <TypeAnimation
@@ -60,7 +60,7 @@ export const Home = (props: Props) => {
         <br />
         <Typography
           variant="h5"
-          color={`${darkMode === true ? 'secondary' : 'secondary'}`}
+          color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
           sx={{ fontWeight: 'medium' }}
         >
           <TypeAnimation
@@ -72,7 +72,7 @@ export const Home = (props: Props) => {
         </Typography>
         <Typography
           variant="h5"
-          color={`${darkMode === true ? 'secondary' : 'secondary'}`}
+          color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
           sx={{ fontWeight: 'medium' }}
         >
           <TypeAnimation
@@ -85,7 +85,7 @@ export const Home = (props: Props) => {
         <br />
         <Typography
           variant="h6"
-          color={`${darkMode === true ? 'secondary' : 'secondary'}`}
+          color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
           sx={{ fontWeight: 'light' }}
         >
           <TypeAnimation
