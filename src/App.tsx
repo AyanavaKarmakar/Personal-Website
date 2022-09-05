@@ -26,12 +26,12 @@ export const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Routes>
         <Route
           path="/home"
           element={
             <>
-              <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
               <Home darkMode={darkMode} />
             </>
           }
