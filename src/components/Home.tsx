@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { TypeAnimation } from 'react-type-animation';
+import { TimeLine } from './TimeLine';
 import '../../styles/Home.css';
 
 interface Props {
@@ -17,6 +18,9 @@ export const Home = (props: Props) => {
   const { darkMode } = props;
   return (
     <>
+      <>
+        <TimeLine />
+      </>
       <>
         <img src="/whitecat.jpg" alt="white_cat" id="catImage" loading="eager" />
       </>
