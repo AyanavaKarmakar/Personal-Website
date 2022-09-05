@@ -144,7 +144,7 @@ export const TimeLine = (props: Props) => {
             Stream: PCMCs
           </Typography>
           <Typography color={`${darkMode === true ? '#ffffff' : 'secondary'}`}>
-            Percentage: 87.4%
+            GPA: 9.2 / 10
           </Typography>
         </TimelineContent>
       </TimelineItem>
