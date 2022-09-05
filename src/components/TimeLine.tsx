@@ -32,6 +32,18 @@ export const TimeLine = (props: Props) => {
             color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
             sx={{ fontStyle: 'italic' }}
           >
+            Ongoing
+          </Typography>
+          <Typography
+            color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
+            sx={{ fontStyle: 'bold' }}
+          >
+            ⇑⇑⇑⇑
+          </Typography>
+          <Typography
+            color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
+            sx={{ fontStyle: 'italic' }}
+          >
             August, 2022
           </Typography>
         </TimelineOppositeContent>
@@ -57,7 +69,19 @@ export const TimeLine = (props: Props) => {
             color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
             sx={{ fontStyle: 'italic' }}
           >
-            2018 — 2022
+            2022
+          </Typography>
+          <Typography
+            color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
+            sx={{ fontStyle: 'bold' }}
+          >
+            ⇑⇑⇑⇑
+          </Typography>
+          <Typography
+            color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
+            sx={{ fontStyle: 'italic' }}
+          >
+            2018
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -90,7 +114,19 @@ export const TimeLine = (props: Props) => {
             color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
             sx={{ fontStyle: 'italic' }}
           >
-            2017 — 2018
+            2018
+          </Typography>
+          <Typography
+            color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
+            sx={{ fontStyle: 'bold' }}
+          >
+            ⇑⇑⇑⇑
+          </Typography>
+          <Typography
+            color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
+            sx={{ fontStyle: 'italic' }}
+          >
+            2017
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -118,7 +154,19 @@ export const TimeLine = (props: Props) => {
             color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
             sx={{ fontStyle: 'italic' }}
           >
-            2015 — 2016
+            2016
+          </Typography>
+          <Typography
+            color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
+            sx={{ fontStyle: 'bold' }}
+          >
+            ⇑⇑⇑⇑
+          </Typography>
+          <Typography
+            color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
+            sx={{ fontStyle: 'italic' }}
+          >
+            2015
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
