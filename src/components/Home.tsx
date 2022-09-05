@@ -19,11 +19,21 @@ export const Home = (props: Props) => {
   return (
     <>
       <>
-        <TimeLine />
-      </>
-      <>
         <img src="/whitecat.jpg" alt="white_cat" id="catImage" loading="eager" />
       </>
+      <Box
+        sx={{
+          position: 'absolute',
+          top: '35%',
+          left: '82%',
+          transform: 'translate(-50%,-50%)',
+          width: '100vw',
+          textAlign: 'justify',
+          zIndex: 1,
+        }}
+      >
+        <TimeLine />
+      </Box>
       <Box
         sx={{
           position: 'absolute',
