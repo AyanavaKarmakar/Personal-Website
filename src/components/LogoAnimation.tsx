@@ -10,5 +10,5 @@ interface Props {
  */
 export const LogoAnimation = (props: Props) => {
   const { darkMode } = props;
-  return <ReactLoading type={'bubbles'} color={'#E0FFFF'} />;
+  return <ReactLoading type={`${darkMode === true ? 'balls' : 'bubbles'}`} color={'#E0FFFF'} />;
 };
