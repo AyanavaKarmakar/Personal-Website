@@ -18,11 +18,7 @@ export const Home = (props: Props) => {
   return (
     <>
       <>
-        <img
-          src="/Cat.jpg"
-          alt="white_cat"
-          style={{ maxWidth: '100%', height: 'auto', padding: 0, margin: 0 }}
-        />
+        <img src="/Cat.jpg" alt="white_cat" id="catImage" />
       </>
       <Box
         sx={{
@@ -35,8 +31,17 @@ export const Home = (props: Props) => {
           zIndex: 1,
         }}
       >
-        <Typography variant="h4" color={`${darkMode === true ? 'secondary' : 'secondary'}`}>
-          <TypeAnimation sequence={['rabbitz', 1000]} speed={10} wrapper="span" repeat={0} />
+        <Typography
+          variant="h4"
+          color={`${darkMode === true ? 'secondary' : 'secondary'}`}
+          sx={{ fontWeight: 'bold' }}
+        >
+          <TypeAnimation
+            sequence={['Ayanava Karmakar', 1000]}
+            speed={10}
+            wrapper="span"
+            repeat={0}
+          />
         </Typography>
         <Typography
           variant="h5"
