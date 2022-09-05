@@ -32,7 +32,7 @@ export const Home = (props: Props) => {
           zIndex: 1,
         }}
       >
-        <TimeLine />
+        <TimeLine darkMode={darkMode} />
       </Box>
       <Box
         sx={{
