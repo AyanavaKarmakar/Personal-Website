@@ -95,7 +95,7 @@ export const NavBar = (props: Props) => {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
-              <LogoAnimation />
+              <LogoAnimation darkMode={darkMode} />
             </Typography>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               {navItems.map(item => (
