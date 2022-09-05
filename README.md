@@ -10,11 +10,9 @@
 6. AWS Amplify (Testing)
 
 ### Progress So Far
+![image](https://user-images.githubusercontent.com/89210438/188482709-17160642-4393-4b3a-a802-313dd72ec631.png)
+![image](https://user-images.githubusercontent.com/89210438/188482791-c4d17d2d-136d-4485-a042-d1c7b6dfbbc7.png)
 
-
-
-
-https://user-images.githubusercontent.com/89210438/188432155-34f3ebe6-ca10-4b2a-a31e-1e2812eb9b2f.mp4
 
 
 
