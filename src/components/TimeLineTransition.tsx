@@ -1,5 +1,5 @@
 /**
- * Animate TimeLine in Home Page #43
+ * Ref: https://mui.com/material-ui/transitions/#slide
  */
 export const TimeLineTransition = () => {
   return <>Stuff</>;
