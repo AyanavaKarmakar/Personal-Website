@@ -15,6 +15,7 @@ import {
 import { Menu, Brightness7, Brightness4 } from '@mui/icons-material';
 import { LogoAnimation } from './LogoAnimation';
 import { SnackBarComponent } from './SnackBarComponent';
+import { Link } from 'react-router-dom';
 
 interface Props {
   darkMode: boolean;
@@ -28,7 +29,24 @@ interface Props {
 export const NavBar = (props: Props) => {
   const { darkMode, setDarkMode } = props;
   const drawerWidth = 240;
-  const navItems = ['Home', 'Skills', 'Projects', 'Contact'];
+  const navItems = [
+    {
+      buttonName: 'Home',
+      buttonRoute: '/home',
+    },
+    {
+      buttonName: 'Skills',
+      buttonRoute: '/skills',
+    },
+    {
+      buttonName: 'Projects',
+      buttonRoute: '/projects',
+    },
+    {
+      buttonName: 'Contact',
+      buttonRoute: '/contact',
+    },
+  ];
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activateSnackDownComponent, setActivateSnackDownComponent] = useState<boolean>(false);
 
@@ -58,9 +76,14 @@ export const NavBar = (props: Props) => {
           {darkMode === true ? <Brightness7 /> : <Brightness4 />}
         </IconButton>
         {navItems.map(item => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+          <ListItem key={item.buttonName} disablePadding>
+            <ListItemButton
+              component={Link}
+              to={item.buttonRoute}
+              key={item.buttonName}
+              sx={{ textAlign: 'center' }}
+            >
+              <ListItemText primary={item.buttonName} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -100,11 +123,13 @@ export const NavBar = (props: Props) => {
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               {navItems.map(item => (
                 <Button
-                  key={item}
+                  component={Link}
+                  to={item.buttonRoute}
+                  key={item.buttonName}
                   size="large"
                   sx={{ color: `${darkMode === true ? '#ffffff' : '#E0FFFF'}` }}
                 >
-                  {item}
+                  {item.buttonName}
                 </Button>
               ))}
               <IconButton

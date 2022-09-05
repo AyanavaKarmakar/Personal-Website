@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { CssBaseline, ThemeProvider, createTheme, PaletteMode } from '@mui/material';
+import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { Home } from './components/Home';
 
@@ -22,11 +23,24 @@ export const App = () => {
     },
   });
 
+  /**
+   * TODO: Put <NavBar /> inside every route except the landing page
+   */
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Home darkMode={darkMode} />
+      <Routes>
+        <Route
+          path="/home"
+          element={
+            <>
+              <Home darkMode={darkMode} />
+            </>
+          }
+        />
+      </Routes>
     </ThemeProvider>
   );
 };
