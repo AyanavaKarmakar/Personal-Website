@@ -38,7 +38,7 @@ export const TimeLine = (props: Props) => {
             color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
             sx={{ fontStyle: 'bold' }}
           >
-            ⇑⇑⇑⇑
+            ‎
           </Typography>
           <Typography
             color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
@@ -75,7 +75,7 @@ export const TimeLine = (props: Props) => {
             color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
             sx={{ fontStyle: 'bold' }}
           >
-            ⇑⇑⇑⇑
+            ‎
           </Typography>
           <Typography
             color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
@@ -120,7 +120,7 @@ export const TimeLine = (props: Props) => {
             color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
             sx={{ fontStyle: 'bold' }}
           >
-            ⇑⇑⇑⇑
+            ‎
           </Typography>
           <Typography
             color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
@@ -160,7 +160,7 @@ export const TimeLine = (props: Props) => {
             color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
             sx={{ fontStyle: 'bold' }}
           >
-            ⇑⇑⇑⇑
+            ‎
           </Typography>
           <Typography
             color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
