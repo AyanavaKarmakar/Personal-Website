@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import { TypeAnimation } from 'react-type-animation';
-import '../../'
+import '../../styles/Home.css';
 
 interface Props {
   darkMode: boolean;
