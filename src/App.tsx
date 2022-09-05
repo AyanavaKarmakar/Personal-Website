@@ -1,6 +1,7 @@
-import { NavBar } from './components/NavBar';
-import { CssBaseline, ThemeProvider, createTheme, PaletteMode } from '@mui/material';
 import { useState } from 'react';
+import { CssBaseline, ThemeProvider, createTheme, PaletteMode } from '@mui/material';
+import { NavBar } from './components/NavBar';
+import { Home } from './components/Home';
 
 /**
  * Adapted from MUI.
@@ -12,7 +13,10 @@ export const App = () => {
   const theme = createTheme({
     palette: {
       primary: {
-        main: '#2c2c6c',
+        main: '#1F2022',
+      },
+      secondary: {
+        main: '#E0FFFF',
       },
       mode: darkMode === true ? ('dark' as PaletteMode) : ('light' as PaletteMode),
     },
@@ -22,6 +26,7 @@ export const App = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Home darkMode={darkMode} />
     </ThemeProvider>
   );
 };

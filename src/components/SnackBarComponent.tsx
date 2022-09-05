@@ -32,7 +32,7 @@ export const SnackBarComponent = (props: Props) => {
   };
   return (
     <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
-      <Alert onClose={handleClose} severity="info" sx={{ width: '100%' }}>
+      <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
         {`Dark Mode Has Been Turned ${darkMode === true ? 'On' : 'Off'}!`}
       </Alert>
     </Snackbar>
