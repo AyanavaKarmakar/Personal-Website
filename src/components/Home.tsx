@@ -11,9 +11,7 @@ export const Home = (props: Props) => {
   const { darkMode } = props;
   return (
     <>
-      <>
-        <img src="/whitecat.jpg" alt="white_cat" id="catImage" loading="eager" />
-      </>
+      <img src="/whitecat.jpg" alt="white_cat" id="catImage" loading="eager" />
       <Box
         sx={{
           position: 'absolute',
@@ -27,9 +25,7 @@ export const Home = (props: Props) => {
       >
         <TimeLine darkMode={darkMode} />
       </Box>
-      <>
-        <TypingAnimation darkMode={darkMode} />
-      </>
+      <TypingAnimation darkMode={darkMode} />
     </>
   );
 };
