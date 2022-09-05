@@ -1,5 +1,6 @@
-import { Box, Paper, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { TypeAnimation } from 'react-type-animation';
+import '../../'
 
 interface Props {
   darkMode: boolean;
@@ -15,10 +16,14 @@ interface Props {
 export const Home = (props: Props) => {
   const { darkMode } = props;
   return (
-    <Paper>
-      <Paper sx={{ width: 1, height: 1 }}>
-        <img src="/Cat.jpg" alt="white_cat" height="100%" width="100%" />
-      </Paper>
+    <>
+      <>
+        <img
+          src="/Cat.jpg"
+          alt="white_cat"
+          style={{ maxWidth: '100%', height: 'auto', padding: 0, margin: 0 }}
+        />
+      </>
       <Box
         sx={{
           position: 'absolute',
@@ -31,12 +36,7 @@ export const Home = (props: Props) => {
         }}
       >
         <Typography variant="h4" color={`${darkMode === true ? 'secondary' : 'secondary'}`}>
-          <TypeAnimation
-            sequence={['Ayanava Karmakar', 1000]}
-            speed={10}
-            wrapper="span"
-            repeat={0}
-          />
+          <TypeAnimation sequence={['rabbitz', 1000]} speed={10} wrapper="span" repeat={0} />
         </Typography>
         <Typography
           variant="h5"
@@ -75,6 +75,6 @@ export const Home = (props: Props) => {
           />
         </Typography>
       </Box>
-    </Paper>
+    </>
   );
 };
