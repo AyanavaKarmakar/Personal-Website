@@ -13,7 +13,7 @@ export const TimeLineTransition = (props: Props) => {
 
   return (
     <>
-      <Slide direction="down" in={true} timeout={3500} mountOnEnter unmountOnExit>
+      <Slide direction="down" in={true} timeout={3000} mountOnEnter unmountOnExit>
         {TimeLine({ darkMode })}
       </Slide>
     </>
