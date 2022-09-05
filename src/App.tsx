@@ -13,7 +13,7 @@ export const App = () => {
   const theme = createTheme({
     palette: {
       primary: {
-        main: '#393D47',
+        main: '#1F2022',
       },
       secondary: {
         main: '#E0FFFF',
