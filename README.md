@@ -9,9 +9,14 @@
 5. Vercel (Production / Preview)
 6. AWS Amplify (Testing)
 
-### Progress so far
+### Progress So Far
 
 
-https://user-images.githubusercontent.com/89210438/188325457-f3fc8984-3463-49fd-8544-ec1bf477a827.mp4
+
+https://user-images.githubusercontent.com/89210438/188391365-361f6f4a-5419-49e4-b23e-63d2fe2f702f.mp4
+
+
+
+
 
 
