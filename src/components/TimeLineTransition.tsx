@@ -13,21 +13,16 @@ export const TimeLineTransition = (props: Props) => {
   const { darkMode } = props;
   const [checked, setChecked] = useState(false);
 
-  const handleChange = () => {
+  const handleClick = () => {
     setChecked(prev => !prev);
   };
 
   return (
-    <Box sx={{ height: 180 }}>
-      <Box sx={{ width: `calc(100px + 16px)` }}>
-        <FormControlLabel
-          control={<Switch checked={checked} onChange={handleChange} />}
-          label="Show"
-        />
-        <Slide direction="right" in={checked} mountOnEnter unmountOnExit>
-          <TimeLine darkMode={darkMode} />
-        </Slide>
-      </Box>
-    </Box>
+    <>
+      <button onClick={handleClick}>button</button>
+      <Slide direction="right" in={checked} mountOnEnter unmountOnExit>
+        {TimeLine({ darkMode })}
+      </Slide>
+    </>
   );
 };
