@@ -18,7 +18,7 @@ export const Home = (props: Props) => {
   return (
     <>
       <>
-        <img src="/Cat.jpg" alt="white_cat" id="catImage" />
+        <img src="/whitecat.jpg" alt="white_cat" id="catImage" />
       </>
       <Box
         sx={{
