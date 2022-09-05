@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { CssBaseline, ThemeProvider, createTheme, PaletteMode } from '@mui/material';
+import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { Home } from './components/Home';
 
@@ -25,8 +26,17 @@ export const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Home darkMode={darkMode} />
+      <Routes>
+        <Route
+          path="/home"
+          element={
+            <>
+              <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
+              <Home darkMode={darkMode} />
+            </>
+          }
+        />
+      </Routes>
     </ThemeProvider>
   );
 };
