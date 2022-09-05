@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import { TimeLine } from './TimeLine';
+import { TimeLineTransition } from './TimeLineTransition';
 import { TypingAnimation } from './TypingAnimation';
 import '../../styles/Home.css';
 
@@ -23,7 +23,7 @@ export const Home = (props: Props) => {
           zIndex: 1,
         }}
       >
-        <TimeLine darkMode={darkMode} />
+        <TimeLineTransition darkMode={darkMode} />
       </Box>
       <TypingAnimation darkMode={darkMode} />
     </>
