@@ -3,6 +3,7 @@ import { CssBaseline, ThemeProvider, createTheme, PaletteMode } from '@mui/mater
 import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { Home } from './components/Home';
+import { LandingPage } from './components/LandingPage';
 
 /**
  * Adapted from MUI.
@@ -32,6 +33,7 @@ export const App = () => {
       <CssBaseline />
       <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Routes>
+        <Route path="/" element={<LandingPage />} />
         <Route
           path="/home"
           element={
