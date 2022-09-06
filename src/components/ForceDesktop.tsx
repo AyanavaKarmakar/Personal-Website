@@ -9,6 +9,7 @@ import {
   Typography,
 } from '@mui/material';
 import { useState, Dispatch, SetStateAction } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface Props {
   isViewedOnDesktop: boolean;
@@ -41,6 +42,7 @@ const steps = [
 export const ForceDesktop = (props: Props) => {
   const { isViewedOnDesktop, setIsViewedOnDesktop } = props;
   const [activeStep, setActiveStep] = useState(0);
+  const navigate = useNavigate();
 
   const handleNext = () => {
     setActiveStep(prevActiveStep => prevActiveStep + 1);
@@ -52,6 +54,10 @@ export const ForceDesktop = (props: Props) => {
 
   const handleReset = () => {
     setActiveStep(0);
+  };
+
+  const handleNavigate = () => {
+    navigate('/home');
   };
 
   return (
@@ -99,14 +105,32 @@ export const ForceDesktop = (props: Props) => {
           <Paper square elevation={0} sx={{ p: 3, backgroundColor: '#000000' }}>
             {isViewedOnDesktop === false && (
               <>
-                <Typography color="secondary">
-                  All steps completed - you&apos;re finished
-                </Typography>
-                <Button color="secondary" onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
-                  <Typography color="secondary"></Typography>Reset
+                <Typography color="secondary">Reload this page to proceed!</Typography>
+                <Button
+                  color="secondary"
+                  variant="outlined"
+                  onClick={handleReset}
+                  sx={{ mt: 1, mr: 1 }}
+                >
+                  <Typography color="secondary"></Typography>Reset Steps?
                 </Button>
               </>
             )}
+            {
+              /**
+               * Incase someone tries to bypass
+               */
+              isViewedOnDesktop === true && (
+                <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh">
+                  <Typography color="secondary">
+                    All steps completed - you&apos;re finished
+                  </Typography>
+                  <Button color="secondary" onClick={handleNavigate} sx={{ mt: 1, mr: 1 }}>
+                    <Typography color="secondary"></Typography>Proceed
+                  </Button>
+                </Box>
+              )
+            }
           </Paper>
         )}
       </Box>
