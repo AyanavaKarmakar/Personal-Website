@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { LandingPageLoadingAnimation } from './LandingPageLoadingAnimation';
 
 /**
  * Refer = https://reactrouter.com/en/main/hooks/use-navigate#usenavigate
@@ -16,5 +17,5 @@ export const LandingPage = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  return <>Landing Page</>;
+  return <LandingPageLoadingAnimation />;
 };
