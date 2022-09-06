@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { Home } from './components/Home';
 import { LandingPageLoadingAnimation } from './components/LandingPageLoadingAnimation';
+import { ForceDesktop } from './components/ForceDesktop';
 
 /**
  * Adapted from MUI.
@@ -62,7 +63,7 @@ export const App = () => {
                 <Home darkMode={darkMode} />
               </>
             ) : (
-              <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
+              <ForceDesktop />
             )
           }
         />
