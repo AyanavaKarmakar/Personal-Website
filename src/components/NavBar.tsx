@@ -49,8 +49,7 @@ export const NavBar = (props: Props) => {
   ];
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activateSnackDownComponent, setActivateSnackDownComponent] = useState<boolean>(false);
-  const location = useLocation();
-  console.log(location.pathname);
+  const path = useLocation().pathname;
 
   function handleDrawerToggle() {
     setMobileOpen(!mobileOpen);
@@ -128,6 +127,8 @@ export const NavBar = (props: Props) => {
                   component={Link}
                   to={item.buttonRoute}
                   key={item.buttonName}
+                  variant={path === item.buttonRoute ? 'outlined' : 'text'}
+                  color={path === item.buttonRoute ? 'secondary' : 'inherit'}
                   size="large"
                   sx={{ color: `${darkMode === true ? '#ffffff' : '#E0FFFF'}` }}
                 >
