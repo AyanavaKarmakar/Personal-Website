@@ -26,7 +26,7 @@ function CircularProgressWithLabel(props: CircularProgressProps & { value: numbe
           justifyContent: 'center',
         }}
       >
-        <Typography variant="h3" component="div" color="text.secondary">{`${Math.round(
+        <Typography variant="h3" component="div" sx={{ color: '#E0FFFF' }}>{`${Math.round(
           props.value
         )}%`}</Typography>
       </Box>
@@ -47,8 +47,14 @@ export const LandingPageLoadingAnimation = () => {
   }, []);
 
   return (
-    <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh">
-      <CircularProgressWithLabel value={progress} size={250} thickness={5} color={'success'} />
+    <Box
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      minHeight="100vh"
+      sx={{ backgroundColor: '#1F2022' }}
+    >
+      <CircularProgressWithLabel value={progress} size={250} thickness={5} color="secondary" />
     </Box>
   );
 };
