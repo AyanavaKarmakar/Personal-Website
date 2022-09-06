@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CssBaseline, ThemeProvider, createTheme, PaletteMode } from '@mui/material';
 import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
@@ -11,6 +11,7 @@ import { LandingPageLoadingAnimation } from './components/LandingPageLoadingAnim
  */
 export const App = () => {
   const [darkMode, setDarkMode] = useState(false);
+  let [isViewedOnDesktop, setIsViewedOnDesktop] = useState(false);
 
   const theme = createTheme({
     palette: {
@@ -24,6 +25,29 @@ export const App = () => {
     },
   });
 
+  /**
+   * Checks if the site is being viewed
+   * in dektop or mobile
+   */
+  const userDeviceDetails = navigator.userAgent;
+
+  /**
+   * Creating a regular expression
+   * containing some mobile devices keywords
+   * to search it in details string
+   */
+  const regexp = /android|iphone|kindle|ipad/i;
+  const isMobileDevice: boolean = regexp.test(userDeviceDetails);
+
+  useEffect(() => {
+    if (isMobileDevice === true) {
+      console.log('Mobile');
+    } else if (isMobileDevice === false) {
+      console.log('Desktop');
+      setIsViewedOnDesktop(true);
+    }
+  }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -32,10 +56,14 @@ export const App = () => {
         <Route
           path="/home"
           element={
-            <>
+            isViewedOnDesktop === true ? (
+              <>
+                <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
+                <Home darkMode={darkMode} />
+              </>
+            ) : (
               <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
-              <Home darkMode={darkMode} />
-            </>
+            )
           }
         />
         <Route path="/skills" element={<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />} />
