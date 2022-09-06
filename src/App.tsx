@@ -38,6 +38,7 @@ export const App = () => {
             </>
           }
         />
+        <Route path="/skills" element={<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />} />
       </Routes>
     </ThemeProvider>
   );
