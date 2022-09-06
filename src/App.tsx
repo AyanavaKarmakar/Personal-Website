@@ -3,7 +3,7 @@ import { CssBaseline, ThemeProvider, createTheme, PaletteMode } from '@mui/mater
 import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { Home } from './components/Home';
-import { LandingPage } from './components/LandingPage';
+import { LandingPageLoadingAnimation } from './components/LandingPageLoadingAnimation';
 
 /**
  * Adapted from MUI.
@@ -28,7 +28,7 @@ export const App = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<LandingPageLoadingAnimation />} />
         <Route
           path="/home"
           element={
