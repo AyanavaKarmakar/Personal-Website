@@ -24,10 +24,6 @@ export const App = () => {
     },
   });
 
-  /**
-   * TODO: Put <NavBar /> inside every route except the landing page
-   */
-
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
