@@ -43,6 +43,7 @@ export const App = () => {
           path="/projects"
           element={<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />}
         />
+        <Route path="/contact" element={<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />} />
       </Routes>
     </ThemeProvider>
   );
