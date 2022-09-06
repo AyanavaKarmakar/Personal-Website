@@ -60,7 +60,10 @@ export const App = () => {
                 <Home darkMode={darkMode} />
               </>
             ) : (
-              <ForceDesktop />
+              <ForceDesktop
+                isViewedOnDesktop={isViewedOnDesktop}
+                setIsViewedOnDesktop={setIsViewedOnDesktop}
+              />
             )
           }
         />
