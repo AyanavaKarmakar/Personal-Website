@@ -39,6 +39,7 @@ function CircularProgressWithLabel(props: CircularProgressProps & { value: numbe
 export const LandingPageLoadingAnimation = () => {
   const navigate = useNavigate();
   const [progress, setProgress] = useState<number>(0);
+  const DELAY_MS = 500;
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -50,7 +51,9 @@ export const LandingPageLoadingAnimation = () => {
   }, []);
 
   if (progress === 100) {
-    navigate('/home');
+    setTimeout(() => {
+      navigate('/home');
+    }, DELAY_MS);
   }
 
   return (
