@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CssBaseline, ThemeProvider, createTheme, PaletteMode } from '@mui/material';
 import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { Home } from './components/Home';
 import { LandingPageLoadingAnimation } from './components/LandingPageLoadingAnimation';
+import { ForceDesktop } from './components/ForceDesktop';
 
 /**
  * Adapted from MUI.
@@ -11,6 +12,7 @@ import { LandingPageLoadingAnimation } from './components/LandingPageLoadingAnim
  */
 export const App = () => {
   const [darkMode, setDarkMode] = useState(false);
+  let [isViewedOnDesktop, setIsViewedOnDesktop] = useState(false);
 
   const theme = createTheme({
     palette: {
@@ -24,6 +26,26 @@ export const App = () => {
     },
   });
 
+  /**
+   * Checks if the site is being viewed
+   * in dektop or mobile
+   */
+  const userDeviceDetails = navigator.userAgent;
+
+  /**
+   * Creating a regular expression
+   * containing some mobile devices keywords
+   * to search it in details string
+   */
+  const regexp = /android|iphone|kindle|ipad/i;
+  const isMobileDevice: boolean = regexp.test(userDeviceDetails);
+
+  useEffect(() => {
+    if (isMobileDevice === false) {
+      setIsViewedOnDesktop(true);
+    }
+  }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -32,10 +54,17 @@ export const App = () => {
         <Route
           path="/home"
           element={
-            <>
-              <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
-              <Home darkMode={darkMode} />
-            </>
+            isViewedOnDesktop === true ? (
+              <>
+                <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
+                <Home darkMode={darkMode} />
+              </>
+            ) : (
+              <ForceDesktop
+                isViewedOnDesktop={isViewedOnDesktop}
+                setIsViewedOnDesktop={setIsViewedOnDesktop}
+              />
+            )
           }
         />
         <Route path="/skills" element={<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />} />
