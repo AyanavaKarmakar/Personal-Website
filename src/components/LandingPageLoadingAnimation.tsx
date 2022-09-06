@@ -1,9 +1,11 @@
+import { useNavigate } from 'react-router-dom';
 import CircularProgress, { CircularProgressProps } from '@mui/material/CircularProgress';
 import { Typography, Box } from '@mui/material';
 import { useEffect, useState } from 'react';
 
 /**
- * Refer: https://mui.com/material-ui/api/circular-progress/
+ * Refer = https://mui.com/material-ui/api/circular-progress/
+ * Refer = https://reactrouter.com/en/main/hooks/use-navigate#usenavigate
  */
 function CircularProgressWithLabel(props: CircularProgressProps & { value: number }) {
   return (
@@ -35,6 +37,7 @@ function CircularProgressWithLabel(props: CircularProgressProps & { value: numbe
 }
 
 export const LandingPageLoadingAnimation = () => {
+  const navigate = useNavigate();
   const [progress, setProgress] = useState<number>(0);
 
   useEffect(() => {
@@ -45,6 +48,10 @@ export const LandingPageLoadingAnimation = () => {
       clearInterval(timer);
     };
   }, []);
+
+  if (progress === 100) {
+    navigate('/home');
+  }
 
   return (
     <Box
