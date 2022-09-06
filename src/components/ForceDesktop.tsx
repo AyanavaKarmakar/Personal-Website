@@ -111,7 +111,15 @@ export const ForceDesktop = (props: Props) => {
                   onClick={handleReset}
                   sx={{ mt: 1, mr: 1 }}
                 >
-                  <Typography color="secondary"></Typography>Reset Steps?
+                  <Typography color="secondary">Reset Steps?</Typography>
+                </Button>
+                <Button
+                  color="secondary"
+                  variant="outlined"
+                  onClick={handleNavigate}
+                  sx={{ mt: 1, mr: 1 }}
+                >
+                  <Typography color="secondary">Reload Page?</Typography>
                 </Button>
               </>
             )}
