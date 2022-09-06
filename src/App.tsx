@@ -3,6 +3,7 @@ import { CssBaseline, ThemeProvider, createTheme, PaletteMode } from '@mui/mater
 import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { Home } from './components/Home';
+import { LandingPage } from './components/LandingPage';
 
 /**
  * Adapted from MUI.
@@ -23,23 +24,26 @@ export const App = () => {
     },
   });
 
-  /**
-   * TODO: Put <NavBar /> inside every route except the landing page
-   */
-
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Routes>
+        <Route path="/" element={<LandingPage />} />
         <Route
           path="/home"
           element={
             <>
+              <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
               <Home darkMode={darkMode} />
             </>
           }
         />
+        <Route path="/skills" element={<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />} />
+        <Route
+          path="/projects"
+          element={<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />}
+        />
+        <Route path="/contact" element={<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />} />
       </Routes>
     </ThemeProvider>
   );
