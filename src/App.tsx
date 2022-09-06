@@ -41,10 +41,7 @@ export const App = () => {
   const isMobileDevice: boolean = regexp.test(userDeviceDetails);
 
   useEffect(() => {
-    if (isMobileDevice === true) {
-      console.log('Mobile');
-    } else if (isMobileDevice === false) {
-      console.log('Desktop');
+    if (isMobileDevice === false) {
       setIsViewedOnDesktop(true);
     }
   }, []);
