@@ -27,7 +27,6 @@ export const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route
