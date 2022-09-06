@@ -8,7 +8,12 @@ import {
   Stepper,
   Typography,
 } from '@mui/material';
-import React from 'react';
+import { useState, Dispatch, SetStateAction } from 'react';
+
+interface Props {
+  isViewedOnDesktop: boolean;
+  setIsViewedOnDesktop: Dispatch<SetStateAction<boolean>>;
+}
 
 /**
  * Ref = https://mui.com/material-ui/react-stepper/#vertical-stepper
@@ -33,8 +38,9 @@ const steps = [
   },
 ];
 
-export const ForceDesktop = () => {
-  const [activeStep, setActiveStep] = React.useState(0);
+export const ForceDesktop = (props: Props) => {
+  const { isViewedOnDesktop, setIsViewedOnDesktop } = props;
+  const [activeStep, setActiveStep] = useState(0);
 
   const handleNext = () => {
     setActiveStep(prevActiveStep => prevActiveStep + 1);
@@ -49,25 +55,39 @@ export const ForceDesktop = () => {
   };
 
   return (
-    <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh">
-      <Box sx={{ maxWidth: 400 }}>
+    <Box
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      minHeight="100vh"
+      sx={{ color: '#1F2022', backgroundColor: '#1F2022' }}
+    >
+      <Box sx={{ maxWidth: 200 }}>
         <Stepper activeStep={activeStep} orientation="vertical">
           {steps.map((step, index) => (
             <Step key={step.label}>
-              <StepLabel
-                optional={index === 2 ? <Typography variant="caption">Last step</Typography> : null}
-              >
-                {step.label}
+              <StepLabel>
+                <Typography color="secondary">{step.label}</Typography>
               </StepLabel>
               <StepContent>
-                <Typography>{step.description}</Typography>
+                <Typography color="secondary">{step.description}</Typography>
                 <Box sx={{ mb: 2 }}>
                   <div>
-                    <Button variant="contained" onClick={handleNext} sx={{ mt: 1, mr: 1 }}>
+                    <Button
+                      variant="outlined"
+                      color="secondary"
+                      onClick={handleNext}
+                      sx={{ mt: 1, mr: 1 }}
+                    >
                       {index === steps.length - 1 ? 'Finish' : 'Continue'}
                     </Button>
-                    <Button disabled={index === 0} onClick={handleBack} sx={{ mt: 1, mr: 1 }}>
-                      Back
+                    <Button
+                      color="secondary"
+                      disabled={index === 0}
+                      onClick={handleBack}
+                      sx={{ mt: 1, mr: 1 }}
+                    >
+                      <Typography color="secondary"></Typography>Back
                     </Button>
                   </div>
                 </Box>
@@ -76,11 +96,17 @@ export const ForceDesktop = () => {
           ))}
         </Stepper>
         {activeStep === steps.length && (
-          <Paper square elevation={0} sx={{ p: 3 }}>
-            <Typography>All steps completed - you&apos;re finished</Typography>
-            <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
-              Reset
-            </Button>
+          <Paper square elevation={0} sx={{ p: 3, backgroundColor: '#000000' }}>
+            {isViewedOnDesktop === false && (
+              <>
+                <Typography color="secondary">
+                  All steps completed - you&apos;re finished
+                </Typography>
+                <Button color="secondary" onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
+                  <Typography color="secondary"></Typography>Reset
+                </Button>
+              </>
+            )}
           </Paper>
         )}
       </Box>
