@@ -15,7 +15,7 @@ import {
 import { Menu, Brightness7, Brightness4 } from '@mui/icons-material';
 import { LogoAnimation } from './LogoAnimation';
 import { SnackBarComponent } from './SnackBarComponent';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 interface Props {
   darkMode: boolean;
@@ -49,10 +49,12 @@ export const NavBar = (props: Props) => {
   ];
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activateSnackDownComponent, setActivateSnackDownComponent] = useState<boolean>(false);
+  const location = useLocation();
+  console.log(location.pathname);
 
-  const handleDrawerToggle = () => {
+  function handleDrawerToggle() {
     setMobileOpen(!mobileOpen);
-  };
+  }
 
   function handleDarkModeToggle() {
     setDarkMode(initialState => !initialState);
