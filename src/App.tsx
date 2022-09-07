@@ -12,7 +12,7 @@ import { ForceDesktop } from './components/ForceDesktop';
  */
 export const App = () => {
   const [darkMode, setDarkMode] = useState(false);
-  const [isViewedOnDesktop, setIsViewedOnDesktop] = useState(false);
+  let [isViewedOnDesktop, setIsViewedOnDesktop] = useState(false);
 
   const theme = createTheme({
     palette: {
