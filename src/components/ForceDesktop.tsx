@@ -59,6 +59,10 @@ export const ForceDesktop = (props: Props) => {
     navigate('/home');
   };
 
+  const handleReload = () => {
+    window.location.reload();
+  };
+
   return (
     <Box
       display="flex"
@@ -67,19 +71,25 @@ export const ForceDesktop = (props: Props) => {
       minHeight="100vh"
       sx={{ color: '#1F2022', backgroundColor: '#1F2022' }}
     >
-      <Box sx={{ maxWidth: 200 }}>
+      <Box sx={{ maxWidth: 300 }}>
+        <Typography variant="h2" color="secondary" sx={{ my: 2, fontWeight: 'bold' }}>
+          Oops!
+        </Typography>
         <Stepper activeStep={activeStep} orientation="vertical">
           {steps.map((step, index) => (
             <Step key={step.label}>
               <StepLabel>
-                <Typography color="secondary">{step.label}</Typography>
+                <Typography color="secondary" variant="h6" sx={{ my: 1, fontWeight: 'bold' }}>
+                  {step.label}
+                </Typography>
               </StepLabel>
               <StepContent>
                 <Typography color="secondary">{step.description}</Typography>
-                <Box sx={{ mb: 2 }}>
+                <Box sx={{ my: 1, mb: 2 }}>
                   <div>
                     <Button
                       variant="outlined"
+                      size="large"
                       color="secondary"
                       onClick={handleNext}
                       sx={{ mt: 1, mr: 1 }}
@@ -101,27 +111,44 @@ export const ForceDesktop = (props: Props) => {
           ))}
         </Stepper>
         {activeStep === steps.length && (
-          <Paper square elevation={0} sx={{ p: 3, backgroundColor: '#000000' }}>
+          <Paper
+            elevation={24}
+            sx={{
+              p: 3,
+              backgroundColor: '#1F2022',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
             {isViewedOnDesktop === false && (
-              <>
-                <Typography color="secondary">Reload this page to proceed!</Typography>
+              <Box justifyContent="center" alignItems="center">
+                <Typography variant="h6" color="secondary" sx={{ mx: 6, my: 1 }}>
+                  Reload this page to proceed...
+                </Typography>
                 <Button
-                  color="secondary"
+                  color="warning"
                   variant="outlined"
                   onClick={handleReset}
-                  sx={{ mt: 1, mr: 1 }}
+                  sx={{ mx: 6, my: 2 }}
                 >
-                  <Typography color="secondary">Reset Steps?</Typography>
+                  <Typography color="warning" sx={{ my: 1 }}>
+                    Reset Steps
+                  </Typography>
                 </Button>
+                <Typography color="secondary" variant="h6" sx={{ mx: 6, my: 1 }}>
+                  Still stuck here?
+                </Typography>
                 <Button
-                  color="secondary"
+                  color="error"
                   variant="outlined"
-                  onClick={handleNavigate}
-                  sx={{ mt: 1, mr: 1 }}
+                  onClick={handleReload}
+                  sx={{ mx: 6, my: 2 }}
                 >
-                  <Typography color="secondary">Reload Page?</Typography>
+                  <Typography color="error" sx={{ my: 1 }}>
+                    Force Reload
+                  </Typography>
                 </Button>
-              </>
+              </Box>
             )}
             {
               /**
