@@ -5,6 +5,7 @@ import { NavBar } from './components/NavBar';
 import { Home } from './components/Home';
 import { LandingPageLoadingAnimation } from './components/LandingPageLoadingAnimation';
 import { ForceDesktop } from './components/ForceDesktop';
+import { Footer } from './components/Footer';
 
 /**
  * Adapted from MUI.
@@ -58,6 +59,7 @@ export const App = () => {
               <>
                 <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
                 <Home darkMode={darkMode} />
+                <Footer />
               </>
             ) : (
               <ForceDesktop
