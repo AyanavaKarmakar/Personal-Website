@@ -20,8 +20,10 @@
     "@mui/icons-material": "^5.10.3",
     "@mui/lab": "^5.0.0-alpha.97",
     "@mui/material": "^5.10.3",
+    "@types/react-imgix": "^9.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-imgix": "^9.5.2",
     "react-loading": "^2.0.3",
     "react-router-dom": "^6.3.0",
     "react-type-animation": "^2.1.1"
