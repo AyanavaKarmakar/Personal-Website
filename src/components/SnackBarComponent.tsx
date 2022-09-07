@@ -38,7 +38,7 @@ export const SnackBarComponent = (props: Props) => {
         sx={{ width: '100%' }}
       >
         <Typography>
-          {`Theme has been set to ${darkMode === true ? 'EXPERIMENTAL' : 'DEFAULT'}!`}
+          {`The theme has been set to ${darkMode === true ? 'EXPERIMENTAL' : 'DEFAULT'}!`}
         </Typography>
       </Alert>
     </Snackbar>
