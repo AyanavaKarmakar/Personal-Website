@@ -121,6 +121,9 @@ export const NavBar = (props: Props) => {
             >
               <LogoAnimation darkMode={darkMode} />
             </Typography>
+            {/**
+             * Put social links here
+             */}
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               {navItems.map(item => (
                 <Button
