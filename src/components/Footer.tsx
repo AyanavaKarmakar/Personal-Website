@@ -9,7 +9,13 @@ export const Footer = () => {
   const [value, setValue] = useState(0);
 
   return (
-    <Box sx={{ width: 500 }}>
+    <Box
+      justifyContent="center"
+      alignItems="center"
+      minHeight="100vh"
+      minWidth="100vw"
+      sx={{ width: 500 }}
+    >
       <BottomNavigation
         showLabels
         value={value}
