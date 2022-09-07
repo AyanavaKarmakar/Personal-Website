@@ -6,8 +6,9 @@
 2. TypeScript
 3. Vite
 4. Material UI
-5. Vercel (Production / Preview)
-6. AWS Amplify (Testing)
+5. Vercel [[Production](https://ayanava-karmakar.vercel.app) || Preview]
+6. Netlify [[Production](https://ayanava-karmakar.netlify.app) || Preview]
+7. AWS Amplify (Testing)
 
 ### Progress So Far
 
