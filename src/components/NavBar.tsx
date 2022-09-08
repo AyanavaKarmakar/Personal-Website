@@ -74,7 +74,7 @@ export const NavBar = (props: Props) => {
           }}
           color="inherit"
         >
-          {darkMode === true ? <Brightness7 /> : <Brightness4 />}
+          {darkMode === true ? <Brightness7 /> : <Brightness4 color="secondary" />}
         </IconButton>
         {navItems.map(item => (
           <ListItem key={item.buttonName} disablePadding>
@@ -124,6 +124,8 @@ export const NavBar = (props: Props) => {
             {/**
              * Put social links here
              */}
+            <GitHub fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
+            <LinkedIn fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               {navItems.map(item => (
                 <Button
@@ -146,7 +148,7 @@ export const NavBar = (props: Props) => {
                 }}
                 color="inherit"
               >
-                {darkMode === true ? <Brightness7 /> : <Brightness4 />}
+                {darkMode === true ? <Brightness7 /> : <Brightness4 color="secondary" />}
               </IconButton>
             </Box>
           </Toolbar>
