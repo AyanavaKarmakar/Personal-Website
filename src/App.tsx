@@ -5,7 +5,7 @@ import { NavBar } from './components/NavBar';
 import { Home } from './components/Home';
 import { LandingPageLoadingAnimation } from './components/LandingPageLoadingAnimation';
 import { ForceDesktopUnloading } from './components/ForceDesktopUnloading';
-import { Skills } from './components/skills/skills';
+import { Skills } from './components/SkillsSection/skills';
 
 /**
  * Adapted from MUI.
