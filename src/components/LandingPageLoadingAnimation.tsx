@@ -43,7 +43,7 @@ export const LandingPageLoadingAnimation = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setProgress(prevProgress => (prevProgress >= 100 ? 0 : prevProgress + 20));
+      setProgress(prevProgress => (prevProgress >= 100 ? 0 : prevProgress + 50));
     }, 800);
     return () => {
       clearInterval(timer);

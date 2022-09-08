@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { Home } from './components/Home';
 import { LandingPageLoadingAnimation } from './components/LandingPageLoadingAnimation';
-import { ForceDesktop } from './components/ForceDesktop';
+import { ForceDesktopUnloading } from './components/ForceDesktopUnloading';
 
 /**
  * Adapted from MUI.
@@ -12,7 +12,7 @@ import { ForceDesktop } from './components/ForceDesktop';
  */
 export const App = () => {
   const [darkMode, setDarkMode] = useState(false);
-  let [isViewedOnDesktop, setIsViewedOnDesktop] = useState(false);
+  const [isViewedOnDesktop, setIsViewedOnDesktop] = useState(false);
 
   const theme = createTheme({
     palette: {
@@ -60,7 +60,7 @@ export const App = () => {
                 <Home darkMode={darkMode} />
               </>
             ) : (
-              <ForceDesktop
+              <ForceDesktopUnloading
                 isViewedOnDesktop={isViewedOnDesktop}
                 setIsViewedOnDesktop={setIsViewedOnDesktop}
               />
