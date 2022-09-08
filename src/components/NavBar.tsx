@@ -11,8 +11,9 @@ import {
   Toolbar,
   Typography,
   Button,
+  Grid,
 } from '@mui/material';
-import { Menu, Brightness7, Brightness4 } from '@mui/icons-material';
+import { Menu, Brightness7, Brightness4, GitHub, LinkedIn } from '@mui/icons-material';
 import { LogoAnimation } from './LogoAnimation';
 import { SnackBarComponent } from './SnackBarComponent';
 import { Link, useLocation } from 'react-router-dom';
@@ -50,6 +51,16 @@ export const NavBar = (props: Props) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activateSnackDownComponent, setActivateSnackDownComponent] = useState<boolean>(false);
   const path = useLocation().pathname;
+  const GITHUB_URL = 'https://github.com/AyanavaKarmakar';
+  const LINKEDIN_URL = 'https://www.linkedin.com/in/ayanava-karmakar-b6ba90219/';
+
+  const handleGitHub = () => {
+    window.open(GITHUB_URL, '_blank');
+  };
+
+  const handleLinkedIn = () => {
+    window.open(LINKEDIN_URL, '_blank');
+  };
 
   function handleDrawerToggle() {
     setMobileOpen(!mobileOpen);
@@ -74,7 +85,7 @@ export const NavBar = (props: Props) => {
           }}
           color="inherit"
         >
-          {darkMode === true ? <Brightness7 /> : <Brightness4 />}
+          {darkMode === true ? <Brightness7 /> : <Brightness4 color="secondary" />}
         </IconButton>
         {navItems.map(item => (
           <ListItem key={item.buttonName} disablePadding>
@@ -93,7 +104,7 @@ export const NavBar = (props: Props) => {
   );
 
   return (
-    <>
+    <Grid container columns={8} columnSpacing={1} direction={'column'}>
       <>
         {
           <SnackBarComponent
@@ -121,6 +132,22 @@ export const NavBar = (props: Props) => {
             >
               <LogoAnimation darkMode={darkMode} />
             </Typography>
+            {/**
+             * Social links:
+             */}
+            <Box
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              sx={{ mx: 50, textAlign: 'center' }}
+            >
+              <IconButton onClick={handleGitHub}>
+                <GitHub fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
+              </IconButton>
+              <IconButton onClick={handleLinkedIn}>
+                <LinkedIn fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
+              </IconButton>
+            </Box>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               {navItems.map(item => (
                 <Button
@@ -143,7 +170,7 @@ export const NavBar = (props: Props) => {
                 }}
                 color="inherit"
               >
-                {darkMode === true ? <Brightness7 /> : <Brightness4 />}
+                {darkMode === true ? <Brightness7 /> : <Brightness4 color="secondary" />}
               </IconButton>
             </Box>
           </Toolbar>
@@ -171,6 +198,6 @@ export const NavBar = (props: Props) => {
           </Drawer>
         </Box>
       </Box>
-    </>
+    </Grid>
   );
 };

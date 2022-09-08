@@ -1,4 +1,4 @@
-import { AlertProps, Snackbar } from '@mui/material';
+import { AlertProps, Snackbar, Typography } from '@mui/material';
 import { forwardRef, SyntheticEvent, useEffect, useState } from 'react';
 import MuiAlert from '@mui/material/Alert';
 
@@ -32,8 +32,14 @@ export const SnackBarComponent = (props: Props) => {
   };
   return (
     <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
-      <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-        {`Dark Mode Has Been Turned ${darkMode === true ? 'On' : 'Off'}!`}
+      <Alert
+        onClose={handleClose}
+        severity={darkMode === true ? 'warning' : 'info'}
+        sx={{ width: '100%' }}
+      >
+        <Typography>
+          {`The theme has been set to ${darkMode === true ? 'EXPERIMENTAL' : 'DEFAULT'}!`}
+        </Typography>
       </Alert>
     </Snackbar>
   );
