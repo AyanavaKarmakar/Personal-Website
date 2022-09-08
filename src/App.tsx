@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { CssBaseline, ThemeProvider, createTheme, PaletteMode } from '@mui/material';
 import { Routes, Route } from 'react-router-dom';
-import { NavBar } from './components/Utils/NavBar';
 import { Home } from './components/HomeSection/Home';
+import { Skills } from './components/SkillsSection/index';
+import { NavBar } from './components/Utils/NavBar';
 import { LandingPageLoadingAnimation } from './components/Utils/LandingPageLoadingAnimation';
 import { ForceDesktopUnloading } from './components/Utils/ForceDesktopUnloading';
-import { Skills } from './components/SkillsSection/skills';
 
 /**
  * Adapted from MUI.
