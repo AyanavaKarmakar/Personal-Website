@@ -13,9 +13,10 @@ import {
   Button,
   Grid,
 } from '@mui/material';
+import { VariantType, useSnackbar } from 'notistack';
 import { Menu, Brightness7, Brightness4, GitHub, LinkedIn } from '@mui/icons-material';
 import { LogoAnimation } from './LogoAnimation';
-import { Notistack } from './Notistack';
+// import { Notistack } from './Notistack';
 import { Link, useLocation } from 'react-router-dom';
 
 interface Props {
@@ -49,7 +50,6 @@ export const NavBar = (props: Props) => {
     },
   ];
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activateSnackDownComponent, setActivateSnackDownComponent] = useState<boolean>(false);
   const path = useLocation().pathname;
   const GITHUB_URL = 'https://github.com/AyanavaKarmakar';
   const LINKEDIN_URL = 'https://www.linkedin.com/in/ayanava-karmakar-b6ba90219/';
@@ -62,27 +62,38 @@ export const NavBar = (props: Props) => {
     window.open(LINKEDIN_URL, '_blank');
   };
 
-  function handleDrawerToggle() {
+  /**
+   * Ref: https://mui.com/material-ui/react-snackbar/#notistack
+   * variant could be success, error, warning, info, or default
+   */
+  const { enqueueSnackbar } = useSnackbar();
+
+  const handleClickVariant = (variant: VariantType) => () => {
+    handleDarkModeToggle();
+    enqueueSnackbar(
+      `The theme has been set to ${darkMode === true ? 'default' : 'experimental'}!`,
+      { variant }
+    );
+  };
+
+  const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
-  }
+  };
 
-  function handleDarkModeToggle() {
+  const handleDarkModeToggle = () => {
     setDarkMode(initialState => !initialState);
-  }
-
-  function handleSnackBarComponent() {
-    setActivateSnackDownComponent(initialState => !initialState);
-  }
+  };
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <List>
         <IconButton
           sx={{ ml: 1 }}
-          onClick={() => {
-            handleDarkModeToggle();
-            handleSnackBarComponent();
-          }}
+          /**
+           * ! variants are reversed
+           * ! since the darkMode state changes after clicking
+           */
+          onClick={handleClickVariant(`${darkMode === true ? 'info' : 'warning'}`)}
           color="inherit"
         >
           {darkMode === true ? <Brightness7 /> : <Brightness4 color="secondary" />}
@@ -105,9 +116,6 @@ export const NavBar = (props: Props) => {
 
   return (
     <Grid container columns={8} columnSpacing={1} direction={'column'}>
-      <>
-        {<Notistack darkMode={darkMode} activateSnackDownComponent={activateSnackDownComponent} />}
-      </>
       <Box sx={{ display: 'flex' }}>
         <AppBar component="nav" position="sticky">
           <Toolbar>
@@ -159,10 +167,11 @@ export const NavBar = (props: Props) => {
               ))}
               <IconButton
                 sx={{ ml: 1 }}
-                onClick={() => {
-                  handleDarkModeToggle();
-                  handleSnackBarComponent();
-                }}
+                /**
+                 * ! variants are reversed
+                 * ! since darkMode state changes after click
+                 */
+                onClick={handleClickVariant(`${darkMode === true ? 'info' : 'warning'}`)}
                 color="inherit"
               >
                 {darkMode === true ? <Brightness7 /> : <Brightness4 color="secondary" />}
