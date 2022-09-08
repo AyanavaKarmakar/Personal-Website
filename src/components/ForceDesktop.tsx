@@ -30,10 +30,7 @@ const steps = [
   },
   {
     label: 'What should I do now?',
-    description: `Please view this
-                  site on your desktop / laptop.
-                  Alternatively, turn on desktop
-                  mode on your mobile.`,
+    description: `Please view this site on your desktop / laptop only!`,
   },
 ];
 
