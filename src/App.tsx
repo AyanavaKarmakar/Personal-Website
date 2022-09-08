@@ -71,10 +71,17 @@ export const App = () => {
         <Route
           path="/skills"
           element={
-            <>
-              <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
-              <Skills darkMode={darkMode} />
-            </>
+            isViewedOnDesktop === true ? (
+              <>
+                <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
+                <Skills darkMode={darkMode} />
+              </>
+            ) : (
+              <ForceDesktopUnloading
+                isViewedOnDesktop={isViewedOnDesktop}
+                setIsViewedOnDesktop={setIsViewedOnDesktop}
+              />
+            )
           }
         />
         <Route
