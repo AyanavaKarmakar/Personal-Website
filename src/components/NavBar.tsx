@@ -12,7 +12,7 @@ import {
   Typography,
   Button,
 } from '@mui/material';
-import { Menu, Brightness7, Brightness4 } from '@mui/icons-material';
+import { Menu, Brightness7, Brightness4, GitHub, LinkedIn } from '@mui/icons-material';
 import { LogoAnimation } from './LogoAnimation';
 import { SnackBarComponent } from './SnackBarComponent';
 import { Link, useLocation } from 'react-router-dom';
