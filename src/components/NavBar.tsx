@@ -125,9 +125,7 @@ export const NavBar = (props: Props) => {
             {/**
              * Social links:
              */}
-
             <GitHub fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
-
             <LinkedIn
               fontSize="large"
               color={darkMode === true ? 'inherit' : 'secondary'}
