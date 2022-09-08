@@ -122,7 +122,7 @@ export const NavBar = (props: Props) => {
               <LogoAnimation darkMode={darkMode} />
             </Typography>
             {/**
-             * Put social links here
+             * Social links:
              */}
             <GitHub fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
             <LinkedIn fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
