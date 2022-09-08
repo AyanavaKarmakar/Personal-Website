@@ -24,7 +24,7 @@ export const Skills = (props: Props) => {
   return (
     <>
       {isLoading === true && <EchartsLoader darkMode={darkMode} />}
-      {isLoading === false && <EchartRosePieChart />}
+      {isLoading === false && <EchartRosePieChart darkMode={darkMode} />}
     </>
   );
 };
