@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { CssBaseline, ThemeProvider, createTheme, PaletteMode } from '@mui/material';
 import { Routes, Route } from 'react-router-dom';
-import { Home } from './components/HomeSection/Home';
+import { Home } from './components/HomeSection/index';
 import { Skills } from './components/SkillsSection/index';
 import {
   NavBar,
