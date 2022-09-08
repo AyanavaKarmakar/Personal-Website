@@ -8,7 +8,7 @@ interface Props {
 }
 
 /**
- * Ref: https://mui.com/material-ui/react-snackbar/#customization
+ * Ref: https://mui.com/material-ui/react-snackbar/#notistack
  */
 export const Notistack = (props: Props) => {
   const { darkMode, activateSnackDownComponent } = props;
