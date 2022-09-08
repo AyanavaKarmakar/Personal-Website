@@ -94,7 +94,7 @@ export const NavBar = (props: Props) => {
   );
 
   return (
-    <>
+    <Grid container columns={8} columnSpacing={1} direction={'column'}>
       <>
         {
           <SnackBarComponent
@@ -125,14 +125,14 @@ export const NavBar = (props: Props) => {
             {/**
              * Social links:
              */}
-            <Grid>
-              <GitHub fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
-              <LinkedIn
-                fontSize="large"
-                color={darkMode === true ? 'inherit' : 'secondary'}
-                sx={{}}
-              />
-            </Grid>
+
+            <GitHub fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
+
+            <LinkedIn
+              fontSize="large"
+              color={darkMode === true ? 'inherit' : 'secondary'}
+              sx={{}}
+            />
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               {navItems.map(item => (
                 <Button
@@ -183,6 +183,6 @@ export const NavBar = (props: Props) => {
           </Drawer>
         </Box>
       </Box>
-    </>
+    </Grid>
   );
 };
