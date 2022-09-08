@@ -16,7 +16,6 @@ import {
 import { VariantType, useSnackbar } from 'notistack';
 import { Menu, Brightness7, Brightness4, GitHub, LinkedIn } from '@mui/icons-material';
 import { LogoAnimation } from './LogoAnimation';
-// import { Notistack } from './Notistack';
 import { Link, useLocation } from 'react-router-dom';
 
 interface Props {
