@@ -73,7 +73,7 @@ export const App = () => {
           element={
             <>
               <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
-              <Skills />
+              <Skills darkMode={darkMode} />
             </>
           }
         />
