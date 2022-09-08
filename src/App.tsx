@@ -5,6 +5,7 @@ import { NavBar } from './components/NavBar';
 import { Home } from './components/Home';
 import { LandingPageLoadingAnimation } from './components/LandingPageLoadingAnimation';
 import { ForceDesktopUnloading } from './components/ForceDesktopUnloading';
+import { Skills } from './components/skills/skills';
 
 /**
  * Adapted from MUI.
@@ -67,7 +68,15 @@ export const App = () => {
             )
           }
         />
-        <Route path="/skills" element={<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />} />
+        <Route
+          path="/skills"
+          element={
+            <>
+              <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
+              <Skills />
+            </>
+          }
+        />
         <Route
           path="/projects"
           element={<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />}
