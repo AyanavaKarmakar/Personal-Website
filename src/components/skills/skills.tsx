@@ -7,7 +7,12 @@ interface Props {
 }
 
 export const Skills = (props: Props) => {
-  const { darkMode } = props;
+  /**
+   * Alt styles
+   */
+  let { darkMode } = props;
+  darkMode = !darkMode;
+
   const [isLoading, setIsLoading] = useState(true);
   const DELAY_MS = 3000;
 

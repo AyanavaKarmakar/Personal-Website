@@ -10,22 +10,23 @@ interface Props {
  */
 export const EchartRosePieChart = (props: Props) => {
   const { darkMode } = props;
+
+  const skillsData = [
+    { value: 60, name: 'React' },
+    { value: 55, name: 'TypeScript' },
+    { value: 50, name: 'Material UI' },
+    { value: 45, name: 'Node.js | Express.js' },
+    { value: 35, name: 'HTML | CSS | JavaScript' },
+    { value: 30, name: 'Data Visualization: ECharts' },
+  ];
+
   const option = {
     legend: {
-      top: 'bottom',
-    },
-    toolbox: {
-      show: true,
-      feature: {
-        mark: { show: true },
-        dataView: { show: true, readOnly: false },
-        restore: { show: true },
-        saveAsImage: { show: true },
-      },
+      top: 'top',
     },
     series: [
       {
-        name: 'Nightingale Chart',
+        name: 'Skills Chart',
         type: 'pie',
         radius: [50, 250],
         center: ['50%', '50%'],
@@ -33,16 +34,7 @@ export const EchartRosePieChart = (props: Props) => {
         itemStyle: {
           borderRadius: 8,
         },
-        data: [
-          { value: 40, name: 'rose 1' },
-          { value: 38, name: 'rose 2' },
-          { value: 32, name: 'rose 3' },
-          { value: 30, name: 'rose 4' },
-          { value: 28, name: 'rose 5' },
-          { value: 26, name: 'rose 6' },
-          { value: 22, name: 'rose 7' },
-          { value: 18, name: 'rose 8' },
-        ],
+        data: skillsData,
       },
     ],
   };
@@ -55,7 +47,7 @@ export const EchartRosePieChart = (props: Props) => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          minHeight: '91vh',
+          minHeight: '100vh',
           minWidth: '100vw',
           backgroundColor: '#E0FFFF',
         }}
