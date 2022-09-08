@@ -125,12 +125,19 @@ export const NavBar = (props: Props) => {
             {/**
              * Social links:
              */}
-            <GitHub fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
-            <LinkedIn
-              fontSize="large"
-              color={darkMode === true ? 'inherit' : 'secondary'}
-              sx={{}}
-            />
+            <Box
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              sx={{ mx: 50, textAlign: 'center' }}
+            >
+              <GitHub
+                fontSize="large"
+                color={darkMode === true ? 'inherit' : 'secondary'}
+                sx={{ mx: 2 }}
+              />
+              <LinkedIn fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
+            </Box>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               {navItems.map(item => (
                 <Button
