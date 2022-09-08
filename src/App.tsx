@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { CssBaseline, ThemeProvider, createTheme, PaletteMode } from '@mui/material';
 import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
-import { Home } from './components/Home';
+import { Home } from './components/HomeSection/Home';
 import { LandingPageLoadingAnimation } from './components/LandingPageLoadingAnimation';
 import { ForceDesktopUnloading } from './components/ForceDesktopUnloading';
 import { Skills } from './components/SkillsSection/skills';
