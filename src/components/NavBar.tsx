@@ -11,6 +11,7 @@ import {
   Toolbar,
   Typography,
   Button,
+  Grid,
 } from '@mui/material';
 import { Menu, Brightness7, Brightness4, GitHub, LinkedIn } from '@mui/icons-material';
 import { LogoAnimation } from './LogoAnimation';
@@ -124,8 +125,14 @@ export const NavBar = (props: Props) => {
             {/**
              * Social links:
              */}
-            <GitHub fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
-            <LinkedIn fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
+            <Grid>
+              <GitHub fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
+              <LinkedIn
+                fontSize="large"
+                color={darkMode === true ? 'inherit' : 'secondary'}
+                sx={{}}
+              />
+            </Grid>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               {navItems.map(item => (
                 <Button
