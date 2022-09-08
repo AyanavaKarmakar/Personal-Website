@@ -1,7 +1,6 @@
 import Imgix from 'react-imgix';
 import { Box } from '@mui/material';
-import { TimeLineTransition } from './TimeLineTransition';
-import { TypingAnimation } from './TypingAnimation';
+import { TimeLineTransition, TypingAnimation } from './index';
 
 interface Props {
   darkMode: boolean;

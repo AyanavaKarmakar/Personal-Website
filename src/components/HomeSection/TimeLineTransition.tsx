@@ -1,5 +1,5 @@
 import { Slide } from '@mui/material';
-import { TimeLine } from './TimeLine';
+import { TimeLine } from './index';
 
 interface Props {
   darkMode: boolean;

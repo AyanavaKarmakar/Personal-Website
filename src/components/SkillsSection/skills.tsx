@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
-import { EchartsLoader } from './echartsLoader';
-import { EchartRosePieChart } from './echartRosePieChart';
+import { EchartsLoader, EchartRosePieChart } from './index';
 
 interface Props {
   darkMode: boolean;

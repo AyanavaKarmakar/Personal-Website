@@ -1,7 +1,7 @@
-import CircularProgress, { CircularProgressProps } from '@mui/material/CircularProgress';
 import { Typography, Box } from '@mui/material';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
-import { ForceDesktop } from './ForceDesktop';
+import CircularProgress, { CircularProgressProps } from '@mui/material/CircularProgress';
+import { ForceDesktop } from './index';
 
 interface Props {
   isViewedOnDesktop: boolean;

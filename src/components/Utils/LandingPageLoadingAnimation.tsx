@@ -1,7 +1,7 @@
-import { useNavigate } from 'react-router-dom';
-import CircularProgress, { CircularProgressProps } from '@mui/material/CircularProgress';
-import { Typography, Box } from '@mui/material';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Typography, Box } from '@mui/material';
+import CircularProgress, { CircularProgressProps } from '@mui/material/CircularProgress';
 
 /**
  * Refer = https://mui.com/material-ui/api/circular-progress/
