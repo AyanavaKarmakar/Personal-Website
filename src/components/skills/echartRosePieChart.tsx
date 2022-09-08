@@ -14,10 +14,10 @@ export const EchartRosePieChart = (props: Props) => {
   const skillsData = [
     { value: 60, name: 'React' },
     { value: 55, name: 'TypeScript' },
-    { value: 50, name: 'Material UI' },
-    { value: 45, name: 'Node.js | Express.js' },
-    { value: 35, name: 'HTML | CSS | JavaScript' },
-    { value: 30, name: 'Data Visualization: ECharts' },
+    { value: 50, name: 'Node.js | Express.js' },
+    { value: 45, name: 'HTML | CSS | JavaScript' },
+    { value: 40, name: 'UI Kits: Material UI | Tailwind CSS | Bootstrap' },
+    { value: 35, name: 'Data Visualization: ECharts' },
   ];
 
   const option = {
