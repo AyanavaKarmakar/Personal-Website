@@ -3,9 +3,11 @@ import { CssBaseline, ThemeProvider, createTheme, PaletteMode } from '@mui/mater
 import { Routes, Route } from 'react-router-dom';
 import { Home } from './components/HomeSection/Home';
 import { Skills } from './components/SkillsSection/index';
-import { NavBar } from './components/Utils/NavBar';
-import { LandingPageLoadingAnimation } from './components/Utils/LandingPageLoadingAnimation';
-import { ForceDesktopUnloading } from './components/Utils/ForceDesktopUnloading';
+import {
+  NavBar,
+  LandingPageLoadingAnimation,
+  ForceDesktopUnloading,
+} from './components/Utils/index';
 
 /**
  * Adapted from MUI.
