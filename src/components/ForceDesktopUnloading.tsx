@@ -49,7 +49,7 @@ export const ForceDesktopUnloading = (props: Props) => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setProgress(prevProgress => (prevProgress <= 0 ? 100 : prevProgress - 50));
+      setProgress(prevProgress => (prevProgress <= 0 ? 100 : prevProgress - 20));
     }, 800);
     return () => {
       clearInterval(timer);
