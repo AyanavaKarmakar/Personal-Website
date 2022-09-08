@@ -10,7 +10,7 @@ interface Props {
 /**
  * Ref: https://mui.com/material-ui/react-snackbar/#customization
  */
-export const SnackBarComponent = (props: Props) => {
+export const Notistack = (props: Props) => {
   const { darkMode, activateSnackDownComponent } = props;
 
   const Alert = forwardRef<HTMLDivElement, AlertProps>(function Alert(props, ref) {

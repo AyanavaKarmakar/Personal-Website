@@ -15,7 +15,7 @@ import {
 } from '@mui/material';
 import { Menu, Brightness7, Brightness4, GitHub, LinkedIn } from '@mui/icons-material';
 import { LogoAnimation } from './LogoAnimation';
-import { SnackBarComponent } from './SnackBarComponent';
+import { Notistack } from './Notistack';
 import { Link, useLocation } from 'react-router-dom';
 
 interface Props {
@@ -106,12 +106,7 @@ export const NavBar = (props: Props) => {
   return (
     <Grid container columns={8} columnSpacing={1} direction={'column'}>
       <>
-        {
-          <SnackBarComponent
-            darkMode={darkMode}
-            activateSnackDownComponent={activateSnackDownComponent}
-          />
-        }
+        {<Notistack darkMode={darkMode} activateSnackDownComponent={activateSnackDownComponent} />}
       </>
       <Box sx={{ display: 'flex' }}>
         <AppBar component="nav" position="sticky">
