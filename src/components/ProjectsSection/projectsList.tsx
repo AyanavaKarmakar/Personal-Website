@@ -30,44 +30,44 @@ export const ProjectsList = (props: Props) => {
 
   const projectsList = [
     {
-      projectTitle: 'Lizard',
+      projectTitle: 'CatchApp',
       projectDescription:
-        'Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica',
-      projectLink: 'https://stackoverflow.com/',
+        'Real-Time Messaging Platform built using React, getstream.io, Node.js, and Express.js. Reference: Discord.',
+      projectLink: 'https://catch-app-ak.netlify.app/',
       projectImage:
-        'https://ayanava-karmakar.imgix.net/https%3A%2F%2Fraw.githubusercontent.com%2FAyanavaKarmakar%2Fimgix-source-assets%2Fmain%2FsiteIcon.png?s=b56a16a7886aaf99f639de88c3fcdc0b',
-      altProjectImageText: 'green iguana',
-      projectButtonText: 'Share',
+        'https://user-images.githubusercontent.com/89210438/189305155-3ccbd7e7-d568-47f2-9fce-b163362156eb.png',
+      altProjectImageText: 'CatchApp Project Snapshot',
+      projectButtonText: 'Live Demo',
     },
     {
-      projectTitle: 'Lizard',
+      projectTitle: 'Self-Driving Car',
       projectDescription:
-        'Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica',
-      projectLink: 'https://stackoverflow.com/',
+        'Self-Driving Car using Neural Networks, and Machine Learning; built using HTML, CSS, and Javascript.',
+      projectLink: 'https://main.d2uu9fdlrx4iu2.amplifyapp.com/',
       projectImage:
-        'https://ayanava-karmakar.imgix.net/https%3A%2F%2Fraw.githubusercontent.com%2FAyanavaKarmakar%2Fimgix-source-assets%2Fmain%2FsiteIcon.png?s=b56a16a7886aaf99f639de88c3fcdc0b',
-      altProjectImageText: 'green iguana',
-      projectButtonText: 'Share',
+        'https://user-images.githubusercontent.com/89210438/189307981-83140c51-dbcf-45a4-91db-a5e0265d4f11.png',
+      altProjectImageText: 'Weather App Project Snapshot',
+      projectButtonText: 'Live Demo',
     },
     {
-      projectTitle: 'Lizard',
+      projectTitle: 'Weather App',
       projectDescription:
-        'Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica',
-      projectLink: 'https://stackoverflow.com/',
+        'Simple Weather App built using HTML, CSS, Javascript, Unsplash Image API, and OpenWeather API.',
+      projectLink: 'https://main.d28jun6e20cb3m.amplifyapp.com/',
       projectImage:
-        'https://ayanava-karmakar.imgix.net/https%3A%2F%2Fraw.githubusercontent.com%2FAyanavaKarmakar%2Fimgix-source-assets%2Fmain%2FsiteIcon.png?s=b56a16a7886aaf99f639de88c3fcdc0b',
-      altProjectImageText: 'green iguana',
-      projectButtonText: 'Share',
+        'https://user-images.githubusercontent.com/89210438/189307211-b8d6d110-9c0c-4ce3-a165-70a32857a6d2.png',
+      altProjectImageText: 'Weather App Project Snapshot',
+      projectButtonText: 'Live Demo',
     },
     {
-      projectTitle: 'Lizard',
+      projectTitle: 'Kloud Pad',
       projectDescription:
-        'Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica',
-      projectLink: 'https://stackoverflow.com/',
+        'MERN Stack Application for storing personalized notes in the cloud with bycrypt hashing, and JWT authentication.',
+      projectLink: 'https://github.com/AyanavaKarmakar/Kloud-Pad-Client',
       projectImage:
-        'https://ayanava-karmakar.imgix.net/https%3A%2F%2Fraw.githubusercontent.com%2FAyanavaKarmakar%2Fimgix-source-assets%2Fmain%2FsiteIcon.png?s=b56a16a7886aaf99f639de88c3fcdc0b',
-      altProjectImageText: 'green iguana',
-      projectButtonText: 'Share',
+        'https://user-images.githubusercontent.com/89210438/189304444-ba1192f1-5314-4f00-9528-cd9ab697c8dd.png',
+      altProjectImageText: 'Kloud Pad Project Snapshot',
+      projectButtonText: 'GitHub',
     },
   ];
 
@@ -112,6 +112,7 @@ export const ProjectsList = (props: Props) => {
                 color={`${darkMode === true ? 'secondary' : 'primary'}`}
                 variant="outlined"
                 href={projectLink}
+                target="_blank"
                 fullWidth
               >
                 {projectButtonText}
