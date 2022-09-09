@@ -20,7 +20,10 @@ export const Home = (props: Props) => {
         minWidth="100vw"
         sx={{ backgroundColor: '#000000' }}
       >
-        <Imgix src={BACKGROUND_IMG} sizes={'100vh'} />
+        {/**
+         * Ref = https://www.npmjs.com/package/react-imgix#shared-props-imgix-source
+         */}
+        <Imgix src={BACKGROUND_IMG} sizes={'100vh'} htmlAttributes={{ alt: 'background' }} />
       </Box>
       <Box
         sx={{

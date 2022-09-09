@@ -143,10 +143,10 @@ export const NavBar = (props: Props) => {
               alignItems="center"
               sx={{ mx: 50, textAlign: 'center' }}
             >
-              <IconButton onClick={handleGitHub}>
+              <IconButton onClick={handleGitHub} aria-label={'GitHub'}>
                 <GitHub fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
               </IconButton>
-              <IconButton onClick={handleLinkedIn}>
+              <IconButton onClick={handleLinkedIn} aria-label={'LinkedIn'}>
                 <LinkedIn fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
               </IconButton>
             </Box>
