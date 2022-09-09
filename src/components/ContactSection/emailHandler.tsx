@@ -6,6 +6,7 @@ interface Props {
 
 export const EmailHandler = (props: Props) => {
   const { fullName, emailId, message } = props;
-
-  return <>Email Handler</>;
+  console.log(fullName);
+  console.log(emailId);
+  console.log(message);
 };
