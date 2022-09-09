@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Grid } from '@mui/material';
 import ReactEcharts from 'echarts-for-react';
 
@@ -5,14 +6,25 @@ import ReactEcharts from 'echarts-for-react';
  * Refer = https://echarts.apache.org/examples/en/editor.html?c=pie-roseType-simple&theme=dark
  */
 export const EchartRosePieChart = () => {
-  const skillsData = [
-    { value: 60, name: 'React' },
-    { value: 55, name: 'TypeScript' },
-    { value: 50, name: 'Node.js | Express.js' },
-    { value: 45, name: 'HTML | CSS | JavaScript' },
-    { value: 40, name: 'UI Kit: Material UI' },
-    { value: 35, name: 'Data Visualization: ECharts' },
-  ];
+  const DELAY_MS = 1500;
+
+  const [data, setData] = useState([
+    { value: 100, name: 'React' },
+    { value: 100, name: 'TypeScript' },
+    { value: 100, name: 'Node.js | Express.js' },
+    { value: 100, name: 'UI Kit: Material UI' },
+    { value: 100, name: 'Data Visualization: ECharts' },
+  ]);
+
+  const makeRandomData = () => {
+    return [
+      { value: Math.random(), name: 'React' },
+      { value: Math.random(), name: 'TypeScript' },
+      { value: Math.random(), name: 'Node.js | Express.js' },
+      { value: Math.random(), name: 'UI Kit: Material UI' },
+      { value: Math.random(), name: 'Data Visualization: ECharts' },
+    ];
+  };
 
   const option = {
     legend: {
@@ -28,10 +40,20 @@ export const EchartRosePieChart = () => {
         itemStyle: {
           borderRadius: 8,
         },
-        data: skillsData,
+        data: data,
       },
     ],
   };
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setData(makeRandomData());
+    }, DELAY_MS);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
   return (
     <Grid container>
       <ReactEcharts
