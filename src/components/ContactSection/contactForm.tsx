@@ -13,6 +13,12 @@ export const ContactForm = (props: Props) => {
 
   const [credentials, setCredentials] = useState({ fullName: '', emailId: '', message: '' });
 
+  const handleOnChange = (e: { preventDefault: () => void; target: { name: any; value: any } }) => {
+    e.preventDefault();
+
+    setCredentials({ ...credentials, [e.target.name]: e.target.value });
+  };
+
   return (
     <Stack
       spacing={2}
