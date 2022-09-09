@@ -13,7 +13,7 @@ export const Skills = (props: Props) => {
   darkMode = !darkMode;
 
   const [isLoading, setIsLoading] = useState(true);
-  const DELAY_MS = 3000;
+  const DELAY_MS = 1500;
 
   useEffect(() => {
     const timer = setTimeout(() => {

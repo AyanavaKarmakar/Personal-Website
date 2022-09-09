@@ -3,6 +3,7 @@ import { CssBaseline, ThemeProvider, createTheme, PaletteMode } from '@mui/mater
 import { Routes, Route } from 'react-router-dom';
 import { Home } from './components/HomeSection/index';
 import { Skills } from './components/SkillsSection/index';
+import { Projects } from './components/ProjectsSection/index';
 import {
   NavBar,
   LandingPageLoadingAnimation,
@@ -88,7 +89,19 @@ export const App = () => {
         />
         <Route
           path="/projects"
-          element={<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />}
+          element={
+            isViewedOnDesktop === true ? (
+              <>
+                <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
+                <Projects darkMode={darkMode} />
+              </>
+            ) : (
+              <ForceDesktopUnloading
+                isViewedOnDesktop={isViewedOnDesktop}
+                setIsViewedOnDesktop={setIsViewedOnDesktop}
+              />
+            )
+          }
         />
         <Route path="/contact" element={<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />} />
       </Routes>
