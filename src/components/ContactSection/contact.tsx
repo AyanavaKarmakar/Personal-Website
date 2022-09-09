@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ContactForm, ContactFormLoader } from './index';
+import { ContactTransition, ContactFormLoader } from './index';
 
 interface Props {
   darkMode: boolean;
@@ -24,7 +24,7 @@ export const Contact = (props: Props) => {
   return (
     <>
       {isLoading === true && <ContactFormLoader />}
-      {isLoading === false && <ContactForm darkMode={darkMode} />}
+      {isLoading === false && <ContactTransition darkMode={darkMode} />}
     </>
   );
 };
