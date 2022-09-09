@@ -19,7 +19,7 @@ export const ContactForm = (props: Props) => {
       component="form"
       noValidate
       autoComplete="off"
-      sx={{ mx: 20 }}
+      sx={{ mx: 10 }}
     >
       <Typography
         gutterBottom

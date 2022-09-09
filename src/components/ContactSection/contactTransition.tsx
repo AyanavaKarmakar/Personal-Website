@@ -28,7 +28,7 @@ export const ContactTransition = (props: Props) => {
           <Zoom in={load}>{ContactForm({ darkMode })}</Zoom>
         </Box>
       </Box>
-      <Box sx={{ mx: 50, my: -20 }}>
+      <Box sx={{ mx: 50, my: -30 }}>
         <ContactAnimation />
       </Box>
     </>

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Grid } from '@mui/material';
 import ReactEcharts from 'echarts-for-react';
 
 /**
@@ -9,16 +8,30 @@ export const ContactAnimation = () => {
   const DELAY_MS = 1500;
 
   const [data, setData] = useState([
-    { value: 100, name: 'Full Name' },
-    { value: 100, name: 'Email ID' },
-    { value: 100, name: 'Message' },
+    { value: 100, name: '' },
+    { value: 100, name: '' },
+    { value: 100, name: '' },
+    { value: 100, name: '' },
+    { value: 100, name: '' },
+    { value: 100, name: '' },
+    { value: 100, name: '' },
+    { value: 100, name: '' },
+    { value: 100, name: '' },
+    { value: 100, name: '' },
   ]);
 
   const makeRandomData = () => {
     return [
-      { value: Math.random(), name: 'Full Name' },
-      { value: Math.random(), name: 'Email ID' },
-      { value: Math.random(), name: 'Message' },
+      { value: Math.random(), name: '' },
+      { value: Math.random(), name: '' },
+      { value: Math.random(), name: '' },
+      { value: Math.random(), name: '' },
+      { value: Math.random(), name: '' },
+      { value: Math.random(), name: '' },
+      { value: Math.random(), name: '' },
+      { value: Math.random(), name: '' },
+      { value: Math.random(), name: '' },
+      { value: Math.random(), name: '' },
     ];
   };
 
@@ -50,7 +63,6 @@ export const ContactAnimation = () => {
   return (
     <ReactEcharts
       option={option}
-      theme={'light'}
       style={{
         display: 'flex',
         justifyContent: 'center',
