@@ -1,4 +1,4 @@
-import { ProjectsList } from './index';
+import { ProjectTransition } from './index';
 
 interface Props {
   darkMode: boolean;
@@ -9,7 +9,7 @@ export const Projects = (props: Props) => {
 
   return (
     <>
-      <ProjectsList darkMode={darkMode} />
+      <ProjectTransition darkMode={darkMode} />
     </>
   );
 };
