@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Home } from './components/HomeSection/index';
 import { Skills } from './components/SkillsSection/index';
 import { Projects } from './components/ProjectsSection/index';
+import { Contact } from './components/ContactSection/index';
 import {
   NavBar,
   LandingPageLoadingAnimation,
@@ -103,7 +104,22 @@ export const App = () => {
             )
           }
         />
-        <Route path="/contact" element={<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />} />
+        <Route
+          path="/contact"
+          element={
+            isViewedOnDesktop === true ? (
+              <>
+                <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
+                <Contact />
+              </>
+            ) : (
+              <ForceDesktopUnloading
+                isViewedOnDesktop={isViewedOnDesktop}
+                setIsViewedOnDesktop={setIsViewedOnDesktop}
+              />
+            )
+          }
+        />
       </Routes>
     </ThemeProvider>
   );
