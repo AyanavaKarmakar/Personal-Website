@@ -1,24 +1,30 @@
+import { useState, useEffect } from 'react';
 import { Grid } from '@mui/material';
 import ReactEcharts from 'echarts-for-react';
-
-interface Props {
-  darkMode: boolean;
-}
 
 /**
  * Refer = https://echarts.apache.org/examples/en/editor.html?c=pie-roseType-simple&theme=dark
  */
-export const EchartRosePieChart = (props: Props) => {
-  const { darkMode } = props;
+export const EchartRosePieChart = () => {
+  const DELAY_MS = 1500;
 
-  const skillsData = [
-    { value: 60, name: 'React' },
-    { value: 55, name: 'TypeScript' },
-    { value: 50, name: 'Node.js | Express.js' },
-    { value: 45, name: 'HTML | CSS | JavaScript' },
-    { value: 40, name: 'UI Kits: Material UI | Tailwind CSS | Bootstrap' },
-    { value: 35, name: 'Data Visualization: ECharts' },
-  ];
+  const [data, setData] = useState([
+    { value: 0, name: 'React' },
+    { value: 0, name: 'TypeScript' },
+    { value: 0, name: 'Node.js | Express.js' },
+    { value: 0, name: 'UI Kit: Material UI' },
+    { value: 0, name: 'Data Visualization: ECharts' },
+  ]);
+
+  const makeRandomData = () => {
+    return [
+      { value: Math.floor(Math.random() * 100 + 40), name: 'React' },
+      { value: Math.floor(Math.random() * 100 + 40), name: 'TypeScript' },
+      { value: Math.floor(Math.random() * 100 + 40), name: 'Node.js | Express.js' },
+      { value: Math.floor(Math.random() * 100 + 40), name: 'UI Kit: Material UI' },
+      { value: Math.floor(Math.random() * 100 + 40), name: 'Data Visualization: ECharts' },
+    ];
+  };
 
   const option = {
     legend: {
@@ -34,15 +40,25 @@ export const EchartRosePieChart = (props: Props) => {
         itemStyle: {
           borderRadius: 8,
         },
-        data: skillsData,
+        data: data,
       },
     ],
   };
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setData(makeRandomData());
+    }, DELAY_MS);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
   return (
     <Grid container>
       <ReactEcharts
         option={option}
-        theme={`${darkMode === true ? 'dark' : ''}`}
+        theme="dark"
         style={{
           display: 'flex',
           justifyContent: 'center',

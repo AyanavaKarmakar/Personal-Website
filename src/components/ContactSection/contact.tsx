@@ -1,7 +1,13 @@
 import { useEffect, useState } from 'react';
-import { EchartsLoader, EchartRosePieChart } from './index';
+import { ContactTransition, ContactFormLoader } from './index';
 
-export const Skills = () => {
+interface Props {
+  darkMode: boolean;
+}
+
+export const Contact = (props: Props) => {
+  const { darkMode } = props;
+
   const [isLoading, setIsLoading] = useState(true);
   const DELAY_MS = 1500;
 
@@ -17,8 +23,8 @@ export const Skills = () => {
 
   return (
     <>
-      {isLoading === true && <EchartsLoader />}
-      {isLoading === false && <EchartRosePieChart />}
+      {isLoading === true && <ContactFormLoader />}
+      {isLoading === false && <ContactTransition darkMode={darkMode} />}
     </>
   );
 };
