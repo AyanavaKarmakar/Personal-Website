@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FormControl, Stack, TextField, Typography } from '@mui/material';
+import { Button, FormControl, Stack, TextField, Typography } from '@mui/material';
 
 interface Props {
   darkMode: boolean;
@@ -17,6 +17,16 @@ export const ContactForm = (props: Props) => {
     e.preventDefault();
 
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+
+    console.log({
+      fullName: credentials.fullName,
+      emailId: credentials.emailId,
+      message: credentials.message,
+    });
   };
 
   return (
@@ -41,34 +51,54 @@ export const ContactForm = (props: Props) => {
         <TextField
           autoFocus
           fullWidth
+          required
           color={`${darkMode === true ? 'secondary' : 'primary'}`}
           id="fullName"
+          name="fullName"
           label="Your Full Name"
           variant="outlined"
           placeholder="Enter your full name here"
           sx={{ my: 1 }}
+          onChange={handleOnChange}
+          value={credentials.fullName}
         />
         <TextField
           fullWidth
+          required
           color={`${darkMode === true ? 'secondary' : 'primary'}`}
           id="emailId"
+          name="emailId"
           label="Your Email"
           variant="outlined"
           placeholder="Enter your email id here"
           sx={{ my: 1 }}
+          onChange={handleOnChange}
+          value={credentials.emailId}
         />
         <TextField
           multiline
           fullWidth
+          required
           color={`${darkMode === true ? 'secondary' : 'primary'}`}
           rows={10}
           id="message"
+          name="message"
           label="Your Message"
           variant="outlined"
           placeholder="Enter your message here"
           sx={{ my: 1 }}
+          onChange={handleOnChange}
+          value={credentials.message}
         />
       </FormControl>
+      <Button
+        fullWidth
+        onClick={handleSubmit}
+        color={`${darkMode === true ? 'secondary' : 'primary'}`}
+        variant="outlined"
+      >
+        Send Message
+      </Button>
     </Stack>
   );
 };
