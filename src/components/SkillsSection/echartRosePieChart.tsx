@@ -16,7 +16,7 @@ export const EchartRosePieChart = (props: Props) => {
     { value: 55, name: 'TypeScript' },
     { value: 50, name: 'Node.js | Express.js' },
     { value: 45, name: 'HTML | CSS | JavaScript' },
-    { value: 40, name: 'UI Kits: Material UI | Tailwind CSS | Bootstrap' },
+    { value: 40, name: 'UI Kit: Material UI' },
     { value: 35, name: 'Data Visualization: ECharts' },
   ];
 
