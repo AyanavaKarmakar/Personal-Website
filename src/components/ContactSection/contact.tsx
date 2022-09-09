@@ -1,4 +1,4 @@
-import { Paper, Stack, TextField, Typography } from '@mui/material';
+import { Stack, TextField, Typography } from '@mui/material';
 
 interface Props {
   darkMode: boolean;
@@ -19,12 +19,18 @@ export const Contact = (props: Props) => {
       component="form"
       noValidate
       autoComplete="off"
+      sx={{ mx: 20 }}
     >
-      <Typography variant="h3" color={`${darkMode === true ? 'secondary' : 'primary'}`}>
+      <Typography
+        gutterBottom
+        variant="h2"
+        color={`${darkMode === true ? 'secondary' : 'primary'}`}
+      >
         Contact Me!
       </Typography>
       <TextField
         autoFocus
+        fullWidth
         color={`${darkMode === true ? 'secondary' : 'primary'}`}
         id="fullName"
         label="Your Full Name"
@@ -32,6 +38,7 @@ export const Contact = (props: Props) => {
         placeholder="Enter your full name here"
       />
       <TextField
+        fullWidth
         color={`${darkMode === true ? 'secondary' : 'primary'}`}
         id="emailId"
         label="Your Email"
@@ -40,6 +47,7 @@ export const Contact = (props: Props) => {
       />
       <TextField
         multiline
+        fullWidth
         color={`${darkMode === true ? 'secondary' : 'primary'}`}
         rows={10}
         id="message"
