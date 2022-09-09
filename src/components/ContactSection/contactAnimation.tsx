@@ -9,20 +9,16 @@ export const ContactAnimation = () => {
   const DELAY_MS = 1500;
 
   const [data, setData] = useState([
-    { value: 100, name: 'React' },
-    { value: 100, name: 'TypeScript' },
-    { value: 100, name: 'Node.js | Express.js' },
-    { value: 100, name: 'UI Kit: Material UI' },
-    { value: 100, name: 'Data Visualization: ECharts' },
+    { value: 100, name: 'Full Name' },
+    { value: 100, name: 'Email ID' },
+    { value: 100, name: 'Message' },
   ]);
 
   const makeRandomData = () => {
     return [
-      { value: Math.random(), name: 'React' },
-      { value: Math.random(), name: 'TypeScript' },
-      { value: Math.random(), name: 'Node.js | Express.js' },
-      { value: Math.random(), name: 'UI Kit: Material UI' },
-      { value: Math.random(), name: 'Data Visualization: ECharts' },
+      { value: Math.random(), name: 'Full Name' },
+      { value: Math.random(), name: 'Email ID' },
+      { value: Math.random(), name: 'Message' },
     ];
   };
 
@@ -54,7 +50,7 @@ export const ContactAnimation = () => {
   return (
     <ReactEcharts
       option={option}
-      theme={'dark'}
+      theme={'light'}
       style={{
         display: 'flex',
         justifyContent: 'center',
