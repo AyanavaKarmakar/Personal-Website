@@ -1,4 +1,5 @@
-import { Stack, TextField, Typography } from '@mui/material';
+import { useState } from 'react';
+import { FormControl, Stack, TextField, Typography } from '@mui/material';
 
 interface Props {
   darkMode: boolean;
@@ -9,6 +10,8 @@ interface Props {
  */
 export const ContactForm = (props: Props) => {
   const { darkMode } = props;
+
+  const [credentials, setCredentials] = useState({ fullName: '', emailId: '', message: '' });
 
   return (
     <Stack
@@ -28,33 +31,38 @@ export const ContactForm = (props: Props) => {
       >
         Contact Me!
       </Typography>
-      <TextField
-        autoFocus
-        fullWidth
-        color={`${darkMode === true ? 'secondary' : 'primary'}`}
-        id="fullName"
-        label="Your Full Name"
-        variant="outlined"
-        placeholder="Enter your full name here"
-      />
-      <TextField
-        fullWidth
-        color={`${darkMode === true ? 'secondary' : 'primary'}`}
-        id="emailId"
-        label="Your Email"
-        variant="outlined"
-        placeholder="Enter your email id here"
-      />
-      <TextField
-        multiline
-        fullWidth
-        color={`${darkMode === true ? 'secondary' : 'primary'}`}
-        rows={10}
-        id="message"
-        label="Your Message"
-        variant="outlined"
-        placeholder="Enter your message here"
-      />
+      <FormControl fullWidth>
+        <TextField
+          autoFocus
+          fullWidth
+          color={`${darkMode === true ? 'secondary' : 'primary'}`}
+          id="fullName"
+          label="Your Full Name"
+          variant="outlined"
+          placeholder="Enter your full name here"
+          sx={{ my: 1 }}
+        />
+        <TextField
+          fullWidth
+          color={`${darkMode === true ? 'secondary' : 'primary'}`}
+          id="emailId"
+          label="Your Email"
+          variant="outlined"
+          placeholder="Enter your email id here"
+          sx={{ my: 1 }}
+        />
+        <TextField
+          multiline
+          fullWidth
+          color={`${darkMode === true ? 'secondary' : 'primary'}`}
+          rows={10}
+          id="message"
+          label="Your Message"
+          variant="outlined"
+          placeholder="Enter your message here"
+          sx={{ my: 1 }}
+        />
+      </FormControl>
     </Stack>
   );
 };
