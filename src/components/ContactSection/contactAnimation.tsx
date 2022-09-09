@@ -8,30 +8,30 @@ export const ContactAnimation = () => {
   const DELAY_MS = 1500;
 
   const [data, setData] = useState([
-    { value: 100, name: '' },
-    { value: 100, name: '' },
-    { value: 100, name: '' },
-    { value: 100, name: '' },
-    { value: 100, name: '' },
-    { value: 100, name: '' },
-    { value: 100, name: '' },
-    { value: 100, name: '' },
-    { value: 100, name: '' },
-    { value: 100, name: '' },
+    { value: 0, name: '' },
+    { value: 0, name: '' },
+    { value: 0, name: '' },
+    { value: 0, name: '' },
+    { value: 0, name: '' },
+    { value: 0, name: '' },
+    { value: 0, name: '' },
+    { value: 0, name: '' },
+    { value: 0, name: '' },
+    { value: 0, name: '' },
   ]);
 
   const makeRandomData = () => {
     return [
-      { value: Math.random(), name: '' },
-      { value: Math.random(), name: '' },
-      { value: Math.random(), name: '' },
-      { value: Math.random(), name: '' },
-      { value: Math.random(), name: '' },
-      { value: Math.random(), name: '' },
-      { value: Math.random(), name: '' },
-      { value: Math.random(), name: '' },
-      { value: Math.random(), name: '' },
-      { value: Math.random(), name: '' },
+      { value: Math.floor(Math.random() * 100 + 40), name: '' },
+      { value: Math.floor(Math.random() * 100 + 40), name: '' },
+      { value: Math.floor(Math.random() * 100 + 40), name: '' },
+      { value: Math.floor(Math.random() * 100 + 40), name: '' },
+      { value: Math.floor(Math.random() * 100 + 40), name: '' },
+      { value: Math.floor(Math.random() * 100 + 40), name: '' },
+      { value: Math.floor(Math.random() * 100 + 40), name: '' },
+      { value: Math.floor(Math.random() * 100 + 40), name: '' },
+      { value: Math.floor(Math.random() * 100 + 40), name: '' },
+      { value: Math.floor(Math.random() * 100 + 40), name: '' },
     ];
   };
 
@@ -68,7 +68,7 @@ export const ContactAnimation = () => {
         justifyContent: 'center',
         alignItems: 'center',
         minHeight: '100vh',
-        minWidth: '10vw',
+        minWidth: '100vw',
       }}
     />
   );

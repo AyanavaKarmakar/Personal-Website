@@ -9,20 +9,20 @@ export const EchartRosePieChart = () => {
   const DELAY_MS = 1500;
 
   const [data, setData] = useState([
-    { value: 100, name: 'React' },
-    { value: 100, name: 'TypeScript' },
-    { value: 100, name: 'Node.js | Express.js' },
-    { value: 100, name: 'UI Kit: Material UI' },
-    { value: 100, name: 'Data Visualization: ECharts' },
+    { value: 0, name: 'React' },
+    { value: 0, name: 'TypeScript' },
+    { value: 0, name: 'Node.js | Express.js' },
+    { value: 0, name: 'UI Kit: Material UI' },
+    { value: 0, name: 'Data Visualization: ECharts' },
   ]);
 
   const makeRandomData = () => {
     return [
-      { value: Math.random(), name: 'React' },
-      { value: Math.random(), name: 'TypeScript' },
-      { value: Math.random(), name: 'Node.js | Express.js' },
-      { value: Math.random(), name: 'UI Kit: Material UI' },
-      { value: Math.random(), name: 'Data Visualization: ECharts' },
+      { value: Math.floor(Math.random() * 100 + 40), name: 'React' },
+      { value: Math.floor(Math.random() * 100 + 40), name: 'TypeScript' },
+      { value: Math.floor(Math.random() * 100 + 40), name: 'Node.js | Express.js' },
+      { value: Math.floor(Math.random() * 100 + 40), name: 'UI Kit: Material UI' },
+      { value: Math.floor(Math.random() * 100 + 40), name: 'Data Visualization: ECharts' },
     ];
   };
 
