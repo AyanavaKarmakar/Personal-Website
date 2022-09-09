@@ -78,7 +78,7 @@ export const App = () => {
             isViewedOnDesktop === true ? (
               <>
                 <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
-                <Skills darkMode={darkMode} />
+                <Skills />
               </>
             ) : (
               <ForceDesktopUnloading

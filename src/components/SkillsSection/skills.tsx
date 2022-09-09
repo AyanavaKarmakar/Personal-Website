@@ -1,17 +1,7 @@
 import { useEffect, useState } from 'react';
 import { EchartsLoader, EchartRosePieChart } from './index';
 
-interface Props {
-  darkMode: boolean;
-}
-
-export const Skills = (props: Props) => {
-  /**
-   * Alt styles
-   */
-  let { darkMode } = props;
-  darkMode = !darkMode;
-
+export const Skills = () => {
   const [isLoading, setIsLoading] = useState(true);
   const DELAY_MS = 1500;
 
@@ -27,8 +17,8 @@ export const Skills = (props: Props) => {
 
   return (
     <>
-      {isLoading === true && <EchartsLoader darkMode={darkMode} />}
-      {isLoading === false && <EchartRosePieChart darkMode={darkMode} />}
+      {isLoading === true && <EchartsLoader />}
+      {isLoading === false && <EchartRosePieChart />}
     </>
   );
 };

@@ -1,16 +1,10 @@
 import { Grid } from '@mui/material';
 import ReactEcharts from 'echarts-for-react';
 
-interface Props {
-  darkMode: boolean;
-}
-
 /**
  * Refer = https://echarts.apache.org/examples/en/editor.html?c=graphic-loading&theme=dark
  */
-export const EchartsLoader = (props: Props) => {
-  const { darkMode } = props;
-
+export const EchartsLoader = () => {
   const option = {
     graphic: {
       elements: [
@@ -56,7 +50,7 @@ export const EchartsLoader = (props: Props) => {
     <Grid container>
       <ReactEcharts
         option={option}
-        theme={`${darkMode === true ? 'dark' : ''}`}
+        theme="dark"
         style={{
           display: 'flex',
           justifyContent: 'center',

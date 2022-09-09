@@ -1,16 +1,10 @@
 import { Grid } from '@mui/material';
 import ReactEcharts from 'echarts-for-react';
 
-interface Props {
-  darkMode: boolean;
-}
-
 /**
  * Refer = https://echarts.apache.org/examples/en/editor.html?c=pie-roseType-simple&theme=dark
  */
-export const EchartRosePieChart = (props: Props) => {
-  const { darkMode } = props;
-
+export const EchartRosePieChart = () => {
   const skillsData = [
     { value: 60, name: 'React' },
     { value: 55, name: 'TypeScript' },
@@ -42,7 +36,7 @@ export const EchartRosePieChart = (props: Props) => {
     <Grid container>
       <ReactEcharts
         option={option}
-        theme={`${darkMode === true ? 'dark' : ''}`}
+        theme="dark"
         style={{
           display: 'flex',
           justifyContent: 'center',
