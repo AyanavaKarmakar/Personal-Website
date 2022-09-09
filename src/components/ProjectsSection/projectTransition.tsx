@@ -11,10 +11,10 @@ interface Props {
  */
 export const ProjectTransition = (props: Props) => {
   const { darkMode } = props;
-  const [checked, setChecked] = useState(false);
+  const [load, setLoad] = useState(false);
 
   const handleChange = () => {
-    setChecked(true);
+    setLoad(true);
   };
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export const ProjectTransition = (props: Props) => {
   return (
     <Box sx={{ height: 180 }}>
       <Box sx={{ display: 'flex' }}>
-        <Zoom in={checked}>{ProjectsList({ darkMode })}</Zoom>
+        <Zoom in={load}>{ProjectsList({ darkMode })}</Zoom>
       </Box>
     </Box>
   );
