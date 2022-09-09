@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Button, FormControl, Stack, TextField, Typography } from '@mui/material';
+import { EmailHandler } from './index';
 
 interface Props {
   darkMode: boolean;
@@ -13,16 +14,17 @@ export const ContactForm = (props: Props) => {
 
   const [credentials, setCredentials] = useState({ fullName: '', emailId: '', message: '' });
 
-  const handleOnChange = (e: { preventDefault: () => void; target: { name: any; value: any } }) => {
+  const handleOnChange = (e: {
+    preventDefault: () => void;
+    target: { name: string; value: string };
+  }) => {
     e.preventDefault();
 
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-
-    console.log({
+  const handleSubmit = () => {
+    EmailHandler({
       fullName: credentials.fullName,
       emailId: credentials.emailId,
       message: credentials.message,
@@ -92,8 +94,8 @@ export const ContactForm = (props: Props) => {
         />
       </FormControl>
       <Button
-        fullWidth
         onClick={handleSubmit}
+        fullWidth
         color={`${darkMode === true ? 'secondary' : 'primary'}`}
         variant="outlined"
       >
