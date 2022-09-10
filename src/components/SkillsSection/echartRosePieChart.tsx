@@ -107,7 +107,6 @@ export const EchartRosePieChart = () => {
       clearTimeout(dataUpdateTimerThree);
       clearTimeout(dataUpdateTimerFour);
       clearTimeout(dataUpdateTimerFinal);
-      clearTimeout(dataUpdateTimerFinal);
     };
   }, []);
 
