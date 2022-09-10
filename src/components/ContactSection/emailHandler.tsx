@@ -27,7 +27,9 @@ export const EmailHandler = (props: Props) => {
       /**
        * response.status === 200 if successfull
        */
-      console.log(response.status);
+      if (response.status === 200) {
+        alert(`Hi, ${fullName}! Your message has been sent successfully!`);
+      }
     },
     err => {
       console.log('FAILED...', err);
