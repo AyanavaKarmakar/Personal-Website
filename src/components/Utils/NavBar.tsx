@@ -137,17 +137,12 @@ export const NavBar = (props: Props) => {
             {/**
              * Social links:
              */}
-            <Box
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-              sx={{ mx: 50, textAlign: 'center' }}
-            >
-              <IconButton onClick={handleGitHub} aria-label={'GitHub'}>
-                <GitHub fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
-              </IconButton>
+            <Box display="flex" justifyContent="center" alignItems="center" sx={{ mx: 1 }}>
               <IconButton onClick={handleLinkedIn} aria-label={'LinkedIn'}>
                 <LinkedIn fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
+              </IconButton>
+              <IconButton sx={{ mx: -1 }} onClick={handleGitHub} aria-label={'GitHub'}>
+                <GitHub fontSize="large" color={darkMode === true ? 'inherit' : 'secondary'} />
               </IconButton>
             </Box>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
