@@ -7,14 +7,9 @@ import ReactEcharts from 'echarts-for-react';
  */
 export const EchartRosePieChart = () => {
   const DELAY_MS = 1500;
+  const INTERVAL_MS = 1500;
 
-  const [data, setData] = useState([
-    { value: 0, name: 'React' },
-    { value: 0, name: 'TypeScript' },
-    { value: 0, name: 'Node.js | Express.js' },
-    { value: 0, name: 'UI Kit: Material UI' },
-    { value: 0, name: 'Data Visualization: ECharts' },
-  ]);
+  const [data, setData] = useState([{ value: 0, name: 'React' }]);
 
   const makeRandomData = () => {
     return [
@@ -46,14 +41,76 @@ export const EchartRosePieChart = () => {
   };
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setData(makeRandomData());
-    }, DELAY_MS);
+    const dataUpdateTimerOne = setTimeout(
+      () =>
+        setData([
+          { value: 0, name: 'React' },
+          { value: 1, name: 'TypeScript' },
+        ]),
+      DELAY_MS
+    );
+
+    const dataUpdateTimerTwo = setTimeout(
+      () =>
+        setData([
+          { value: 1, name: 'React' },
+          { value: 1, name: 'TypeScript' },
+          { value: 2, name: 'Node.js | Express.js' },
+        ]),
+      DELAY_MS * 2
+    );
+
+    const dataUpdateTimerThree = setTimeout(
+      () =>
+        setData([
+          { value: 2, name: 'React' },
+          { value: 2, name: 'TypeScript' },
+          { value: 2, name: 'Node.js | Express.js' },
+          { value: 3, name: 'UI Kit: Material UI' },
+        ]),
+      DELAY_MS * 3
+    );
+
+    const dataUpdateTimerFour = setTimeout(
+      () =>
+        setData([
+          { value: 3, name: 'React' },
+          { value: 3, name: 'TypeScript' },
+          { value: 3, name: 'Node.js | Express.js' },
+          { value: 3, name: 'UI Kit: Material UI' },
+          { value: 4, name: 'Data Visualization: ECharts' },
+        ]),
+      DELAY_MS * 4
+    );
+
+    const dataUpdateTimerFinal = setTimeout(
+      () =>
+        setData([
+          { value: 0, name: 'React' },
+          { value: 0, name: 'TypeScript' },
+          { value: 0, name: 'Node.js | Express.js' },
+          { value: 0, name: 'UI Kit: Material UI' },
+          { value: 0, name: 'Data Visualization: ECharts' },
+        ]),
+      DELAY_MS * 5
+    );
+
+    const randomValueGenerator = setTimeout(() => {
+      const timer = setInterval(() => {
+        setData(makeRandomData());
+      }, INTERVAL_MS);
+    }, DELAY_MS * 5 + 500);
 
     return () => {
-      clearInterval(timer);
+      clearTimeout(dataUpdateTimerOne);
+      clearTimeout(dataUpdateTimerTwo);
+      clearTimeout(dataUpdateTimerThree);
+      clearTimeout(dataUpdateTimerFour);
+      clearTimeout(dataUpdateTimerFinal);
+      clearTimeout(dataUpdateTimerFinal);
     };
   }, []);
+
   return (
     <Grid container>
       <ReactEcharts
