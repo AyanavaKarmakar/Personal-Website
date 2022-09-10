@@ -1,4 +1,4 @@
-import { SMTPClient } from 'emailjs';
+import emailjs from '@emailjs/browser';
 
 interface Props {
   fullName: string;
@@ -7,32 +7,28 @@ interface Props {
 }
 
 /**
- * Refer = https://www.npmjs.com/package/emailjs
+ * Refer = https://www.npmjs.com/package/@emailjs/browser
  */
 
-const client = new SMTPClient({
-  user: 'user',
-  password: 'password',
-  host: 'smtp.your-email.com',
-  ssl: true,
-});
+export const EmailHandler = (props: Props) => {
+  const SERVICE_ID = 'service_kyj427g';
+  const TEMPLATE_ID = 'template_mituj0j';
+  const PUBLIC_KEY = 'eyYp85-Sud5mls1gM';
 
-export const EmailHandler = async (props: Props) => {
   const { fullName, emailId, message } = props;
-  console.log(fullName);
-  console.log(emailId);
-  console.log(message);
 
-  try {
-    const message = await client.sendAsync({
-      text: 'i hope this works',
-      from: 'you <username@your-email.com>',
-      to: 'someone <someone@your-email.com>, another <another@your-email.com>',
-      cc: 'else <else@your-email.com>',
-      subject: 'testing emailjs',
-    });
-    console.log(message);
-  } catch (err) {
-    console.error(err);
-  }
+  const templateParams = {
+    fullName: fullName,
+    emailID: emailId,
+    message: message,
+  };
+
+  emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY).then(
+    response => {
+      console.log('SUCCESS!', response.status, response.text);
+    },
+    err => {
+      console.log('FAILED...', err);
+    }
+  );
 };
