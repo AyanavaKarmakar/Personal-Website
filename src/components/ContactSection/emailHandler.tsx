@@ -24,7 +24,9 @@ export const EmailHandler = (props: Props) => {
 
   emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY).then(
     response => {
-      // 200
+      /**
+       * response.status === 200 if successfull
+       */
       console.log(response.status);
     },
     err => {
