@@ -29,6 +29,11 @@ export const ContactForm = (props: Props) => {
       emailId: credentials.emailId,
       message: credentials.message,
     });
+
+    /**
+     * Resets imput fields
+     */
+    setCredentials({ fullName: '', emailId: '', message: '' });
   };
 
   return (

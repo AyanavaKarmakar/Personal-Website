@@ -18,13 +18,14 @@ export const EmailHandler = (props: Props) => {
 
   const templateParams = {
     fullName: fullName,
-    emailID: emailId,
+    emailId: emailId,
     message: message,
   };
 
   emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY).then(
     response => {
-      console.log('SUCCESS!', response.status, response.text);
+      // 200
+      console.log(response.status);
     },
     err => {
       console.log('FAILED...', err);
