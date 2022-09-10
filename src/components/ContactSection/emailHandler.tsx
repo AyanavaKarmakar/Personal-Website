@@ -9,7 +9,6 @@ interface Props {
 /**
  * Refer = https://www.npmjs.com/package/@emailjs/browser
  */
-
 export const EmailHandler = (props: Props) => {
   const SERVICE_ID = 'service_kyj427g';
   const TEMPLATE_ID = 'template_mituj0j';
