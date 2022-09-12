@@ -120,6 +120,7 @@ export const App = () => {
             )
           }
         />
+        <Route path="/extras" element={<NavBar darkMode={darkMode} setDarkMode={setDarkMode} />} />
       </Routes>
     </ThemeProvider>
   );
