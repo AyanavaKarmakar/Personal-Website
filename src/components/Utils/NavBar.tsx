@@ -47,6 +47,10 @@ export const NavBar = (props: Props) => {
       buttonName: 'Contact',
       buttonRoute: '/contact',
     },
+    {
+      buttonName: 'Extras',
+      buttonRoute: '/extras',
+    },
   ];
   const [mobileOpen, setMobileOpen] = useState(false);
   const path = useLocation().pathname;

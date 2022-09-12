@@ -1,15 +1,12 @@
 import { useEffect, useState } from 'react';
 import { CssBaseline, ThemeProvider, createTheme, PaletteMode } from '@mui/material';
 import { Routes, Route } from 'react-router-dom';
-import { Home } from './components/HomeSection/index';
-import { Skills } from './components/SkillsSection/index';
-import { Projects } from './components/ProjectsSection/index';
-import { Contact } from './components/ContactSection/index';
-import {
-  NavBar,
-  LandingPageLoadingAnimation,
-  ForceDesktopUnloading,
-} from './components/Utils/index';
+import { Home } from './components/HomeSection';
+import { Skills } from './components/SkillsSection';
+import { Projects } from './components/ProjectsSection';
+import { Contact } from './components/ContactSection';
+import { Extras } from './components/ExtrasSection';
+import { NavBar, LandingPageLoadingAnimation, ForceDesktopUnloading } from './components/Utils';
 
 /**
  * Adapted from MUI.
@@ -111,6 +108,22 @@ export const App = () => {
               <>
                 <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
                 <Contact darkMode={darkMode} />
+              </>
+            ) : (
+              <ForceDesktopUnloading
+                isViewedOnDesktop={isViewedOnDesktop}
+                setIsViewedOnDesktop={setIsViewedOnDesktop}
+              />
+            )
+          }
+        />
+        <Route
+          path="/extras"
+          element={
+            isViewedOnDesktop === true ? (
+              <>
+                <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
+                <Extras darkMode={darkMode} />
               </>
             ) : (
               <ForceDesktopUnloading
