@@ -40,14 +40,14 @@ export const ProjectsList = (props: Props) => {
       projectButtonText: 'Live Demo',
     },
     {
-      projectTitle: 'Self-Driving Car',
+      projectTitle: 'TODOs App',
       projectDescription:
-        'Self-Driving Car using Neural Networks, and Machine Learning; built using HTML, CSS, and Javascript.',
-      projectLink: 'https://main.d2uu9fdlrx4iu2.amplifyapp.com/',
+        'A mobile app to save your TODOs digitally! Supports basic CRUD operations. Built using React Native, and Expo.',
+      projectLink: 'https://github.com/AyanavaKarmakar/TODOS',
       projectImage:
-        'https://user-images.githubusercontent.com/89210438/189307981-83140c51-dbcf-45a4-91db-a5e0265d4f11.png',
-      altProjectImageText: 'Weather App Project Snapshot',
-      projectButtonText: 'Live Demo',
+        'https://user-images.githubusercontent.com/89210438/189995623-4fd42b3f-1745-4ec7-a1ee-b6428bf92620.png',
+      altProjectImageText: 'TODOs App Project Snapshot',
+      projectButtonText: 'Github',
     },
     {
       projectTitle: 'Weather App',
