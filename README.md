@@ -1,4 +1,4 @@
-# Personal Website (SOONTM)
+# Personal Website
 
 ### Tech Stack
 
