@@ -30,14 +30,14 @@ export const ProjectsList = (props: Props) => {
 
   const projectsList = [
     {
-      projectTitle: 'CatchApp',
+      projectTitle: 'Signal 2.0',
       projectDescription:
-        'Real-Time Messaging Platform built using React, getstream.io, Node.js, and Express.js. Reference: Discord.',
-      projectLink: 'https://catch-app-ak.netlify.app/',
+        'Real-time Cross-Platform Messaging App built using React Native, Expo, and Firebase. Reference: https://signal.org/en/',
+      projectLink: 'https://github.com/AyanavaKarmakar/signal-clone',
       projectImage:
-        'https://user-images.githubusercontent.com/89210438/189305155-3ccbd7e7-d568-47f2-9fce-b163362156eb.png',
-      altProjectImageText: 'CatchApp Project Snapshot',
-      projectButtonText: 'Live Demo',
+        'https://user-images.githubusercontent.com/89210438/190871778-b15cf4c5-11fe-4797-8ab0-98629db91c1b.png',
+      altProjectImageText: 'Signal Project Snapshot',
+      projectButtonText: 'GitHub',
     },
     {
       projectTitle: 'TODOs App',
@@ -60,14 +60,14 @@ export const ProjectsList = (props: Props) => {
       projectButtonText: 'Live Demo',
     },
     {
-      projectTitle: 'Kloud Pad',
+      projectTitle: 'CatchApp',
       projectDescription:
-        'MERN Stack Application for storing personalized notes in the cloud with bycrypt hashing, and JWT authentication.',
-      projectLink: 'https://github.com/AyanavaKarmakar/Kloud-Pad-Client',
+        'Real-Time Messaging Platform built using React, getstream.io, Node.js, and Express.js. Reference: https://discord.com/',
+      projectLink: 'https://catch-app-ak.netlify.app/',
       projectImage:
-        'https://user-images.githubusercontent.com/89210438/189304444-ba1192f1-5314-4f00-9528-cd9ab697c8dd.png',
-      altProjectImageText: 'Kloud Pad Project Snapshot',
-      projectButtonText: 'GitHub',
+        'https://user-images.githubusercontent.com/89210438/189305155-3ccbd7e7-d568-47f2-9fce-b163362156eb.png',
+      altProjectImageText: 'CatchApp Project Snapshot',
+      projectButtonText: 'Live Demo',
     },
   ];
 
