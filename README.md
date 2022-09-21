@@ -11,7 +11,6 @@
 7. Email.js
 8. Vercel [[Production](https://ayanava-karmakar.vercel.app) || Preview]
 9. Netlify [[Production](https://ayanava-karmakar.netlify.app) || Preview]
-10. AWS Amplify (Testing)
 
 ### Progress So Far
 
