@@ -3,7 +3,7 @@ import { Grid } from '@mui/material';
 import ReactEcharts from 'echarts-for-react';
 
 /**
- * Refer = https://echarts.apache.org/examples/en/editor.html?c=pie-roseType-simple&theme=dark
+ * @see https://echarts.apache.org/examples/en/editor.html?c=pie-roseType-simple&theme=dark
  */
 export const EchartRosePieChart = () => {
   const DELAY_MS = 1500;

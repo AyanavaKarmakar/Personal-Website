@@ -24,8 +24,7 @@ interface Props {
 }
 
 /**
- * Adapted from MUI.
- * Ref: https://mui.com/material-ui/react-app-bar/#responsive-app-bar-with-drawer
+ * @see https://mui.com/material-ui/react-app-bar/#responsive-app-bar-with-drawer
  */
 export const NavBar = (props: Props) => {
   const { darkMode, setDarkMode } = props;

@@ -7,7 +7,7 @@ interface Props {
 }
 
 /**
- * Refer: https://mui.com/material-ui/react-text-field/#components
+ * @see https://mui.com/material-ui/react-text-field/#components
  */
 export const ContactForm = (props: Props) => {
   const { darkMode } = props;

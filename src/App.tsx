@@ -9,8 +9,7 @@ import { Extras } from './components/ExtrasSection';
 import { NavBar, LandingPageLoadingAnimation, ForceDesktopUnloading } from './components/Utils';
 
 /**
- * Adapted from MUI.
- * Ref: https://mui.com/material-ui/customization/dark-mode
+ * @see https://mui.com/material-ui/customization/dark-mode
  */
 export const App = () => {
   const [darkMode, setDarkMode] = useState(false);

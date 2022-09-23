@@ -9,8 +9,8 @@ interface Props {
 }
 
 /**
- * Refer = https://mui.com/material-ui/api/circular-progress/
- * Refer = https://reactrouter.com/en/main/hooks/use-navigate#usenavigate
+ * @see https://mui.com/material-ui/api/circular-progress/
+ * @see https://reactrouter.com/en/main/hooks/use-navigate#usenavigate
  */
 function CircularProgressWithLabel(props: CircularProgressProps & { value: number }) {
   return (

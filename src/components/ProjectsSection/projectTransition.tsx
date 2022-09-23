@@ -7,7 +7,7 @@ interface Props {
 }
 
 /**
- * Ref = https://mui.com/material-ui/transitions/
+ * @see https://mui.com/material-ui/transitions/
  */
 export const ProjectTransition = (props: Props) => {
   const { darkMode } = props;
