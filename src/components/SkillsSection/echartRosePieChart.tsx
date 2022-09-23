@@ -14,7 +14,9 @@ export const EchartRosePieChart = () => {
   const makeRandomData = () => {
     return [
       { value: Math.floor(Math.random() * 100 + 40), name: 'React' },
-      { value: Math.floor(Math.random() * 100 + 40), name: 'TypeScript' },
+      { value: Math.floor(Math.random() * 100 + 40), name: 'TypeScript | JavaScript' },
+      { value: Math.floor(Math.random() * 100 + 40), name: 'Firebase' },
+      { value: Math.floor(Math.random() * 100 + 40), name: 'React Native' },
       { value: Math.floor(Math.random() * 100 + 40), name: 'Node.js | Express.js' },
       { value: Math.floor(Math.random() * 100 + 40), name: 'UI Kit: Material UI' },
       { value: Math.floor(Math.random() * 100 + 40), name: 'Data Visualization: ECharts' },
@@ -45,7 +47,7 @@ export const EchartRosePieChart = () => {
       () =>
         setData([
           { value: 0, name: 'React' },
-          { value: 1, name: 'TypeScript' },
+          { value: 1, name: 'TypeScript | JavaScript' },
         ]),
       DELAY_MS
     );
@@ -54,8 +56,8 @@ export const EchartRosePieChart = () => {
       () =>
         setData([
           { value: 1, name: 'React' },
-          { value: 1, name: 'TypeScript' },
-          { value: 2, name: 'Node.js | Express.js' },
+          { value: 1, name: 'TypeScript | JavaScript' },
+          { value: 2, name: 'Firebase' },
         ]),
       DELAY_MS * 2
     );
@@ -64,9 +66,9 @@ export const EchartRosePieChart = () => {
       () =>
         setData([
           { value: 2, name: 'React' },
-          { value: 2, name: 'TypeScript' },
-          { value: 2, name: 'Node.js | Express.js' },
-          { value: 3, name: 'UI Kit: Material UI' },
+          { value: 2, name: 'TypeScript | JavaScript' },
+          { value: 2, name: 'Firebase' },
+          { value: 3, name: 'React Native' },
         ]),
       DELAY_MS * 3
     );
@@ -75,37 +77,68 @@ export const EchartRosePieChart = () => {
       () =>
         setData([
           { value: 3, name: 'React' },
-          { value: 3, name: 'TypeScript' },
-          { value: 3, name: 'Node.js | Express.js' },
-          { value: 3, name: 'UI Kit: Material UI' },
-          { value: 4, name: 'Data Visualization: ECharts' },
+          { value: 3, name: 'TypeScript | JavaScript' },
+          { value: 3, name: 'Firebase' },
+          { value: 3, name: 'React Native' },
+          { value: 4, name: 'Node.js | Express.js' },
         ]),
       DELAY_MS * 4
+    );
+
+    const dataUpdateTimerFive = setTimeout(
+      () =>
+        setData([
+          { value: 4, name: 'React' },
+          { value: 4, name: 'TypeScript | JavaScript' },
+          { value: 4, name: 'Firebase' },
+          { value: 4, name: 'React Native' },
+          { value: 4, name: 'Node.js | Express.js' },
+          { value: 5, name: 'UI Kit: Material UI' },
+        ]),
+      DELAY_MS * 5
+    );
+
+    const dataUpdateTimerSix = setTimeout(
+      () =>
+        setData([
+          { value: 5, name: 'React' },
+          { value: 5, name: 'TypeScript | JavaScript' },
+          { value: 5, name: 'Firebase' },
+          { value: 5, name: 'React Native' },
+          { value: 5, name: 'Node.js | Express.js' },
+          { value: 5, name: 'UI Kit: Material UI' },
+          { value: 6, name: 'Data Visualization: ECharts' },
+        ]),
+      DELAY_MS * 6
     );
 
     const dataUpdateTimerFinal = setTimeout(
       () =>
         setData([
           { value: 0, name: 'React' },
-          { value: 0, name: 'TypeScript' },
+          { value: 0, name: 'TypeScript | JavaScript' },
+          { value: 0, name: 'Firebase' },
+          { value: 0, name: 'React Native' },
           { value: 0, name: 'Node.js | Express.js' },
           { value: 0, name: 'UI Kit: Material UI' },
           { value: 0, name: 'Data Visualization: ECharts' },
         ]),
-      DELAY_MS * 5
+      DELAY_MS * 7
     );
 
     const randomValueGenerator = setTimeout(() => {
       const timer = setInterval(() => {
         setData(makeRandomData());
       }, INTERVAL_MS);
-    }, DELAY_MS * 5 + 500);
+    }, DELAY_MS * 7 + 500);
 
     return () => {
       clearTimeout(dataUpdateTimerOne);
       clearTimeout(dataUpdateTimerTwo);
       clearTimeout(dataUpdateTimerThree);
       clearTimeout(dataUpdateTimerFour);
+      clearTimeout(dataUpdateTimerFive);
+      clearTimeout(dataUpdateTimerSix);
       clearTimeout(dataUpdateTimerFinal);
     };
   }, []);
