@@ -1,10 +1,25 @@
 import emailjs from '@emailjs/browser';
+import { collection, addDoc } from 'firebase/firestore';
+import { db } from '../../../Firebase';
 
 interface Props {
   fullName: string;
   emailId: string;
   message: string;
 }
+
+const addMessageToDB = async (templateParams: Props) => {
+  const { fullName, emailId, message } = templateParams;
+  await addDoc(collection(db, 'messages'), {
+    fullName: fullName,
+    emailId: emailId,
+    message: message,
+  }).catch((error: { code: number; message: string }) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(`${errorCode} + ${errorMessage}`);
+  });
+};
 
 /**
  * @see https://www.npmjs.com/package/@emailjs/browser
@@ -29,6 +44,7 @@ export const EmailHandler = (props: Props) => {
        */
       if (response.status === 200) {
         alert(`Hi, ${fullName}! Your message has been sent successfully!`);
+        addMessageToDB(templateParams);
       }
     },
     err => {
