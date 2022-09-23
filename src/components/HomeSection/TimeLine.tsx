@@ -1,5 +1,5 @@
 /**
- * Refer: https://mui.com/material-ui/about-the-lab/#typescript
+ * @see https://mui.com/material-ui/about-the-lab/#typescript
  */
 import type {} from '@mui/lab/themeAugmentation';
 
@@ -20,7 +20,7 @@ interface Props {
 }
 
 /**
- * Refer: https://mui.com/material-ui/react-timeline/
+ * @see https://mui.com/material-ui/react-timeline/
  */
 export const TimeLine = (props: Props) => {
   const { darkMode } = props;

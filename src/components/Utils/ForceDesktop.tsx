@@ -17,7 +17,7 @@ interface Props {
 }
 
 /**
- * Ref = https://mui.com/material-ui/react-stepper/#vertical-stepper
+ * @see https://mui.com/material-ui/react-stepper/#vertical-stepper
  */
 const steps = [
   {

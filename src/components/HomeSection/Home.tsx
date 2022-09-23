@@ -21,7 +21,7 @@ export const Home = (props: Props) => {
         sx={{ backgroundColor: '#000000' }}
       >
         {/**
-         * Ref = https://www.npmjs.com/package/react-imgix#shared-props-imgix-source
+         * @see https://www.npmjs.com/package/react-imgix#shared-props-imgix-source
          */}
         <Imgix src={BACKGROUND_IMG} sizes={'100vh'} htmlAttributes={{ alt: 'background' }} />
       </Box>

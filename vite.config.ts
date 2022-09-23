@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 /**
- * https://vitejs.dev/config/
- * Refer: https://dev.to/keefdrive/create-react-app-vs-vite-2amn
+ * @see https://vitejs.dev/config/
+ * @see https://dev.to/keefdrive/create-react-app-vs-vite-2amn
  *
  * Allows us to refer to paths as:
  * import x from '@/component/x

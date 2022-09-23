@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import ReactEcharts from 'echarts-for-react';
 
 /**
- * Refer = https://echarts.apache.org/examples/en/editor.html?c=pie-roseType-simple&theme=dark
+ * @see https://echarts.apache.org/examples/en/editor.html?c=pie-roseType-simple&theme=dark
  */
 export const ContactAnimation = () => {
   const DELAY_MS = 1500;

@@ -6,7 +6,7 @@ interface Props {
 }
 
 /**
- * Ref: https://mui.com/material-ui/transitions/#slide
+ * @see https://mui.com/material-ui/transitions/#slide
  */
 export const TimeLineTransition = (props: Props) => {
   const { darkMode } = props;

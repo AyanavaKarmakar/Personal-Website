@@ -5,8 +5,7 @@ interface Props {
 }
 
 /**
- * Adapted from react-loading
- * Refer: https://gsithub.com/fakiolinho/react-loading#readme
+ * @see https://gsithub.com/fakiolinho/react-loading#readme
  */
 export const LogoAnimation = (props: Props) => {
   const { darkMode } = props;

@@ -6,7 +6,7 @@ interface Props {
 }
 
 /**
- * Refer: https://www.npmjs.com/package/react-type-animation
+ * @see https://www.npmjs.com/package/react-type-animation
  * Same String at the start will only be typed once, initially
  * Custom Speed from 1-99 - Default Speed: 40
  * Animation will be rendered as a <span>

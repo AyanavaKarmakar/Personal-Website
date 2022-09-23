@@ -2,7 +2,7 @@ import { Grid } from '@mui/material';
 import ReactEcharts from 'echarts-for-react';
 
 /**
- * Refer = https://echarts.apache.org/examples/en/editor.html?c=graphic-loading&theme=dark
+ * @see https://echarts.apache.org/examples/en/editor.html?c=graphic-loading&theme=dark
  */
 export const EchartsLoader = () => {
   const option = {

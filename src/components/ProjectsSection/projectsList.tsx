@@ -23,7 +23,7 @@ interface ProjectListTypes {
 }
 
 /**
- * Refer = https://mui.com/material-ui/react-card/#primary-action
+ * @see https://mui.com/material-ui/react-card/#primary-action
  */
 export const ProjectsList = (props: Props) => {
   const { darkMode } = props;
