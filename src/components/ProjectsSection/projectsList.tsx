@@ -30,7 +30,7 @@ export const ProjectsList = (props: Props) => {
 
   const projectsList = [
     {
-      projectTitle: 'Signal 2.0',
+      projectTitle: 'CatchApp v2.0',
       projectDescription:
         'Real-time Cross-Platform Messaging App built using React Native, Expo, and Firebase. Reference: https://signal.org/en/',
       projectLink: 'https://github.com/AyanavaKarmakar/signal-clone',
