@@ -12,7 +12,7 @@ import path from 'path';
  * !Prefix '@' in path.
  */
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), VitePWA()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
