@@ -12,6 +12,7 @@
 8. Email.js
 9. Vercel [[Production](https://ayanava-karmakar.vercel.app) || Preview]
 10. Netlify [[Production](https://ayanava-karmakar.netlify.app) || Preview]
+11. Vitest [TESTING]
 
 
 
