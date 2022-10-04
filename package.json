@@ -9,7 +9,9 @@
     "preview": "vite preview",
     "lint": "eslint",
     "prepare": "husky install",
-    "test": "vitest"
+    "test": "vitest",
+    "docker:build": "docker build -t personal-website:1.0 .",
+    "docker:run": "docker run -p 5000:3000 personal-website:1.0"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
