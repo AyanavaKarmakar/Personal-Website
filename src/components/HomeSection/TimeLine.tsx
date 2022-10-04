@@ -55,12 +55,53 @@ export const TimeLine = (props: Props) => {
         </TimelineSeparator>
         <TimelineContent>
           <Typography color={`${darkMode === true ? '#ffffff' : 'secondary'}`} variant="h6">
-            Technical Content Writer
+            Intern (Frontend)
           </Typography>
           <Typography color={`${darkMode === true ? '#ffffff' : 'secondary'}`}>
             GeeksForGeeks
           </Typography>
-          <Typography color={`${darkMode === true ? '#ffffff' : 'secondary'}`}>Intern</Typography>
+          <Typography color={`${darkMode === true ? '#ffffff' : 'secondary'}`}>
+            Internship
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent>
+          <Typography
+            color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
+            sx={{ fontStyle: 'italic' }}
+          >
+            July, 2022
+          </Typography>
+          <Typography
+            color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
+            sx={{ fontStyle: 'bold' }}
+          >
+            ‎
+          </Typography>
+          <Typography
+            color={`${darkMode === true ? '#ffffff' : 'secondary'}`}
+            sx={{ fontStyle: 'italic' }}
+          >
+            February, 2022
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot>
+            <Code fontSize="small" />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Typography color={`${darkMode === true ? '#ffffff' : 'secondary'}`} variant="h6">
+            Intern (Fullstack)
+          </Typography>
+          <Typography color={`${darkMode === true ? '#ffffff' : 'secondary'}`}>
+            Cognizant (ADM BU/SL)
+          </Typography>
+          <Typography color={`${darkMode === true ? '#ffffff' : 'secondary'}`}>
+            Internship
+          </Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
