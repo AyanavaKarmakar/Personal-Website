@@ -20,8 +20,8 @@ if (!self.define) {
     if (t[o]) return;
     let s = {};
     const l = e => i(e, o),
-      u = { module: { uri: o }, exports: s, require: l };
-    t[o] = Promise.all(n.map(e => u[e] || l(e))).then(e => (r(...e), s));
+      d = { module: { uri: o }, exports: s, require: l };
+    t[o] = Promise.all(n.map(e => d[e] || l(e))).then(e => (r(...e), s));
   };
 }
 define(['./workbox-3ea082d2'], function (e) {
@@ -30,7 +30,7 @@ define(['./workbox-3ea082d2'], function (e) {
     e.clientsClaim(),
     e.precacheAndRoute(
       [
-        { url: 'registerSW.js', revision: '3ca0b8505b4bec776b69afdba2768812' },
+        { url: 'registerSW.js', revision: '65b2dfb293f1d5d857019cfff22150f1' },
         { revision: null, url: 'index.html' },
       ],
       {}
