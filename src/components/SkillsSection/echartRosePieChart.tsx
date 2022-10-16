@@ -9,16 +9,16 @@ export const EchartRosePieChart = () => {
   const DELAY_MS = 1500;
   const INTERVAL_MS = 1500;
 
-  const [data, setData] = useState([{ value: 0, name: 'React' }]);
+  const [data, setData] = useState([{ value: 0, name: 'Next.js' }]);
 
   const makeRandomData = () => {
     return [
-      { value: Math.floor(Math.random() * 100 + 40), name: 'React' },
+      { value: Math.floor(Math.random() * 100 + 40), name: 'Next.js' },
       { value: Math.floor(Math.random() * 100 + 40), name: 'TypeScript | JavaScript' },
       { value: Math.floor(Math.random() * 100 + 40), name: 'Firebase' },
-      { value: Math.floor(Math.random() * 100 + 40), name: 'React Native' },
+      { value: Math.floor(Math.random() * 100 + 40), name: 'React Native + Expo' },
       { value: Math.floor(Math.random() * 100 + 40), name: 'Node.js | Express.js' },
-      { value: Math.floor(Math.random() * 100 + 40), name: 'UI Kit: Material UI' },
+      { value: Math.floor(Math.random() * 100 + 40), name: 'UI: TailwindCSS + daisyUI' },
       { value: Math.floor(Math.random() * 100 + 40), name: 'Data Visualization: ECharts' },
     ];
   };
@@ -46,7 +46,7 @@ export const EchartRosePieChart = () => {
     const dataUpdateTimerOne = setTimeout(
       () =>
         setData([
-          { value: 0, name: 'React' },
+          { value: 0, name: 'Next.js' },
           { value: 1, name: 'TypeScript | JavaScript' },
         ]),
       DELAY_MS
@@ -55,7 +55,7 @@ export const EchartRosePieChart = () => {
     const dataUpdateTimerTwo = setTimeout(
       () =>
         setData([
-          { value: 1, name: 'React' },
+          { value: 1, name: 'Next.js' },
           { value: 1, name: 'TypeScript | JavaScript' },
           { value: 2, name: 'Firebase' },
         ]),
@@ -65,10 +65,10 @@ export const EchartRosePieChart = () => {
     const dataUpdateTimerThree = setTimeout(
       () =>
         setData([
-          { value: 2, name: 'React' },
+          { value: 2, name: 'Next.js' },
           { value: 2, name: 'TypeScript | JavaScript' },
           { value: 2, name: 'Firebase' },
-          { value: 3, name: 'React Native' },
+          { value: 3, name: 'React Native + Expo' },
         ]),
       DELAY_MS * 3
     );
@@ -76,10 +76,10 @@ export const EchartRosePieChart = () => {
     const dataUpdateTimerFour = setTimeout(
       () =>
         setData([
-          { value: 3, name: 'React' },
+          { value: 3, name: 'Next.js' },
           { value: 3, name: 'TypeScript | JavaScript' },
           { value: 3, name: 'Firebase' },
-          { value: 3, name: 'React Native' },
+          { value: 3, name: 'React Native + Expo' },
           { value: 4, name: 'Node.js | Express.js' },
         ]),
       DELAY_MS * 4
@@ -88,12 +88,12 @@ export const EchartRosePieChart = () => {
     const dataUpdateTimerFive = setTimeout(
       () =>
         setData([
-          { value: 4, name: 'React' },
+          { value: 4, name: 'Next.js' },
           { value: 4, name: 'TypeScript | JavaScript' },
           { value: 4, name: 'Firebase' },
-          { value: 4, name: 'React Native' },
+          { value: 4, name: 'React Native + Expo' },
           { value: 4, name: 'Node.js | Express.js' },
-          { value: 5, name: 'UI Kit: Material UI' },
+          { value: 5, name: 'UI: TailwindCSS + daisyUI' },
         ]),
       DELAY_MS * 5
     );
@@ -101,12 +101,12 @@ export const EchartRosePieChart = () => {
     const dataUpdateTimerSix = setTimeout(
       () =>
         setData([
-          { value: 5, name: 'React' },
+          { value: 5, name: 'Next.js' },
           { value: 5, name: 'TypeScript | JavaScript' },
           { value: 5, name: 'Firebase' },
-          { value: 5, name: 'React Native' },
+          { value: 5, name: 'React Native + Expo' },
           { value: 5, name: 'Node.js | Express.js' },
-          { value: 5, name: 'UI Kit: Material UI' },
+          { value: 5, name: 'UI: TailwindCSS + daisyUI' },
           { value: 6, name: 'Data Visualization: ECharts' },
         ]),
       DELAY_MS * 6
@@ -115,12 +115,12 @@ export const EchartRosePieChart = () => {
     const dataUpdateTimerFinal = setTimeout(
       () =>
         setData([
-          { value: 0, name: 'React' },
+          { value: 0, name: 'Next.js' },
           { value: 0, name: 'TypeScript | JavaScript' },
           { value: 0, name: 'Firebase' },
-          { value: 0, name: 'React Native' },
+          { value: 0, name: 'React Native + Expo' },
           { value: 0, name: 'Node.js | Express.js' },
-          { value: 0, name: 'UI Kit: Material UI' },
+          { value: 0, name: 'UI: TailwindCSS + daisyUI' },
           { value: 0, name: 'Data Visualization: ECharts' },
         ]),
       DELAY_MS * 7
