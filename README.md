@@ -1,7 +1,5 @@
 # Personal Website
 
-## Note: The [website](https://ayanava-karmakar.vercel.app/) has been hosted via [Vercel](https://vercel.com/docs); having [fallback](https://ayanava-karmakar.netlify.app/) via [Netlify](https://www.netlify.com/)!
-
 ## UI Showcase —
 
 
