@@ -1,4 +1,0 @@
-/* Removes scrollbar from the website */
-::-webkit-scrollbar {
-  display: none;
-}
