@@ -4,94 +4,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   html {
     color: #d6d3d1;
     background-color: #1c1917;
-    font-family: "Familjen Grotesk", sans-serif;
+    font-family: Familjen Grotesk, sans-serif;
     -webkit-font-smoothing: auto;
     -moz-osx-font-smoothing: auto;
     -ms-overflow-style: none;
   }
 
-  /*** REMOVES SCROLLBAR ***/
+  /*** Remove scrollbar ***/
   ::-webkit-scrollbar {
     display: none;
   }
-}
-
-
-body {
-  font-family: "Familjen Grotesk", sans-serif;
-  margin: auto;
-  padding: 20px;
-  max-width: 65ch;
-  text-align: left;
-  background-color: #fff;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  line-height: 1.5;
-  color: #444;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-b {
-  color: #222;
-}
-
-a {
-  color: #3273dc;
-}
-
-nav a {
-  margin-right: 10px;
-}
-
-textarea {
-  width: 100%;
-  font-size: 16px;
-}
-
-input {
-  font-size: 16px;
-}
-
-content {
-  line-height: 1.6;
-}
-
-table {
-  width: 100%;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-code {
-  padding: 2px 5px;
-  background-color: #f2f2f2;
-}
-
-pre {
-  padding: 1rem;
-}
-
-pre>code {
-  all: unset;
-}
-
-blockquote {
-  border: 1px solid #999;
-  color: #222;
-  padding: 2px 0px 2px 20px;
-  margin: 0px;
-  font-style: italic;
 }
