@@ -5,16 +5,21 @@ import { Links } from "../utils/Links";
 <div
   class="flex flex-col gap-5 h-[calc(100vh-100px)] lg:h-screen items-center justify-center text-center"
 >
-  <h1 class="font-extrabold text-6xl">Ayanava Karmakar</h1>
+  <h1 class="font-extrabold text-6xl">
+    <span
+      class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300/80 to-indigo-300/90"
+      >Ayanava Karmakar</span
+    >
+  </h1>
   <div
     class="flex flex-col text-justify lg:flex-row gap-0 lg:gap-2 text-2xl lg:text-3xl"
   >
-    <p>Frontend Developer</p>
+    <p class="text-sky-300/75">Frontend Developer</p>
     <p class="hidden lg:inline lg:py-0">{" "}+{" "}</p>
-    <p>Electrical Engineer</p>
+    <p class="text-violet-200/75">Electrical Engineer</p>
   </div>
   <div
-    class="flex underline decoration-dotted underline-offset-4 flex-col lg:flex-row text-2xl gap-2 tracking-wider"
+    class="flex underline decoration-dotted decoration-2 underline-offset-4 flex-col lg:flex-row text-2xl gap-2 tracking-wider"
   >
     <div class="hidden lg:flex lg:flex-row lg:gap-10">
       {
@@ -22,7 +27,7 @@ import { Links } from "../utils/Links";
           const { linkName, linkUrl } = link;
 
           return (
-            <p>
+            <p class="text-indigo-400/80">
               <a href={linkUrl} target="_blank" rel="noreferrer">
                 {linkName}
               </a>
