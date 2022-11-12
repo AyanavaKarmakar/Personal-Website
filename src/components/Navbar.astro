@@ -1,0 +1,30 @@
+---
+import { NavLinks } from "../utils/NavLinks";
+---
+
+<div class="text-xl lg:text-3xl pt-5 font-semibold">
+  <nav class="flex flex-row gap-5 justify-center text-center">
+    {
+      NavLinks.map((link) => {
+        const { name, url } = link;
+
+        return (
+          <a
+            href={url}
+            class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-50/90 to-teal-100/90"
+          >
+            <span
+              class={`${
+                Astro.url.pathname === url
+                  ? "bg-clip-text text-transparent bg-gradient-to-r from-orange-300 to-red-400/90"
+                  : null
+              }`}
+            >
+              {name}
+            </span>
+          </a>
+        );
+      })
+    }
+  </nav>
+</div>

@@ -15,6 +15,27 @@ const location = Astro.url.pathname;
   </head>
   <body>
     {
+      location === "/extras/" && (
+        <div class="h-screen bg-gradient-to-r from-slate-900/10 via-amber-900/20 to-zinc-900/10">
+          <slot />
+        </div>
+      )
+    }
+    {
+      location === "/projects/" && (
+        <div class="h-screen bg-gradient-to-r from-slate-900/10 via-fuchsia-900/30 to-zinc-900/10">
+          <slot />
+        </div>
+      )
+    }
+    {
+      location === "/skills/" && (
+        <div class="h-screen bg-gradient-to-r from-slate-900/10 via-teal-900/40 to-zinc-900/10">
+          <slot />
+        </div>
+      )
+    }
+    {
       location === "/home/" && (
         <div class="h-screen bg-gradient-to-r from-slate-900/10 via-indigo-900/40 to-zinc-900/10">
           <slot />
