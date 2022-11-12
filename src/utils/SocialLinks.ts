@@ -1,14 +1,14 @@
 import { z } from "zod";
 
-const LinkValidator = z.object({
+const SocialLinkValidator = z.object({
   id: z.number().positive(),
   linkName: z.string().min(3),
   linkUrl: z.string().url().startsWith("https://"),
 });
 
-export type Link = z.infer<typeof LinkValidator>;
+type SocialLink = z.infer<typeof SocialLinkValidator>;
 
-export const Links: Link[] = [
+export const SocialLinks: SocialLink[] = [
   {
     id: 1,
     linkName: "GitHub",

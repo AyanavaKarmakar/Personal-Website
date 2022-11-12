@@ -1,15 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { NavLinks } from "../utils/NavLinks";
 ---
 
 <BaseLayout pageTitle={"Home | Ayanava Karmakar"}>
   <header>
     <div class="text-xl lg:text-3xl pt-5 font-semibold">
       <nav class="flex flex-row gap-5 justify-center text-center">
-        <a href="/home/">Home</a>
-        <a href="/skills/">Skills</a>
-        <a href="/projects/">Projects</a>
-        <a href="/extras/">Extras</a>
+        {
+          NavLinks.map((link) => {
+            const { name, url } = link;
+
+            return <a href={url}>{name}</a>;
+          })
+        }
       </nav>
     </div>
   </header>
