@@ -20,10 +20,12 @@ const { pageTitle } = Astro.props;
         </div>
       )
     }
-    <div
-      class="h-screen bg-gradient-to-r from-slate-900/10 via-cyan-900/40 to-zinc-900/10"
-    >
-      <slot />
-    </div>
+    {
+      pageTitle === "Ayanava Karmakar" && (
+        <div class="h-screen bg-gradient-to-r from-slate-900/10 via-cyan-900/40 to-zinc-900/10">
+          <slot />
+        </div>
+      )
+    }
   </body>
 </html>
