@@ -7,18 +7,18 @@ import { Links } from "../utils/Links";
 >
   <h1 class="font-extrabold text-6xl">
     <span
-      class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-300/80 to-indigo-300/90"
+      class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-200/90 to-indigo-300/90"
       >Ayanava Karmakar</span
     >
   </h1>
   <div
     class="flex flex-col text-justify lg:flex-row gap-0 lg:gap-2 text-2xl lg:text-3xl"
   >
-    <p class="text-sky-300/75">Frontend Developer</p>
+    <p class="text-sky-300/90">Frontend Developer</p>
     <p class="hidden lg:inline lg:py-0 motion-safe:animate-pulse">
       {" "}+{" "}
     </p>
-    <p class="text-violet-200/75">Electrical Engineer</p>
+    <p class="text-violet-300/90">Electrical Engineer</p>
   </div>
   <div
     class="flex underline decoration-dotted decoration-2 underline-offset-4 flex-col lg:flex-row text-2xl gap-2 tracking-wider"
@@ -29,7 +29,7 @@ import { Links } from "../utils/Links";
           const { linkName, linkUrl } = link;
 
           return (
-            <p class="text-indigo-400/80 hover:text-teal-300/70 hover:motion-safe:animate-pulse">
+            <p class="text-indigo-300 hover:text-teal-200/75 hover:motion-safe:animate-pulse">
               <a href={linkUrl} target="_blank" rel="noreferrer">
                 {linkName}
               </a>
@@ -40,7 +40,7 @@ import { Links } from "../utils/Links";
     </div>
     <div class="inline text-xl lg:hidden">
       <p
-        class="text-indigo-300 hover:text-teal-300 hover:motion-safe:animate-pulse"
+        class="text-indigo-300 hover:text-teal-200/75 hover:motion-safe:animate-pulse"
       >
         <a href={Links[0]?.linkUrl} target="
         _blank" rel="noreferrer">
