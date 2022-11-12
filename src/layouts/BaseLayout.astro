@@ -2,6 +2,7 @@
 import "../styles/global.css";
 
 const { pageTitle } = Astro.props;
+const location = Astro.url.pathname;
 ---
 
 <html lang="en">
@@ -14,14 +15,14 @@ const { pageTitle } = Astro.props;
   </head>
   <body>
     {
-      pageTitle === "Home | Ayanava Karmakar" && (
+      location === "/home/" && (
         <div class="h-screen bg-gradient-to-r from-slate-900/10 via-indigo-900/40 to-zinc-900/10">
           <slot />
         </div>
       )
     }
     {
-      pageTitle === "Ayanava Karmakar" && (
+      location === "/" && (
         <div class="h-screen bg-gradient-to-r from-slate-900/10 via-cyan-900/40 to-zinc-900/10">
           <slot />
         </div>
