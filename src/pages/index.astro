@@ -7,9 +7,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     class="flex flex-col gap-5 h-screen items-center justify-center text-center"
   >
     <h1 class="font-extrabold text-6xl">Ayanava Karmakar</h1>
-    <div class="flex flex-row gap-2 text-3xl">
+    <div
+      class="flex flex-col text-justify lg:flex-row gap-0 lg:gap-2 text-2xl lg:text-3xl"
+    >
       <p>Frontend Developer</p>
-      <p>{" "}+{" "}</p>
+      <p class="hidden lg:inline lg:py-0">{" "}+{" "}</p>
       <p>Electrical Engineer</p>
     </div>
     <div
