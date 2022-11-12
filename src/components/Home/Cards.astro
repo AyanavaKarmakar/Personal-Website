@@ -8,11 +8,29 @@ import { HomeTexts } from "../../utils/HomeTexts";
   >
     {
       HomeTexts.map((text) => {
-        const { heading, para } = text;
+        const { id, heading, para1, para2, para3, para4 } = text;
         return (
           <div class="text-left pt-5">
-            <h1 class="font-semibold tracking-wide text-4xl">{heading}</h1>
-            <h2 class="text-2xl pt-2">{para}</h2>
+            <h1 class="lg:text-left text-center font-semibold tracking-wide text-2xl lg:text-4xl">
+              {heading}
+            </h1>
+            <h2 class="text-xl lg:text-2xl pt-2">
+              {para1}
+              {id === 4 && (
+                <span>
+                  <a
+                    href="/extras/"
+                    class="bg-clip-text font-semibold text-transparent bg-gradient-to-r from-cyan-50/90 to-teal-100/90"
+                  >
+                    Extras
+                  </a>
+                  )
+                </span>
+              )}
+            </h2>
+            <h2 class="text-xl lg:text-2xl pt-0">{para2}</h2>
+            <h2 class="text-xl lg:text-2xl pt-0">{para3}</h2>
+            <h2 class="text-xl lg:text-2xl pt-0">{para4}</h2>
           </div>
         );
       })
