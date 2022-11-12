@@ -1,3 +1,7 @@
+---
+import { Links } from "../utils/Links";
+---
+
 <div
   class="flex flex-col gap-5 h-screen items-center justify-center text-center"
 >
@@ -13,13 +17,26 @@
     class="flex underline decoration-dotted underline-offset-4 flex-col lg:flex-row text-2xl gap-2 tracking-wider"
   >
     <div class="hidden lg:flex lg:flex-row lg:gap-10">
-      <p>GitHub</p>
-      <p>LinkedIn</p>
-      <p>Guestbook</p>
-      <p>Linktree</p>
+      {
+        Links.map((link) => {
+          const { linkName, linkUrl } = link;
+
+          return (
+            <p>
+              <a href={linkUrl} target="_blank" rel="noreferrer">
+                {linkName}
+              </a>
+            </p>
+          );
+        })
+      }
     </div>
     <div class="inline text-xl lg:hidden">
-      <p>GitHub</p>
+      <p>
+        <a href={Links[0]?.linkUrl} target="_blank" rel="noreferrer">
+          {Links[0]?.linkName}</a
+        >
+      </p>
     </div>
   </div>
 </div>
