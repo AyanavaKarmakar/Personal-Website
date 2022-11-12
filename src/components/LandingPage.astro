@@ -15,7 +15,9 @@ import { Links } from "../utils/Links";
     class="flex flex-col text-justify lg:flex-row gap-0 lg:gap-2 text-2xl lg:text-3xl"
   >
     <p class="text-sky-300/75">Frontend Developer</p>
-    <p class="hidden lg:inline lg:py-0">{" "}+{" "}</p>
+    <p class="hidden lg:inline lg:py-0 motion-safe:animate-pulse">
+      {" "}+{" "}
+    </p>
     <p class="text-violet-200/75">Electrical Engineer</p>
   </div>
   <div
@@ -27,7 +29,7 @@ import { Links } from "../utils/Links";
           const { linkName, linkUrl } = link;
 
           return (
-            <p class="text-indigo-400/80">
+            <p class="text-indigo-400/80 hover:text-teal-300/70 hover:motion-safe:animate-pulse">
               <a href={linkUrl} target="_blank" rel="noreferrer">
                 {linkName}
               </a>
@@ -37,10 +39,13 @@ import { Links } from "../utils/Links";
       }
     </div>
     <div class="inline text-xl lg:hidden">
-      <p class="text-indigo-300">
-        <a href={Links[0]?.linkUrl} target="_blank" rel="noreferrer">
-          {Links[0]?.linkName}</a
-        >
+      <p
+        class="text-indigo-300 hover:text-teal-300 hover:motion-safe:animate-pulse"
+      >
+        <a href={Links[0]?.linkUrl} target="
+        _blank" rel="noreferrer">
+          {Links[0]?.linkName}
+        </a>
       </p>
     </div>
   </div>
