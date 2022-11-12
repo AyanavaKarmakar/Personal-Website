@@ -15,12 +15,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <p>Electrical Engineer</p>
     </div>
     <div
-      class="flex underline decoration-dotted underline-offset-4 flex-col lg:flex-row lg:gap-10 text-2xl tracking-wider"
+      class="flex underline decoration-dotted underline-offset-4 flex-col lg:flex-row text-2xl gap-2 tracking-wider"
     >
-      <p>GitHub</p>
-      <p>LinkedIn</p>
-      <p>Guestbook</p>
-      <p>Linktree</p>
+      <div class="hidden lg:flex lg:flex-row lg:gap-10">
+        <p>GitHub</p>
+        <p>LinkedIn</p>
+        <p>Guestbook</p>
+        <p>Linktree</p>
+      </div>
+      <div class="inline text-xl lg:hidden">
+        <p>GitHub</p>
+      </div>
     </div>
   </div>
 </BaseLayout>
