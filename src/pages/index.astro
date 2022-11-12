@@ -4,9 +4,21 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout>
   <div
-    class="flex flex-col tracking-wide gap-5 h-screen items-center justify-center text-center"
+    class="flex flex-col gap-5 h-screen items-center justify-center text-center"
   >
     <h1 class="font-extrabold text-6xl">Ayanava Karmakar</h1>
-    <p class="font-normal text-3xl">Frontend Developer</p>
+    <div class="flex flex-row gap-2 text-3xl">
+      <p>Frontend Developer</p>
+      <p>{" "}+{" "}</p>
+      <p>Electrical Engineer</p>
+    </div>
+    <div
+      class="flex underline decoration-dotted underline-offset-4 flex-col lg:flex-row lg:gap-10 text-2xl tracking-wider"
+    >
+      <p>GitHub</p>
+      <p>LinkedIn</p>
+      <p>Guestbook</p>
+      <p>Linktree</p>
+    </div>
   </div>
 </BaseLayout>
