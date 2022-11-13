@@ -7,6 +7,7 @@ const ProjectTextValidator = z.object({
   para2: z.string().min(10).optional(),
   para3: z.string().min(10).optional(),
   para4: z.string().min(10).optional(),
+  para5: z.string().min(10).optional(),
 });
 
 export type ProjectText = z.infer<typeof ProjectTextValidator>;
@@ -18,8 +19,9 @@ export const ProjectsTexts: ProjectText[] = [
     para1:
       "Guestbook is a simple web application that allows users to sign in, and leave a message. It is built using the T3 Stack (Next.js, TypeScript, and TailwindCSS).",
     para2: "— Open Source @ ",
-    para3: "— Live @ Vercel",
+    para3: "— Live @ ",
     para4: "https://github.com/AyanavaKarmakar/Guestbook",
+    para5: "https://guestbook.ayanavakarmakar.software/",
   },
   {
     id: 2,
@@ -35,8 +37,9 @@ export const ProjectsTexts: ProjectText[] = [
     para1:
       'ARID is a cross-platform application for checking "Dry Days" in India. It is built using React Native, Expo, and React Native Paper, and is available for both Android, and as a Web App.',
     para2: "— Open Source @ ",
-    para3: "— Live @ Vercel",
+    para3: "— Live @ ",
     para4: "https://github.com/AyanavaKarmakar/ARID",
+    para5: "https://arid.ayanavakarmakar.software/",
   },
   {
     id: 4,
@@ -44,7 +47,8 @@ export const ProjectsTexts: ProjectText[] = [
     para1:
       "This is the portfolio website you are currently viewing. It is built using Astro, TypeScript, and TailwindCSS.",
     para2: "— Open Source @ ",
-    para3: "— Live @ Expo",
+    para3: "— Live @ ",
     para4: "https://github.com/AyanavaKarmakar/Personal-Website",
+    para5: "https://ayanavakarmakar.software/",
   },
 ];

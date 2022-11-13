@@ -10,7 +10,7 @@ const location = Astro.url.pathname;
     {
       // Using only AboutText as type since all the types are same`
       objectToMap.map((text: AboutText) => {
-        const { id, heading, para1, para2, para3, para4 } = text;
+        const { id, heading, para1, para2, para3, para4, para5 } = text;
         return (
           <div class="text-left pt-5">
             <h1 class="lg:text-left text-center font-semibold tracking-wide text-2xl lg:text-4xl">
@@ -38,7 +38,14 @@ const location = Astro.url.pathname;
                 }`}</span>
               </a>
             </h2>
-            <h2 class="text-xl lg:text-2xl pt-0">{para3}</h2>
+            <h2 class="text-xl lg:text-2xl pt-0">
+              {para3}
+              <a href={para5} target="_blank" rel="noreferrer">
+                <span class="bg-clip-text font-semibold text-transparent bg-gradient-to-r from-sky-100/95 to-emerald-100/95 hover:from-orange-300 hover:to-red-400/90">{`${
+                  location === "/projects/" && id !== 2 ? "Vercel" : ""
+                }`}</span>
+              </a>
+            </h2>
             {location !== "/projects/" && (
               <h2 class="text-xl lg:text-2xl pt-0">{para4}</h2>
             )}
