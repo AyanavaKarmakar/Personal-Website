@@ -42,7 +42,7 @@ const location = Astro.url.pathname;
       }
       {
         location === "/about/" && (
-          <div class="h-screen bg-gradient-to-r from-slate-900/10 via-indigo-900/40 to-zinc-900/10">
+          <div class="h-[calc(100vh+50px)] bg-gradient-to-r from-slate-900/10 via-indigo-900/40 to-zinc-900/10">
             <Navbar />
             <slot />
           </div>
