@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-const HomeTextValidator = z.object({
+const AboutTextValidator = z.object({
   id: z.number().positive(),
   heading: z.string().min(5).optional(),
   para1: z.string().min(10).optional(),
@@ -8,9 +8,9 @@ const HomeTextValidator = z.object({
   para3: z.string().min(10).optional(),
 });
 
-type HomeText = z.infer<typeof HomeTextValidator>;
+export type AboutText = z.infer<typeof AboutTextValidator>;
 
-export const HomeTexts: HomeText[] = [
+export const AboutTexts: AboutText[] = [
   {
     id: 1,
     heading: "About Me",

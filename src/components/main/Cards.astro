@@ -1,11 +1,15 @@
 ---
-import { HomeTexts } from "../../utils/HomeTexts";
+import type { AboutText } from "../../utils/Texts/AboutTexts";
+import type { SkillText } from "../../utils/Texts/SkillsTexts";
+
+const { objectToMap } = Astro.props;
+const location = Astro.url.pathname;
 ---
 
 <div class="flex items-center justify-center">
   <div class="w-[calc(100vw-55px)] lg:w-[calc(100vw-750px)] pt-0 lg:pt-3">
     {
-      HomeTexts.map((text) => {
+      objectToMap.map((text: AboutText | SkillText) => {
         const { id, heading, para1, para2, para3 } = text;
         return (
           <div class="text-left pt-5">
@@ -14,7 +18,7 @@ import { HomeTexts } from "../../utils/HomeTexts";
             </h1>
             <h2 class="text-xl lg:text-2xl pt-2">
               {para1}
-              {id === 4 && (
+              {id === 4 && location === "/about/" && (
                 <span>
                   <a
                     href="/extras/"
