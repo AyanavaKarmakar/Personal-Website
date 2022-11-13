@@ -36,6 +36,5 @@ export const HomeTexts: HomeText[] = [
     heading: "Hobbies",
     para1: "1. Aesthetic Photography ( Curious? Take a peek at ",
     para2: "2. Open Source Contribution",
-    para3: "3. Cycling",
   },
 ];
