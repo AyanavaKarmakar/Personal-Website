@@ -1,4 +1,5 @@
 ---
+import Navbar from "../components/Others/Navbar.astro";
 import "../styles/global.css";
 
 const { pageTitle } = Astro.props;
@@ -15,39 +16,50 @@ const location = Astro.url.pathname;
   </head>
   <body>
     {
-      location === "/extras/" && (
-        <div class="h-screen bg-gradient-to-r from-slate-900/10 via-amber-900/20 to-zinc-900/10">
-          <slot />
-        </div>
+      location !== "/" && (
+        <header>
+          <div class="bg-gradient-to-r from-slate-900/10 via-indigo-900/40 to-zinc-900/10">
+            <Navbar />
+          </div>
+        </header>
       )
     }
-    {
-      location === "/projects/" && (
-        <div class="h-screen bg-gradient-to-r from-slate-900/10 via-fuchsia-900/30 to-zinc-900/10">
-          <slot />
-        </div>
-      )
-    }
-    {
-      location === "/skills/" && (
-        <div class="h-screen bg-gradient-to-r from-slate-900/10 via-teal-900/40 to-zinc-900/10">
-          <slot />
-        </div>
-      )
-    }
-    {
-      location === "/about/" && (
-        <div class="h-screen bg-gradient-to-r from-slate-900/10 via-indigo-900/40 to-zinc-900/10">
-          <slot />
-        </div>
-      )
-    }
-    {
-      location === "/" && (
-        <div class="h-screen bg-gradient-to-r from-slate-900/10 via-cyan-900/40 to-zinc-900/10">
-          <slot />
-        </div>
-      )
-    }
+    <main>
+      {
+        location === "/extras/" && (
+          <div class="h-screen bg-gradient-to-r from-slate-900/10 via-amber-900/20 to-zinc-900/10">
+            <slot />
+          </div>
+        )
+      }
+      {
+        location === "/projects/" && (
+          <div class="h-screen bg-gradient-to-r from-slate-900/10 via-fuchsia-900/30 to-zinc-900/10">
+            <slot />
+          </div>
+        )
+      }
+      {
+        location === "/skills/" && (
+          <div class="h-screen bg-gradient-to-r from-slate-900/10 via-teal-900/40 to-zinc-900/10">
+            <slot />
+          </div>
+        )
+      }
+      {
+        location === "/about/" && (
+          <div class="h-screen bg-gradient-to-r from-slate-900/10 via-indigo-900/40 to-zinc-900/10">
+            <slot />
+          </div>
+        )
+      }
+      {
+        location === "/" && (
+          <div class="h-screen bg-gradient-to-r from-slate-900/10 via-cyan-900/40 to-zinc-900/10">
+            <slot />
+          </div>
+        )
+      }
+    </main>
   </body>
 </html>
