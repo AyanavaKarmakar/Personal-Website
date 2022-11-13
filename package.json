@@ -2,6 +2,16 @@
   "name": "ayanava-karmakar-website",
   "type": "module",
   "version": "0.0.1",
+  "description": "My personal website",
+  "license": "MIT",
+  "homepage": "https://ayanavakarmakar.software/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyanavaKarmakar/Personal-Website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AyanavaKarmakar/Personal-Website/issues"
+  },
   "private": true,
   "scripts": {
     "dev": "astro dev --host",
