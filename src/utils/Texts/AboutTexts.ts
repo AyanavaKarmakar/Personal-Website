@@ -6,6 +6,7 @@ const AboutTextValidator = z.object({
   para1: z.string().min(10).optional(),
   para2: z.string().min(10).optional(),
   para3: z.string().min(10).optional(),
+  para4: z.string().min(10).optional(),
 });
 
 export type AboutText = z.infer<typeof AboutTextValidator>;

@@ -10,7 +10,7 @@ const location = Astro.url.pathname;
   <div class="w-[calc(100vw-55px)] lg:w-[calc(100vw-750px)] pt-0 lg:pt-3">
     {
       objectToMap.map((text: AboutText | SkillText) => {
-        const { id, heading, para1, para2, para3 } = text;
+        const { id, heading, para1, para2, para3, para4 } = text;
         return (
           <div class="text-left pt-5">
             <h1 class="lg:text-left text-center font-semibold tracking-wide text-2xl lg:text-4xl">
@@ -32,6 +32,7 @@ const location = Astro.url.pathname;
             </h2>
             <h2 class="text-xl lg:text-2xl pt-0">{para2}</h2>
             <h2 class="text-xl lg:text-2xl pt-0">{para3}</h2>
+            <h2 class="text-xl lg:text-2xl pt-0">{para4}</h2>
           </div>
         );
       })
