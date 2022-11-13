@@ -15,7 +15,7 @@ export const HomeTexts: HomeText[] = [
     id: 1,
     heading: "About Me",
     para1:
-      "Frontend Developer with a passion for simple, responsive, and mobile-first cross-platform application development, and an Open Souce Contributor :)",
+      "Hey, I'm Ayanava Karmakar, an Electrical Engineer turned Frontend Developer. I have a passion for developing simple, and responsive web apps. I have also recently started contributing to Open Source projects on GitHub.",
   },
   {
     id: 2,
