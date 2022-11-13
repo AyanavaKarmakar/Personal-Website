@@ -6,7 +6,6 @@ const HomeTextValidator = z.object({
   para1: z.string().min(10).optional(),
   para2: z.string().min(10).optional(),
   para3: z.string().min(10).optional(),
-  para4: z.string().min(10).optional(),
 });
 
 type HomeText = z.infer<typeof HomeTextValidator>;
@@ -37,6 +36,5 @@ export const HomeTexts: HomeText[] = [
     para1: "1. Aesthetic Photography ( Curious? Take a peek at ",
     para2: "2. Open Source Contribution",
     para3: "3. Cycling",
-    para4: "4. Swimming",
   },
 ];
