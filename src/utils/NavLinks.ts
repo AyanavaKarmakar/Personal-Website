@@ -12,20 +12,25 @@ export const NavLinks: NavLink[] = [
   {
     id: 1,
     name: "Home",
-    url: "/home/",
+    url: "/",
   },
   {
     id: 2,
+    name: "About",
+    url: "/about/",
+  },
+  {
+    id: 3,
     name: "Skills",
     url: "/skills/",
   },
   {
-    id: 3,
+    id: 4,
     name: "Projects",
     url: "/projects/",
   },
   {
-    id: 4,
+    id: 5,
     name: "Extras",
     url: "/extras/",
   },
