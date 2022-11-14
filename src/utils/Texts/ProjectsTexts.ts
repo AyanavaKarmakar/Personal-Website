@@ -17,7 +17,7 @@ export const ProjectsTexts: ProjectText[] = [
     id: 1,
     heading: "Guestbook",
     para1:
-      "Guestbook is a simple web application that allows users to sign in, and leave a message. It is built using the T3 Stack (Next.js, TypeScript, and TailwindCSS).",
+      "Guestbook is a simple web application that allows users to sign in, and leave a message. It is built using the T3 Stack (Next.js, tRPC, Tailwind CSS, TypeScript, Prisma, and NextAuth.js).",
     para2: "— Open Source @ ",
     para3: "— Live @ ",
     para4: "https://github.com/AyanavaKarmakar/Guestbook",
@@ -45,7 +45,7 @@ export const ProjectsTexts: ProjectText[] = [
     id: 4,
     heading: "Portfolio",
     para1:
-      "This is the portfolio website you are currently viewing. It is built using Astro, TypeScript, and TailwindCSS.",
+      "This is the portfolio website you are currently viewing. It is built using Astro, TypeScript, and Tailwind CSS.",
     para2: "— Open Source @ ",
     para3: "— Live @ ",
     para4: "https://github.com/AyanavaKarmakar/Personal-Website",

@@ -31,14 +31,32 @@ export const SkillsTexts: SkillText[] = [
     para1: "1. React.js, React Native, and Expo",
     para2: "2. Redux Toolkit, React Query, Zustand, Zod, and NextAuth.js",
     para3: "3. Framer Motion, React ECharts, and Storybook",
-    para4: "4. Tailwind CSS, daisyUI, Material UI, and Bootstrap",
   },
   {
     id: 4,
+    heading: "UI Frameworks",
+    para1: "Tailwind CSS, daisyUI, Material UI, and Bootstrap",
+  },
+  {
+    id: 5,
+    heading: "Backend",
+    para1:
+      "Prisma, tRPC, PostgreSQL, Firebase Cloud Firestore, Railway, and PlanetScale",
+  },
+  {
+    id: 6,
+    heading: "Authentication",
+    para1: "NextAuth.js, Firebase Authentication, and Auth0",
+  },
+  {
+    id: 7,
+    heading: "Deployment",
+    para1: "Docker, GitHub Pages, Heroku, Netlify, and Vercel",
+  },
+  {
+    id: 8,
     heading: "Tools",
-    para1: "1. Prisma, tRPC, Firebase, Railway, and PlanetScale",
-    para2: "2. VS Code, GitHub, GitPod, and CodeSpaces",
-    para3: "3. Docker, Heroku, Netlify, and Vercel",
-    para4: "4. Eslint, Prettier, and Husky",
+    para1: "1. VS Code, GitHub, GitPod, and CodeSpaces",
+    para2: "2. Eslint, Prettier, and Husky",
   },
 ];
