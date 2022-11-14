@@ -34,13 +34,27 @@ export const ExtrasTexts: ExtraText[] = [
     id: 3,
     heading: "Music I Like",
     para1:
-      "I like a lot of music, but here are some of my favourites compiled in the form of a YouTube Music playlist.",
+      "Here's some of my favourites compiled in the form of a YouTube Music playlist.",
     para3: "— Open the playlist in a new tab:",
     para10:
       "https://music.youtube.com/playlist?list=PL3mmgsHsl2SUM3a1-y4NORgN4X8Mf20l1",
   },
   {
     id: 4,
+    heading: "PC or Console?",
+    para1:
+      "I'm a PC person, but I do like consoles too. Here's a list of my favourite games I have played so far.",
+    para2: "— The Elder Scrolls III: Morrowind [99/100]",
+    para3: "— The Elder Scrolls IV: Oblivion [95/100]",
+    para4: "— Need for Speed: Underground 2 [92/100]",
+    para5: "— Assassin's Creed: Brotherhood [90/100]",
+    para6: "— Grand Theft Auto San Andreas [85/100]",
+    para7: "— The Witcher 3: Wild Hunt [80/100]",
+    para8: "— Far Cry 5 + New Dawn [75/100]",
+    para9: "— Far Cry 3 [70/100]",
+  },
+  {
+    id: 5,
     heading: "Tea or Coffee?",
     para1:
       "I'm a tea person, but I do like coffee too. I like my coffee black, and I like it strong. I don't like it with milk, or sugar, or anything else. I like it the way it is. Here's a list of my favourite coffees I have tried so far, and some I would probably stay away from.",
