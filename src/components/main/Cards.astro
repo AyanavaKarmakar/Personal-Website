@@ -10,7 +10,20 @@ const location = Astro.url.pathname;
     {
       // Using only AboutText as type since all the types are same`
       objectToMap.map((text: AboutText) => {
-        const { id, heading, para1, para2, para3, para4, para5 } = text;
+        const {
+          id,
+          heading,
+          para1,
+          para2,
+          para3,
+          para4,
+          para5,
+          para6,
+          para7,
+          para8,
+          para9,
+          para10,
+        } = text;
         return (
           <div class="text-left pt-5">
             <h1 class="lg:text-left text-center font-semibold tracking-wide text-2xl lg:text-4xl">
@@ -49,6 +62,14 @@ const location = Astro.url.pathname;
             {location !== "/projects/" && (
               <h2 class="text-xl lg:text-2xl pt-0">{para4}</h2>
             )}
+            {location === "/extras/" && (
+              <h2 class="text-xl lg:text-2xl pt-0">{para5}</h2>
+            )}
+            <h2 class="text-xl lg:text-2xl pt-0">{para6}</h2>
+            <h2 class="text-xl lg:text-2xl pt-0">{para7}</h2>
+            <h2 class="text-xl lg:text-2xl pt-0">{para8}</h2>
+            <h2 class="text-xl lg:text-2xl pt-0">{para9}</h2>
+            <h2 class="text-xl lg:text-2xl pt-0">{para10}</h2>
           </div>
         );
       })

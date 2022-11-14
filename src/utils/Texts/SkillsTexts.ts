@@ -8,6 +8,11 @@ const SkillTextValidator = z.object({
   para3: z.string().min(10).optional(),
   para4: z.string().min(10).optional(),
   para5: z.string().min(10).optional(),
+  para6: z.string().min(10).optional(),
+  para7: z.string().min(10).optional(),
+  para8: z.string().min(10).optional(),
+  para9: z.string().min(10).optional(),
+  para10: z.string().min(10).optional(),
 });
 
 export type SkillText = z.infer<typeof SkillTextValidator>;
