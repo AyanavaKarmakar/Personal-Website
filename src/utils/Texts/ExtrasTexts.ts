@@ -26,6 +26,12 @@ export const ExtrasTexts: ExtraText[] = [
   },
   {
     id: 2,
+    heading: "Some Photos I Clicked",
+    para1:
+      "I love photography, and I love to click photos. Here are some of my favourite photos.",
+  },
+  {
+    id: 3,
     heading: "Music I Like",
     para1:
       "I like a lot of music, but here are some of my favourites compiled in the form of a YouTube Music playlist.",
@@ -34,7 +40,7 @@ export const ExtrasTexts: ExtraText[] = [
       "https://music.youtube.com/playlist?list=PL3mmgsHsl2SUM3a1-y4NORgN4X8Mf20l1",
   },
   {
-    id: 3,
+    id: 4,
     heading: "Tea or Coffee?",
     para1:
       "I'm a tea person, but I do like coffee too. I like my coffee black, and I like it strong. I don't like it with milk, or sugar, or anything else. I like it the way it is. Here's a list of my favourite coffees I have tried so far, and some I would probably stay away from.",
