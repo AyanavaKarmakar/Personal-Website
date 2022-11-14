@@ -50,7 +50,7 @@ export const ProjectsTexts: ProjectText[] = [
     id: 4,
     heading: "Portfolio",
     para1:
-      "This is the portfolio website you are currently viewing. It is built using Astro, TypeScript, and Tailwind CSS.",
+      "This is the portfolio website you are currently viewing. It is built using Astro with React, and Tailwind CSS integrations.",
     para2: "— Open Source @ ",
     para3: "— Live @ ",
     para4: "https://github.com/AyanavaKarmakar/Personal-Website",
