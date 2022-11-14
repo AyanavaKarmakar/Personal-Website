@@ -50,13 +50,11 @@ const location = Astro.url.pathname;
                   location === "/projects/" ? "GitHub" : ""
                 }`}</span>
               </a>
-              <a href={para10} target="_blank" rel="noreferrer">
+              <button id="copyButton">
                 <span class="bg-clip-text font-semibold text-transparent bg-gradient-to-r from-sky-100/95 to-emerald-100/95 hover:from-orange-300 hover:to-red-400/90 hover:motion-safe:animate-pulse">{`${
-                  location === "/extras/" && (id === 2 || id === 3)
-                    ? "_//\\\\_"
-                    : ""
+                  location === "/extras/" && id === 2 ? "_//\\\\_" : ""
                 }`}</span>
-              </a>
+              </button>
             </h2>
             <h2 class="text-xl lg:text-2xl pt-0">
               {para3}
@@ -65,11 +63,11 @@ const location = Astro.url.pathname;
                   location === "/projects/" && id !== 2 ? "Vercel" : ""
                 }`}</span>
               </a>
-              <span class="bg-clip-text font-semibold text-transparent bg-gradient-to-r from-sky-100/95 to-emerald-100/95 hover:from-orange-300 hover:to-red-400/90 hover:motion-safe:animate-pulse">{`${
-                location === "/extras/" && (id === 2 || id === 3)
-                  ? " _//\\\\_"
-                  : ""
-              }`}</span>
+              <a href={para10} target="_blank" rel="noreferrer">
+                <span class="bg-clip-text font-semibold text-transparent bg-gradient-to-r from-sky-100/95 to-emerald-100/95 hover:from-orange-300 hover:to-red-400/90 hover:motion-safe:animate-pulse">{`${
+                  location === "/extras/" && id === 2 ? " _//\\\\_" : ""
+                }`}</span>
+              </a>
             </h2>
             {location !== "/projects/" && (
               <h2 class="text-xl lg:text-2xl pt-0">{para4}</h2>

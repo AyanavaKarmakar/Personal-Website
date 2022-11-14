@@ -36,14 +36,6 @@ export const ExtrasTexts: ExtraText[] = [
   },
   {
     id: 3,
-    heading: "Music I Made",
-    para1:
-      "Yeah, you read that right! I've been making music for a while now using Ableton as my goto DAW (Digital Audio Workstation). Some of them are on Spotify, and some of them are on YouTube.",
-    para2: "— Copy the Spotify link",
-    para3: "— Open the Spotify link in a new tab",
-  },
-  {
-    id: 4,
     heading: "Tea or Coffee?",
     para1:
       "I'm a tea person, but I do like coffee too. I like my coffee black, and I like it strong. I don't like it with milk, or sugar, or anything else. I like it the way it is. Here's a list of my favourite coffees I have tried so far, and some I would probably stay away from.",
