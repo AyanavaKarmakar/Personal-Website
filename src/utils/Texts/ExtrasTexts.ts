@@ -22,7 +22,7 @@ export const ExtrasTexts: ExtraText[] = [
     id: 1,
     heading: "So, what is this page about?",
     para1:
-      "This page contains anything, and everything that couldn't fit into the other pages. It's a collection of random stuff that I find \"interesting\", and I hope you do too. I'll try to keep this page updated as much as possible.",
+      "This page contains anything, and everything that couldn't fit into the other pages. It's a collection of random stuff that I \"like\", and I hope you do too :)",
   },
   {
     id: 2,
