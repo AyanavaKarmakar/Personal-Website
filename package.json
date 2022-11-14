@@ -22,9 +22,15 @@
     "prettier:format": "prettier -w ."
   },
   "dependencies": {
+    "@astrojs/react": "^1.2.2",
     "@astrojs/tailwind": "^2.1.2",
     "@astrojs/vercel": "^2.3.3",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
     "astro": "^1.6.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-simple-image-slider": "^2.4.1",
     "tailwindcss": "^3.2.4",
     "zod": "^3.19.1"
   },
