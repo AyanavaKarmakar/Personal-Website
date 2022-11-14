@@ -1,10 +1,5 @@
 import SimpleImageSlider from "react-simple-image-slider";
-
-const images = [
-  { url: "https://picsum.photos/id/1018/1000/600/" },
-  { url: "https://picsum.photos/id/1015/1000/600/" },
-  { url: "https://picsum.photos/id/1019/1000/600/" },
-];
+import { images } from "../../utils/Images/ImageLinks";
 
 export const Slider = () => {
   return (
@@ -21,7 +16,7 @@ export const Slider = () => {
           navMargin={5}
           loop={true}
           autoPlay={true}
-          autoPlayDelay={3.0}
+          autoPlayDelay={5.0}
         />
       </div>
       <div className="hidden lg:inline">
