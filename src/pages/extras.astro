@@ -1,9 +1,11 @@
 ---
-import Cards from "../components/main/Cards.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Cards from "../components/main/Cards.astro";
+import { Slider } from "../components/Others/Slider";
 import { ExtrasTexts } from "../utils/Texts/ExtrasTexts";
 ---
 
 <BaseLayout pageTitle="Extras | Ayanava Karmakar">
   <Cards objectToMap={ExtrasTexts} />
+  <Slider client:load />
 </BaseLayout>
