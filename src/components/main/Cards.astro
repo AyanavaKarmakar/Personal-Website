@@ -52,7 +52,9 @@ const location = Astro.url.pathname;
               </a>
               <a href={para10} target="_blank" rel="noreferrer">
                 <span class="bg-clip-text font-semibold text-transparent bg-gradient-to-r from-sky-100/95 to-emerald-100/95 hover:from-orange-300 hover:to-red-400/90 hover:motion-safe:animate-pulse">{`${
-                  location === "/extras/" && (id === 2 || id === 3) ? "🡥" : ""
+                  location === "/extras/" && (id === 2 || id === 3)
+                    ? "_//\\\\_"
+                    : ""
                 }`}</span>
               </a>
             </h2>
@@ -64,7 +66,9 @@ const location = Astro.url.pathname;
                 }`}</span>
               </a>
               <span class="bg-clip-text font-semibold text-transparent bg-gradient-to-r from-sky-100/95 to-emerald-100/95 hover:from-orange-300 hover:to-red-400/90 hover:motion-safe:animate-pulse">{`${
-                location === "/extras/" && (id === 2 || id === 3) ? "🡥" : ""
+                location === "/extras/" && (id === 2 || id === 3)
+                  ? " _//\\\\_"
+                  : ""
               }`}</span>
             </h2>
             {location !== "/projects/" && (

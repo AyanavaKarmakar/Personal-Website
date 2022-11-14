@@ -29,8 +29,8 @@ export const ExtrasTexts: ExtraText[] = [
     heading: "Music I Like",
     para1:
       "I like a lot of music, but here are some of my favourites compiled in the form of a YouTube Music playlist.",
-    para2: "— Open the playlist in a new tab",
-    para3: "— Copy the playlist link to your clipboard",
+    para2: "— Copy the playlist link",
+    para3: "— Open the playlist in a new tab",
     para10:
       "https://music.youtube.com/playlist?list=PL3mmgsHsl2SUM3a1-y4NORgN4X8Mf20l1",
   },
@@ -39,8 +39,8 @@ export const ExtrasTexts: ExtraText[] = [
     heading: "Music I Made",
     para1:
       "Yeah, you read that right! I've been making music for a while now using Ableton as my goto DAW (Digital Audio Workstation). Some of them are on Spotify, and some of them are on YouTube.",
-    para2: "— Open the Spotify link in a new tab",
-    para3: "— Copy the Spotify link to your clipboard",
+    para2: "— Copy the Spotify link",
+    para3: "— Open the Spotify link in a new tab",
   },
   {
     id: 4,
