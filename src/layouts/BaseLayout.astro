@@ -1,0 +1,60 @@
+---
+import Navbar from "../components/Others/Navbar.astro";
+import "../styles/global.css";
+
+const { pageTitle } = Astro.props;
+const location = Astro.url.pathname;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <main>
+      {
+        location === "/extras/" && (
+          <div class="h-[calc(100vh+1500px)] bg-gradient-to-r from-slate-900/10 via-lime-800/40 to-zinc-900/10">
+            <Navbar />
+            <slot />
+          </div>
+        )
+      }
+      {
+        location === "/projects/" && (
+          <div class="h-[calc(100vh+300px)] bg-gradient-to-r from-slate-900/10 via-fuchsia-900/30 to-zinc-900/10">
+            <Navbar />
+            <slot />
+          </div>
+        )
+      }
+      {
+        location === "/skills/" && (
+          <div class="h-[calc(100vh+600px)] bg-gradient-to-r from-slate-900/10 via-teal-900/40 to-zinc-900/10">
+            <Navbar />
+            <slot />
+          </div>
+        )
+      }
+      {
+        location === "/about/" && (
+          <div class="h-[calc(100vh+100px)] bg-gradient-to-r from-slate-900/10 via-indigo-900/40 to-zinc-900/10">
+            <Navbar />
+            <slot />
+          </div>
+        )
+      }
+      {
+        location === "/" && (
+          <div class="h-screen bg-gradient-to-r from-slate-900/10 via-cyan-900/40 to-zinc-900/10">
+            <slot />
+          </div>
+        )
+      }
+    </main>
+  </body>
+</html>

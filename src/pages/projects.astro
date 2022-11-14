@@ -1,0 +1,9 @@
+---
+import Cards from "../components/main/Cards.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { ProjectsTexts } from "../utils/Texts/ProjectsTexts";
+---
+
+<BaseLayout pageTitle="Projects | Ayanava Karmakar">
+  <Cards objectToMap={ProjectsTexts} />
+</BaseLayout>

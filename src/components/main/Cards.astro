@@ -1,0 +1,87 @@
+---
+import type { AboutText } from "../../utils/Texts/AboutTexts";
+import { Slider } from "../Others/Slider";
+
+const { objectToMap } = Astro.props;
+const location = Astro.url.pathname;
+---
+
+<div class="flex items-center justify-center">
+  <div class="w-[calc(100vw-55px)] lg:w-[calc(100vw-750px)] pt-0 lg:pt-3">
+    {
+      // Using only AboutText as type since all the types are same`
+      objectToMap.map((text: AboutText) => {
+        const {
+          id,
+          heading,
+          para1,
+          para2,
+          para3,
+          para4,
+          para5,
+          para6,
+          para7,
+          para8,
+          para9,
+          para10,
+        } = text;
+        return (
+          <div class="text-left pt-5">
+            <h1 class="lg:text-left text-cyan-50/90 text-center font-semibold tracking-wide text-2xl lg:text-4xl">
+              {heading}
+            </h1>
+            <h2 class="text-xl lg:text-2xl pt-2">
+              {para1}
+              {id === 4 && location === "/about/" && (
+                <span>
+                  <a
+                    href="/extras/"
+                    class="bg-clip-text font-semibold text-transparent bg-gradient-to-r from-cyan-50/90 to-teal-100/90 hover:from-orange-300 hover:to-red-400/90 hover:motion-safe:animate-pulse"
+                  >
+                    Extras
+                  </a>
+                  )
+                </span>
+              )}
+            </h2>
+            {location === "/extras/" && id === 2 && <Slider client:load />}
+            <h2 class="text-xl lg:text-2xl pt-0">
+              {para2}
+              <a href={para4} target="_blank" rel="noreferrer">
+                <span class="bg-clip-text font-semibold text-transparent bg-gradient-to-r from-sky-100/95 to-emerald-100/95 hover:from-orange-300 hover:to-red-400/90 hover:motion-safe:animate-pulse">{`${
+                  location === "/projects/" ? "GitHub" : ""
+                }`}</span>
+              </a>
+            </h2>
+            <h2 class="text-xl lg:text-2xl pt-0">
+              {para3}
+              <a href={para5} target="_blank" rel="noreferrer">
+                <span class="bg-clip-text font-semibold text-transparent bg-gradient-to-r from-sky-100/95 to-emerald-100/95 hover:from-orange-300 hover:to-red-400/90 hover:motion-safe:animate-pulse">{`${
+                  location === "/projects/" && id !== 2 ? "Vercel" : ""
+                }`}</span>
+              </a>
+              <a href={para10} target="_blank" rel="noreferrer">
+                <span class="bg-clip-text font-semibold text-transparent bg-gradient-to-r from-sky-100/95 to-emerald-100/95 hover:from-orange-300 hover:to-red-400/90 hover:motion-safe:animate-pulse">{`${
+                  location === "/extras/" && id === 3 ? " _//\\\\_" : ""
+                }`}</span>
+              </a>
+            </h2>
+            {location !== "/projects/" && (
+              <h2 class="text-xl lg:text-2xl pt-0">{para4}</h2>
+            )}
+            {location === "/extras/" && (
+              <h2 class="text-xl lg:text-2xl pt-0">{para5}</h2>
+            )}
+            <h2 class="text-xl lg:text-2xl pt-0">{para6}</h2>
+            <h2 class="text-xl lg:text-2xl pt-0">{para7}</h2>
+            <h2 class="text-xl lg:text-2xl pt-0">{para8}</h2>
+            <h2 class="text-xl lg:text-2xl pt-0">{para9}</h2>
+            {location !== "/extras/" && (
+              <h2 class="text-xl lg:text-2xl pt-0">{para10}</h2>
+            )}
+          </div>
+        );
+      })
+    }
+  </div>
+</div>
