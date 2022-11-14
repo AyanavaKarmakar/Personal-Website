@@ -30,7 +30,9 @@ export const ExtrasTexts: ExtraText[] = [
     para1:
       "I like a lot of music, but here are some of my favourites compiled in the form of a YouTube Music playlist.",
     para2: "— Open the playlist in a new tab",
-    para3: "— Copy the playlist link to your clipboard.",
+    para3: "— Copy the playlist link to your clipboard",
+    para10:
+      "https://music.youtube.com/playlist?list=PL3mmgsHsl2SUM3a1-y4NORgN4X8Mf20l1",
   },
   {
     id: 3,
@@ -38,7 +40,7 @@ export const ExtrasTexts: ExtraText[] = [
     para1:
       "Yeah, you read that right! I've been making music for a while now using Ableton as my goto DAW (Digital Audio Workstation). Some of them are on Spotify, and some of them are on YouTube.",
     para2: "— Open the Spotify link in a new tab",
-    para3: "— Copy the Spotify link to your clipboard.",
+    para3: "— Copy the Spotify link to your clipboard",
   },
   {
     id: 4,
@@ -50,9 +52,8 @@ export const ExtrasTexts: ExtraText[] = [
     para4: "— Nescafe Classic Black Roast [80/100]",
     para5: "— Nescafe Gold Blend Decaff [75/100]",
     para6: "— Nescafe Classic [60/100]",
-    para7: "— Nescafe Classic All-in-one [50/100]",
-    para8: "— Nescafe Gold Cappuccino [55/100]",
-    para9: "— Nescafe Gold Blend [40/100]",
-    para10: "— Bru Gold Premium [30/100]",
+    para7: "— Nescafe Gold Cappuccino [55/100]",
+    para8: "— Nescafe Gold Blend [40/100]",
+    para9: "— Bru Gold Premium [30/100]",
   },
 ];

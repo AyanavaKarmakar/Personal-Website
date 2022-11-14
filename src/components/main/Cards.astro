@@ -50,6 +50,11 @@ const location = Astro.url.pathname;
                   location === "/projects/" ? "GitHub" : ""
                 }`}</span>
               </a>
+              <a href={para10} target="_blank" rel="noreferrer">
+                <span class="bg-clip-text font-semibold text-transparent bg-gradient-to-r from-sky-100/95 to-emerald-100/95 hover:from-orange-300 hover:to-red-400/90 hover:motion-safe:animate-pulse">{`${
+                  location === "/extras/" && (id === 2 || id === 3) ? "🡥" : ""
+                }`}</span>
+              </a>
             </h2>
             <h2 class="text-xl lg:text-2xl pt-0">
               {para3}
@@ -58,6 +63,9 @@ const location = Astro.url.pathname;
                   location === "/projects/" && id !== 2 ? "Vercel" : ""
                 }`}</span>
               </a>
+              <span class="bg-clip-text font-semibold text-transparent bg-gradient-to-r from-sky-100/95 to-emerald-100/95 hover:from-orange-300 hover:to-red-400/90 hover:motion-safe:animate-pulse">{`${
+                location === "/extras/" && (id === 2 || id === 3) ? "🡥" : ""
+              }`}</span>
             </h2>
             {location !== "/projects/" && (
               <h2 class="text-xl lg:text-2xl pt-0">{para4}</h2>
@@ -69,7 +77,9 @@ const location = Astro.url.pathname;
             <h2 class="text-xl lg:text-2xl pt-0">{para7}</h2>
             <h2 class="text-xl lg:text-2xl pt-0">{para8}</h2>
             <h2 class="text-xl lg:text-2xl pt-0">{para9}</h2>
-            <h2 class="text-xl lg:text-2xl pt-0">{para10}</h2>
+            {location !== "/extras/" && (
+              <h2 class="text-xl lg:text-2xl pt-0">{para10}</h2>
+            )}
           </div>
         );
       })
