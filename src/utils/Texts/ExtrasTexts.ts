@@ -28,7 +28,7 @@ export const ExtrasTexts: ExtraText[] = [
     id: 2,
     heading: "Some Photos I Clicked",
     para1:
-      "I love photography, and I love to click photos. Here are some of my favourite photos.",
+      "I love to click photos. Here are some of my favorite photos mostly from my college days. Those were arguably the best days of my life with the best friends I could ever ask for.",
   },
   {
     id: 3,
