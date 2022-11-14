@@ -29,8 +29,7 @@ export const ExtrasTexts: ExtraText[] = [
     heading: "Music I Like",
     para1:
       "I like a lot of music, but here are some of my favourites compiled in the form of a YouTube Music playlist.",
-    para2: "— Copy the playlist link",
-    para3: "— Open the playlist in a new tab",
+    para3: "— Open the playlist in a new tab:",
     para10:
       "https://music.youtube.com/playlist?list=PL3mmgsHsl2SUM3a1-y4NORgN4X8Mf20l1",
   },
