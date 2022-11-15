@@ -28,13 +28,12 @@ export const ExtrasTexts: ExtraText[] = [
     id: 2,
     heading: "Some Photos I Clicked",
     para1:
-      "I love to click photos. Here are some of my favorite photos taken by me. Those were arguably the best days of my life with the best friends I could ever ask for.",
+      "I love to click photos. Here are some of my photos I have taken mostly during my college days. Those were arguably the best days of my life with the best friends I could ever ask for.",
   },
   {
     id: 3,
-    heading: "Some of my favorite photos",
-    para1:
-      "Here's a collection of some of my favorite photos taken mostly during my college days.",
+    heading:
+      "...and here's my favorite one! (Waiting for HQ version don't ship!)",
   },
   {
     id: 4,
@@ -72,5 +71,28 @@ export const ExtrasTexts: ExtraText[] = [
     para7: "— Nescafe Gold Cappuccino [55/100]",
     para8: "— Nescafe Gold Blend [40/100]",
     para9: "— Bru Gold Premium [30/100]",
+  },
+  {
+    id: 7,
+    heading: "Light Novels I Like",
+    para1: "Here's a list of my favourite light novels I have read so far.",
+    para2:
+      "— The Saga of Tanya the Evil [幼女戦記] by Carlo Zen & Shinotsuki Shinobu",
+    para3: "— Overlord",
+    para4: "— todo later",
+  },
+  {
+    id: 8,
+    heading: "Manga I Like",
+    para1: "Here's a list of my favourite manga I have read so far.",
+    para2: "— Lookback [99/100]",
+  },
+  {
+    id: 9,
+    heading: "Anime I Like",
+    para1: "Here's a list of my favourite anime I have watched so far.",
+    para2: "— Durarara! [99/100]",
+    para3: "— todo later",
+    para4: "— i need sleep",
   },
 ];
