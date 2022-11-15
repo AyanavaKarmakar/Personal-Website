@@ -1,5 +1,6 @@
 ---
 import type { AboutText } from "../../utils/Texts/AboutTexts";
+import { FavSlider } from "../Others/FavSlider";
 import { Slider } from "../Others/Slider";
 
 const { objectToMap } = Astro.props;
@@ -45,6 +46,7 @@ const location = Astro.url.pathname;
               )}
             </h2>
             {location === "/extras/" && id === 2 && <Slider client:load />}
+            {location === "/extras/" && id === 3 && <FavSlider client:load />}
             <h2 class="text-xl lg:text-2xl pt-0">
               {para2}
               <a href={para4} target="_blank" rel="noreferrer">
