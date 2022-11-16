@@ -96,8 +96,14 @@ export const ExtrasTexts: ExtraText[] = [
     id: 9,
     heading: "Anime I Like",
     para1: "Here's a list of my favourite anime I have watched so far.",
-    para2: "— Durarara! [99/100]",
-    para3: "— todo later",
-    para4: "— i need sleep",
+    para2:
+      "— Durarara!! (デュラララ!!) written by Narita Ryohgo (LN), and adapted by Brain's Base",
+    para3: "— Tsuki ga Kirei (月がきれい) by Studio Feel (OG)",
+    para4:
+      "— Spy X Family (スパイファミリー) written by Endou Tatsuya (Manga), and adapted by Wit Studio & CloverWorks",
+    para5:
+      "— Kabaneri of the Iron Fortress (甲鉄城のカバネリ) by Wit Studio (OG)",
+    para6:
+      "— Fire Force (炎炎ノ消防隊) by Atsushi Ohkubo (Manga), and adapted by David Production",
   },
 ];
