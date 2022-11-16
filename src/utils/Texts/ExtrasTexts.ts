@@ -76,9 +76,12 @@ export const ExtrasTexts: ExtraText[] = [
     id: 7,
     heading: "Light Novels I Like",
     para1: "Here's a list of my favourite light novels I have read so far.",
-    para2: "— Youjo Senki (幼女戦記) by Carlo Zen & Shinotsuki Shinobu",
-    para3: "— Overlord",
-    para4: "— todo later",
+    para2:
+      "— Classroom of the Elite (ようこそ実力至上主義の教室へ) by Kinugasa Shougo & Tomose Shunsaku",
+    para3:
+      "— Classroom of the Elite: 2nd Year (ようこそ実力至上主義の教室へ 2年生編) by Kinugasa Shougo & Tomose Shunsaku",
+    para4: "— Youjo Senki (幼女戦記) by Carlo Zen & Shinotsuki Shinobu",
+    para5: "— Overlord (オーバーロード) by Maruyama Kugane & So-bin",
   },
   {
     id: 8,
