@@ -87,7 +87,10 @@ export const ExtrasTexts: ExtraText[] = [
     id: 8,
     heading: "Manga I Like",
     para1: "Here's a list of my favourite manga I have read so far.",
-    para2: "— Lookback [99/100]",
+    para2: "— Look Back (ルックバック) by Fujimoto Tatsuki",
+    para3: "— A Town Where You Live (小镇有你) by Seo Kouji",
+    para4: "— Soul Eater (ソウルイーター) by Atsushi Ohkubo",
+    para5: "— Insomniacs After School (君は放課後インソムニア) by Ojiro Makoto",
   },
   {
     id: 9,
