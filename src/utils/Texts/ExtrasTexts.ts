@@ -76,8 +76,7 @@ export const ExtrasTexts: ExtraText[] = [
     id: 7,
     heading: "Light Novels I Like",
     para1: "Here's a list of my favourite light novels I have read so far.",
-    para2:
-      "— The Saga of Tanya the Evil (幼女戦記) by Carlo Zen & Shinotsuki Shinobu",
+    para2: "— Youjo Senki (幼女戦記) by Carlo Zen & Shinotsuki Shinobu",
     para3: "— Overlord",
     para4: "— todo later",
   },
