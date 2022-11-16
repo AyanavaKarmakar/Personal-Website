@@ -48,7 +48,7 @@ export const ExtrasTexts: ExtraText[] = [
     id: 5,
     heading: "PC or Console?",
     para1:
-      "I'm a PC person, but I do like consoles too. Here's a list of my favourite games I have played so far.",
+      "I'm a PC person, but I do like consoles too. Here's a list of my favourite games I have played so far:",
     para2: "— The Elder Scrolls III: Morrowind [99/100]",
     para3: "— The Elder Scrolls IV: Oblivion [95/100]",
     para4: "— Need for Speed: Underground 2 [92/100]",
@@ -75,7 +75,7 @@ export const ExtrasTexts: ExtraText[] = [
   {
     id: 7,
     heading: "Light Novels I Like",
-    para1: "Here's a list of my favourite light novels I have read so far.",
+    para1: "Here's a list of my favourite light novels I have read so far:",
     para2:
       "— Classroom of the Elite (ようこそ実力至上主義の教室へ) by Kinugasa Shougo & Tomose Shunsaku",
     para3:
@@ -86,7 +86,7 @@ export const ExtrasTexts: ExtraText[] = [
   {
     id: 8,
     heading: "Manga I Like",
-    para1: "Here's a list of my favourite manga I have read so far.",
+    para1: "Here's a list of my favourite manga I have read so far:",
     para2: "— Look Back (ルックバック) by Fujimoto Tatsuki",
     para3: "— A Town Where You Live (小镇有你) by Seo Kouji",
     para4: "— Soul Eater (ソウルイーター) by Atsushi Ohkubo",
@@ -95,15 +95,17 @@ export const ExtrasTexts: ExtraText[] = [
   {
     id: 9,
     heading: "Anime I Like",
-    para1: "Here's a list of my favourite anime I have watched so far.",
+    para1: "Here's a list of my favourite anime I have watched so far:",
     para2:
       "— Durarara!! (デュラララ!!) written by Narita Ryohgo (LN), and adapted by Brain's Base",
     para3: "— Tsuki ga Kirei (月がきれい) by Studio Feel (OG)",
     para4:
-      "— Spy X Family (スパイファミリー) written by Endou Tatsuya (Manga), and adapted by Wit Studio & CloverWorks",
+      "— ReLIFE (リライフ) written by Yayoi Sou (Manga), and adapted by TMS Entertainment",
     para5:
-      "— Kabaneri of the Iron Fortress (甲鉄城のカバネリ) by Wit Studio (OG)",
+      "— Spy X Family (スパイファミリー) written by Endou Tatsuya (Manga), and adapted by Wit Studio & CloverWorks",
     para6:
+      "— Kabaneri of the Iron Fortress (甲鉄城のカバネリ) by Wit Studio (OG)",
+    para7:
       "— Fire Force (炎炎ノ消防隊) by Atsushi Ohkubo (Manga), and adapted by David Production",
   },
 ];
