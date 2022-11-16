@@ -1,7 +1,14 @@
 import SimpleImageSlider from "react-simple-image-slider";
-import { images } from "../../utils/Images/ImageLinks";
+import type { Image } from "../../utils/Images/ImageLinks";
+import type { FavImage } from "../../utils/Images/FavImageLinks";
 
-export const Slider = () => {
+interface Props {
+  images: Image[] | FavImage[];
+}
+
+export const Slider = (props: Props) => {
+  const { images } = props;
+
   return (
     <div className="flex items-center justify-center ml-3 mr-3 mt-5 mb-3">
       <div className="visible lg:hidden">
