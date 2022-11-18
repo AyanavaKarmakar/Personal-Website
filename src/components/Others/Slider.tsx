@@ -1,9 +1,8 @@
 import SimpleImageSlider from "react-simple-image-slider";
 import type { Image } from "../../utils/Images/ImageLinks";
-import type { FavImage } from "../../utils/Images/FavImageLinks";
 
 interface Props {
-  images: Image[] | FavImage[];
+  images: Image[];
 }
 
 export const Slider = (props: Props) => {
@@ -18,7 +17,7 @@ export const Slider = (props: Props) => {
           images={images}
           showBullets={true}
           showNavs={true}
-          navStyle={3}
+          navStyle={2}
           navSize={50}
           navMargin={5}
           loop={true}
@@ -33,7 +32,7 @@ export const Slider = (props: Props) => {
           images={images}
           showBullets={true}
           showNavs={true}
-          navStyle={3}
+          navStyle={2}
           navSize={50}
           navMargin={5}
           loop={true}
