@@ -2,7 +2,6 @@
 import type { AboutText } from "../../utils/Texts/AboutTexts";
 import { Slider } from "../Others/Slider";
 import { images } from "../../utils/Images/ImageLinks";
-import { favImages } from "../../utils/Images/FavImageLinks";
 
 const { objectToMap } = Astro.props;
 const location = Astro.url.pathname;
@@ -48,9 +47,6 @@ const location = Astro.url.pathname;
             </h2>
             {location === "/extras/" && id === 2 && (
               <Slider client:load images={images} />
-            )}
-            {location === "/extras/" && id === 3 && (
-              <Slider client:load images={favImages} />
             )}
             <h2 class="text-xl lg:text-2xl pt-0">
               {para2}
