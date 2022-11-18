@@ -1,4 +1,12 @@
-export const images = [
+import { z } from "zod";
+
+const imageValidator = z.object({
+  url: z.string().url().startsWith("https://"),
+});
+
+export type Image = z.infer<typeof imageValidator>;
+
+export const images: Image[] = [
   {
     url: "https://user-images.githubusercontent.com/89210438/201740537-a3371217-2fb0-48f8-bfb6-4887e7d69ae6.png",
   },

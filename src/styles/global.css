@@ -11,11 +11,6 @@
     font-family: Familjen Grotesk, sans-serif;
     -webkit-font-smoothing: auto;
     -moz-osx-font-smoothing: auto;
-    -ms-overflow-style: none;
-  }
-
-  /*** Remove scrollbar ***/
-  ::-webkit-scrollbar {
-    display: none;
+    scroll-behavior: smooth;
   }
 }

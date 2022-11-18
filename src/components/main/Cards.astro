@@ -1,6 +1,7 @@
 ---
 import type { AboutText } from "../../utils/Texts/AboutTexts";
 import { Slider } from "../Others/Slider";
+import { images } from "../../utils/Images/ImageLinks";
 
 const { objectToMap } = Astro.props;
 const location = Astro.url.pathname;
@@ -44,7 +45,9 @@ const location = Astro.url.pathname;
                 </span>
               )}
             </h2>
-            {location === "/extras/" && id === 2 && <Slider client:load />}
+            {location === "/extras/" && id === 2 && (
+              <Slider client:load images={images} />
+            )}
             <h2 class="text-xl lg:text-2xl pt-0">
               {para2}
               <a href={para4} target="_blank" rel="noreferrer">
@@ -62,7 +65,7 @@ const location = Astro.url.pathname;
               </a>
               <a href={para10} target="_blank" rel="noreferrer">
                 <span class="bg-clip-text font-semibold text-transparent bg-gradient-to-r from-sky-100/95 to-emerald-100/95 hover:from-orange-300 hover:to-red-400/90 hover:motion-safe:animate-pulse">{`${
-                  location === "/extras/" && id === 3 ? " _//\\\\_" : ""
+                  location === "/extras/" && id === 4 ? " _//\\\\_" : ""
                 }`}</span>
               </a>
             </h2>
