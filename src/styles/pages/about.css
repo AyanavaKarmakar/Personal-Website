@@ -11,6 +11,7 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #312e81;
+    border-radius: 12px;
 }
 
 /* Handle on hover */
