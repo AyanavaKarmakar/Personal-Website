@@ -22,7 +22,7 @@ export const AboutTexts: AboutText[] = [
     id: 1,
     heading: "About Me",
     para1:
-      "Hey, I'm Ayanava Karmakar, an Electrical Engineer turned Frontend Developer. I have a passion for developing simple, and responsive web apps. I have also recently started contributing to Open Source projects on GitHub.",
+      "Hey, I'm Ayanava Karmakar, an Electrical Engineer turned Frontend Developer. I have a passion for developing simple and responsive web apps. I have also recently started contributing to Open Source projects on GitHub.",
   },
   {
     id: 2,

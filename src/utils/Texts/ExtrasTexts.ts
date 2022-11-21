@@ -22,19 +22,19 @@ export const ExtrasTexts: ExtraText[] = [
     id: 1,
     heading: "So, what is this page about?",
     para1:
-      "This page contains anything, and everything that couldn't fit into the other pages. It's a collection of random stuff that I \"like\", and I hope you do too :)",
+      "This page contains anything and everything that couldn't fit into the other pages. It's a collection of random stuff that I like, and I hope you do too :)",
   },
   {
     id: 2,
-    heading: "Some Photos I Clicked",
+    heading: "Some Pics I Clicked",
     para1:
-      "I love to click photos. Here are some of my photos I have taken mostly during my college days:",
+      "I love to click photos. Here are some of the pictures I have taken mostly during my college days:",
   },
   {
     id: 4,
     heading: "Music I Like",
     para1:
-      "Here's some of my favourites compiled in the form of a YouTube Music playlist.",
+      "Here are some of my favorites compiled as a YouTube Music playlist.",
     para3: "— Open the playlist in a new tab:",
     para10:
       "https://music.youtube.com/playlist?list=PL3mmgsHsl2SUM3a1-y4NORgN4X8Mf20l1",
@@ -43,7 +43,7 @@ export const ExtrasTexts: ExtraText[] = [
     id: 5,
     heading: "PC or Console?",
     para1:
-      "I'm a PC person, but I do like consoles too. Here's a list of my favourite games I have played so far:",
+      "I'm a PC person, but I do like consoles too. Here's a list of my favorite games I have played so far:",
     para2: "— The Elder Scrolls III: Morrowind [99/100]",
     para3: "— The Elder Scrolls IV: Oblivion [95/100]",
     para4: "— Need for Speed: Underground 2 [92/100]",
@@ -57,7 +57,7 @@ export const ExtrasTexts: ExtraText[] = [
     id: 6,
     heading: "Tea or Coffee?",
     para1:
-      "I'm a tea person, but I do like coffee too. I like my coffee black, and I like it strong. I don't like it with milk, or sugar, or anything else. I like it the way it is. Here's a list of my favourite coffees I have tried so far, and some I would probably stay away from.",
+      "I'm a tea person, but I do like coffee too. I like my coffee black, and I like it strong. I don't like it with milk, sugar, or anything else. I like it the way it is. Here's a list of my favorite coffees I have tried so far, and some I would probably stay away from.",
     para2: "— Davidoff Cafe Espresso 57 [95/100]",
     para3: "— Bevzilla Turkish Hazelnut [90/100]",
     para4: "— Nescafe Classic Black Roast [80/100]",
@@ -70,7 +70,7 @@ export const ExtrasTexts: ExtraText[] = [
   {
     id: 7,
     heading: "Light Novels I Like",
-    para1: "Here's a list of my favourite light novels I have read so far:",
+    para1: "Here's a list of my favorite light novels I have read so far:",
     para2:
       "— Classroom of the Elite (ようこそ実力至上主義の教室へ) by Kinugasa Shougo & Tomose Shunsaku",
     para3:
@@ -81,7 +81,7 @@ export const ExtrasTexts: ExtraText[] = [
   {
     id: 8,
     heading: "Manga I Like",
-    para1: "Here's a list of my favourite manga I have read so far:",
+    para1: "Here's a list of my favorite manga I have read so far:",
     para2: "— Look Back (ルックバック) by Fujimoto Tatsuki",
     para3: "— A Town Where You Live (小镇有你) by Seo Kouji",
     para4: "— Soul Eater (ソウルイーター) by Atsushi Ohkubo",
@@ -90,7 +90,7 @@ export const ExtrasTexts: ExtraText[] = [
   {
     id: 9,
     heading: "Anime I Like",
-    para1: "Here's a list of my favourite anime I have watched so far:",
+    para1: "Here's a list of my favorite anime I have watched so far:",
     para2:
       "— Durarara!! (デュラララ!!) written by Narita Ryohgo (LN), and adapted by Brain's Base",
     para3: "— Tsuki ga Kirei (月がきれい) by Studio Feel (OG)",
