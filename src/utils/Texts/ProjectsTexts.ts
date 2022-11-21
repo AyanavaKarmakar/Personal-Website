@@ -22,7 +22,7 @@ export const ProjectsTexts: ProjectText[] = [
     id: 1,
     heading: "Guestbook",
     para1:
-      "Guestbook is a simple web application that allows users to sign in, and leave a message. It is built using the T3 Stack (Next.js, tRPC, Tailwind CSS, TypeScript, Prisma, and NextAuth.js).",
+      "Guestbook is a simple web application that allows users to sign in and leave a message. It is built using the T3 Stack (Next.js, tRPC, Tailwind CSS, TypeScript, Prisma, and NextAuth.js).",
     para2: "— Open Source @ ",
     para3: "— Live @ ",
     para4: "https://github.com/AyanavaKarmakar/Guestbook",
@@ -32,7 +32,7 @@ export const ProjectsTexts: ProjectText[] = [
     id: 2,
     heading: "CatchApp",
     para1:
-      "CatchApp is a real-time chat application that allows users to create rooms, and chat with other users. It is built using React Native, Expo, and Firebase.",
+      "CatchApp is a real-time chat application that allows users to create rooms and chat with other users. It is built using React Native, Expo, and Firebase.",
     para2: "— Open Source @ ",
     para4: "https://github.com/AyanavaKarmakar/CatchApp-v2",
   },
@@ -40,7 +40,7 @@ export const ProjectsTexts: ProjectText[] = [
     id: 3,
     heading: "ARID",
     para1:
-      'ARID is a cross-platform application for checking "Dry Days" in India. It is built using React Native, Expo, and React Native Paper, and is available for both Android, and as a Web App.',
+      'ARID is a cross-platform application for checking "Dry Days" in India. It is built using React Native, Expo, and React Native Paper and is available for Android and as a Web App.',
     para2: "— Open Source @ ",
     para3: "— Live @ ",
     para4: "https://github.com/AyanavaKarmakar/ARID",
@@ -50,7 +50,7 @@ export const ProjectsTexts: ProjectText[] = [
     id: 4,
     heading: "Portfolio",
     para1:
-      "This is the portfolio website you are currently viewing. It is built using Astro with React, and Tailwind CSS integrations.",
+      "This is the portfolio website you are currently viewing. It is built using Astro with React and Tailwind CSS integrations.",
     para2: "— Open Source @ ",
     para3: "— Live @ ",
     para4: "https://github.com/AyanavaKarmakar/Personal-Website",
