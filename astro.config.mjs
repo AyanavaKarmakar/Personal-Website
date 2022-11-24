@@ -10,9 +10,12 @@ import vercel from "@astrojs/vercel/serverless";
 import react from "@astrojs/react";
 
 // https://astro.build/config
+import sitemap from "@astrojs/sitemap";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://ayanavakarmakar.software",
-  integrations: [tailwind(), react()],
+  integrations: [tailwind(), react(), sitemap()],
   output: "server",
-  adapter: vercel(),
+  adapter: vercel()
 });
