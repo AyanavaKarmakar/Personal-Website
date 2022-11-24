@@ -4,6 +4,6 @@
 
 # 100 / 100 Lighthouse Scores :D
 
-![Lighthouse-Score](https://user-images.githubusercontent.com/89210438/203782238-5bba5077-8f90-4f11-9901-367a6ef01042.png)
+![image](https://user-images.githubusercontent.com/89210438/203785537-4eb22915-034e-4803-bdbb-2207f23f03be.png)
 
 </div>
