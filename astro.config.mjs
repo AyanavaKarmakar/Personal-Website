@@ -17,5 +17,5 @@ export default defineConfig({
   site: "https://ayanavakarmakar.software",
   integrations: [tailwind(), react(), sitemap()],
   output: "server",
-  adapter: vercel()
+  adapter: vercel(),
 });
