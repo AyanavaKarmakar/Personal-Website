@@ -6,7 +6,7 @@ const location = Astro.url.pathname;
 ---
 
 <!-- Mobile menu button -->
-<div class="md:hidden flex items-center ml-5">
+<div class="lg:hidden flex items-center ml-5">
   <button class="outline-none mobile-menu-button pt-5">
     <svg
       class="w-10 h-10 text-gray-200 hover:text-slate-50"
@@ -40,9 +40,13 @@ const location = Astro.url.pathname;
 
         return (
           <li
-            class={`${location === url ? "bg-indigo-500/75" : ""} rounded-lg`}
+            class={`${
+              location === url
+                ? "bg-gradient-to-r from-indigo-900/80 to-purple-900/50"
+                : ""
+            } rounded-lg`}
           >
-            <a href={url} class="block px-2 py-4 text-slate-50">
+            <a href={url} class="block p-4 text-slate-50">
               {name}
             </a>
           </li>
