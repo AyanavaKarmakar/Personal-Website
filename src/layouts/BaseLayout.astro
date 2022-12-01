@@ -6,7 +6,7 @@ const { pageTitle } = Astro.props;
 const location = Astro.url.pathname;
 ---
 
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -14,6 +14,30 @@ const location = Astro.url.pathname;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
+
+    <script is:inline>
+      // Ref: https://github.com/t3-oss/create-t3-app/blob/next/www/src/layouts/docs.astro
+      const html = document.documentElement;
+      const theme = (() => {
+        if (
+          typeof localStorage !== undefined &&
+          localStorage.getItem("theme")
+        ) {
+          return localStorage.getItem("theme");
+        }
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          return "dark";
+        }
+        return "light";
+      })();
+      if (theme === "light") {
+        html.classList.remove("dark");
+        html.classList.add("light");
+      } else {
+        html.classList.remove("light");
+        html.classList.add("dark");
+      }
+    </script>
   </head>
   <body>
     <main>
