@@ -1,6 +1,8 @@
 ---
 import { NavLinks } from "../../utils/Others/NavLinks";
 import ThemeToggleButton from "./ThemeToggleButton.astro";
+
+const location = Astro.url.pathname;
 ---
 
 <!-- Mobile menu button -->
@@ -19,6 +21,11 @@ import ThemeToggleButton from "./ThemeToggleButton.astro";
       <path d="M4 6h16M4 12h16M4 18h16"></path>
     </svg>
   </button>
+  <div
+    class="pt-4 uppercase tracking-wide pr-12 m-auto font-bold text-4xl text-slate-50"
+  >
+    {location.slice(1, -1)}
+  </div>
   <div class="inline lg:hidden absolute right-5 top-0 pt-5">
     <ThemeToggleButton />
   </div>
@@ -27,36 +34,24 @@ import ThemeToggleButton from "./ThemeToggleButton.astro";
 <!-- mobile menu -->
 <div class="hidden mobile-menu">
   <ul class="pl-5 pr-5 pt-3 rounded-lg">
-    <li class="active">
-      <a
-        href="index.html"
-        class="block px-2 py-4 text-slate-50 bg-indigo-700/75 font-semibold rounded-lg"
-        >Home</a
-      >
-    </li>
-    <li>
-      <a
-        href="#services"
-        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
-        >Services</a
-      >
-    </li>
-    <li>
-      <a
-        href="#about"
-        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
-        >About</a
-      >
-    </li>
-    <li>
-      <a
-        href="#contact"
-        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
-        >Contact Us</a
-      >
-    </li>
+    {
+      NavLinks.map((link) => {
+        const { name, url } = link;
+
+        return (
+          <li
+            class={`${location === url ? "bg-indigo-500/75" : ""} rounded-lg`}
+          >
+            <a href={url} class="block px-2 py-4 text-slate-50">
+              {name}
+            </a>
+          </li>
+        );
+      })
+    }
   </ul>
 </div>
+
 <script>
   const btn = document.querySelector("button.mobile-menu-button");
   const menu = document.querySelector(".mobile-menu");
