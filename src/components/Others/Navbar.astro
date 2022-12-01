@@ -19,11 +19,14 @@ import ThemeToggleButton from "./ThemeToggleButton.astro";
       <path d="M4 6h16M4 12h16M4 18h16"></path>
     </svg>
   </button>
+  <div class="inline lg:hidden absolute right-5 top-0 pt-5">
+    <ThemeToggleButton />
+  </div>
 </div>
 
 <!-- mobile menu -->
 <div class="hidden mobile-menu">
-  <ul class="">
+  <ul class="p-5 rounded-lg">
     <li class="active">
       <a
         href="index.html"
