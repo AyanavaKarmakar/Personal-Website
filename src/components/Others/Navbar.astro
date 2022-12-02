@@ -40,11 +40,29 @@ const location = Astro.url.pathname;
 
         return (
           <li
-            class={`${
-              location === url
-                ? "bg-gradient-to-r from-indigo-900/80 to-purple-900/50"
-                : ""
-            } rounded-lg`}
+            class={`${((): string | void => {
+              switch (location.slice(1, -1)) {
+                case "about": {
+                  if (location === url) {
+                    return "bg-gradient-to-r from-indigo-900/80 to-purple-900/50";
+                  } else {
+                    break;
+                  }
+                }
+
+                case "skills": {
+                  if (location === url) {
+                    return "bg-gradient-to-r from-teal-900/40 to-emerald-800/50";
+                  } else {
+                    break;
+                  }
+                }
+
+                default: {
+                  return "";
+                }
+              }
+            })()} rounded-lg`}
           >
             <a href={url} class="block p-4 text-slate-50">
               {name}
@@ -57,6 +75,9 @@ const location = Astro.url.pathname;
 </div>
 
 <script>
+  // location === url
+  // ? "bg-gradient-to-r from-indigo-900/80 to-purple-900/50"
+  // : ""
   const btn = document.querySelector("button.mobile-menu-button");
   const menu = document.querySelector(".mobile-menu");
 
