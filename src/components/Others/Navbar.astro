@@ -52,7 +52,23 @@ const location = Astro.url.pathname;
 
                 case "skills": {
                   if (location === url) {
-                    return "bg-gradient-to-r from-teal-900/40 to-emerald-800/50";
+                    return "bg-gradient-to-r from-teal-900/40 to-green-800/50";
+                  } else {
+                    break;
+                  }
+                }
+
+                case "projects": {
+                  if (location === url) {
+                    return "bg-gradient-to-r from-fuchsia-900/40 to-rose-800/40";
+                  } else {
+                    break;
+                  }
+                }
+
+                case "extras": {
+                  if (location === url) {
+                    return "bg-gradient-to-r from-lime-900/75 to-yellow-900/40";
                   } else {
                     break;
                   }
