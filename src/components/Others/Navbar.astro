@@ -45,7 +45,7 @@ const location = Astro.url.pathname;
               switch (location.slice(1, -1)) {
                 case "about": {
                   if (location === url) {
-                    return "bg-gradient-to-r from-indigo-900/80 to-purple-900/50";
+                    return "bg-gradient-to-r from-indigo-600/80 to-purple-600/50 dark:from-indigo-900/80 dark:to-purple-900/50";
                   } else {
                     break;
                   }
@@ -53,7 +53,7 @@ const location = Astro.url.pathname;
 
                 case "skills": {
                   if (location === url) {
-                    return "bg-gradient-to-r from-teal-900/40 to-green-800/50";
+                    return "bg-gradient-to-r from-teal-600/40 to-green-600/50 dark:from-teal-900/40 dark:to-green-800/50";
                   } else {
                     break;
                   }
@@ -61,7 +61,7 @@ const location = Astro.url.pathname;
 
                 case "projects": {
                   if (location === url) {
-                    return "bg-gradient-to-r from-fuchsia-900/40 to-rose-800/40";
+                    return "bg-gradient-to-r from-fuchsia-500/40 to-rose-600/40 dark:from-fuchsia-900/40 dark:to-rose-800/40";
                   } else {
                     break;
                   }
@@ -69,7 +69,7 @@ const location = Astro.url.pathname;
 
                 case "extras": {
                   if (location === url) {
-                    return "bg-gradient-to-r from-lime-900/75 to-yellow-900/40";
+                    return "bg-gradient-to-r from-lime-600/50 to-yellow-700/75 dark:from-lime-900/75 dark:to-yellow-900/40";
                   } else {
                     break;
                   }
