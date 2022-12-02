@@ -111,13 +111,13 @@ const location = Astro.url.pathname;
         return (
           <a
             href={url}
-            class="bg-clip-text text-transparent bg-gradient-to-r hover:motion-safe:animate-pulse hover:from-sky-300/80 hover:to-emerald-300/95 from-cyan-50/90 to-teal-100/90"
+            class="bg-clip-text text-transparent bg-gradient-to-r hover:motion-safe:animate-pulse hover:from-sky-300 hover:to-emerald-300 from-cyan-50 to-teal-100"
           >
             <span
               class={`${
                 Astro.url.pathname === url
-                  ? "bg-clip-text text-transparent bg-gradient-to-r from-orange-300 to-red-400/90"
-                  : null
+                  ? "bg-clip-text text-transparent bg-gradient-to-r from-orange-300 to-red-400"
+                  : ""
               }`}
             >
               {name}
