@@ -14,7 +14,7 @@
   },
   "private": true,
   "scripts": {
-    "dev": "astro dev --host",
+    "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",

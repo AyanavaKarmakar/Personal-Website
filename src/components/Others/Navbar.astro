@@ -1,9 +1,109 @@
 ---
 import { NavLinks } from "../../utils/Others/NavLinks";
+import ThemeToggleButton from "./ThemeToggleButton.astro";
+
+const location = Astro.url.pathname;
 ---
 
-<div class="text-xl pt-5 lg:text-4xl font-semibold">
-  <nav class="flex flex-row gap-5 lg:gap-7 justify-center text-center">
+<!-- Mobile menu button -->
+<div class="lg:hidden flex items-center ml-5">
+  <button class="outline-none mobile-menu-button mt-5">
+    <svg
+      class="w-10 h-8 text-gray-200 hover:text-slate-50"
+      x-show="!showMenu"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
+  <div
+    class="pt-5 uppercase tracking-wide pr-14 m-auto font-bold text-3xl text-slate-50"
+  >
+    {location.slice(1, -1)}
+  </div>
+</div>
+
+<div class="absolute right-5 top-0 pt-5">
+  <ThemeToggleButton />
+</div>
+
+<!-- mobile menu -->
+<div class="hidden mobile-menu">
+  <ul class="pl-5 pr-5 pt-3 rounded-lg">
+    {
+      NavLinks.map((link) => {
+        const { name, url } = link;
+
+        return (
+          <li
+            class={`${((): string | void => {
+              switch (location.slice(1, -1)) {
+                case "about": {
+                  if (location === url) {
+                    return "bg-gradient-to-r from-indigo-600/80 to-purple-600/50 dark:from-indigo-900/80 dark:to-purple-900/50";
+                  } else {
+                    break;
+                  }
+                }
+
+                case "skills": {
+                  if (location === url) {
+                    return "bg-gradient-to-r from-teal-600/40 to-green-600/50 dark:from-teal-900/40 dark:to-green-800/50";
+                  } else {
+                    break;
+                  }
+                }
+
+                case "projects": {
+                  if (location === url) {
+                    return "bg-gradient-to-r from-fuchsia-500/40 to-rose-600/40 dark:from-fuchsia-900/40 dark:to-rose-800/40";
+                  } else {
+                    break;
+                  }
+                }
+
+                case "extras": {
+                  if (location === url) {
+                    return "bg-gradient-to-r from-lime-600/50 to-yellow-700/75 dark:from-lime-900/75 dark:to-yellow-900/40";
+                  } else {
+                    break;
+                  }
+                }
+
+                default: {
+                  return "";
+                }
+              }
+            })()} rounded-lg hover:animate-pulse`}
+          >
+            <a href={url} class="block p-4 text-slate-50 text-lg">
+              {name}
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</div>
+
+<script>
+  const btn = document.querySelector("button.mobile-menu-button");
+  const menu = document.querySelector(".mobile-menu");
+
+  if (btn !== null && menu !== null) {
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  }
+</script>
+
+<div class="hidden lg:block pt-5 text-4xl font-semibold">
+  <nav class="flex flex-row gap-7 justify-center text-center">
     {
       NavLinks.map((link) => {
         const { name, url } = link;
@@ -11,13 +111,13 @@ import { NavLinks } from "../../utils/Others/NavLinks";
         return (
           <a
             href={url}
-            class="bg-clip-text text-transparent bg-gradient-to-r hover:motion-safe:animate-pulse hover:from-sky-300/80 hover:to-emerald-300/95 from-cyan-50/90 to-teal-100/90"
+            class="bg-clip-text text-transparent bg-gradient-to-r hover:motion-safe:animate-pulse hover:from-sky-300 hover:to-emerald-300 from-cyan-50 to-teal-100"
           >
             <span
               class={`${
                 Astro.url.pathname === url
-                  ? "bg-clip-text text-transparent bg-gradient-to-r from-orange-300 to-red-400/90"
-                  : null
+                  ? "bg-clip-text text-transparent bg-gradient-to-r from-orange-300 to-red-400"
+                  : ""
               }`}
             >
               {name}

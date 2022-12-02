@@ -6,7 +6,7 @@ const { pageTitle } = Astro.props;
 const location = Astro.url.pathname;
 ---
 
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -14,47 +14,81 @@ const location = Astro.url.pathname;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
+
+    <script is:inline>
+      // Ref: https://github.com/t3-oss/create-t3-app/blob/next/www/src/layouts/docs.astro
+      const html = document.documentElement;
+      const theme = (() => {
+        if (
+          typeof localStorage !== undefined &&
+          localStorage.getItem("theme")
+        ) {
+          return localStorage.getItem("theme");
+        }
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          return "dark";
+        }
+        return "light";
+      })();
+      if (theme === "light") {
+        html.classList.remove("dark");
+        html.classList.add("light");
+      } else {
+        html.classList.remove("light");
+        html.classList.add("dark");
+      }
+    </script>
   </head>
   <body>
     <main>
       {
-        location === "/extras/" && (
-          <div class="h-[calc(100vh+5000px)] bg-gradient-to-r from-slate-900/10 via-lime-800/40 to-zinc-900/10">
-            <Navbar />
-            <slot />
-          </div>
-        )
-      }
-      {
-        location === "/projects/" && (
-          <div class="h-[calc(100vh+300px)] bg-gradient-to-r from-slate-900/10 via-fuchsia-900/30 to-zinc-900/10">
-            <Navbar />
-            <slot />
-          </div>
-        )
-      }
-      {
-        location === "/skills/" && (
-          <div class="h-[calc(100vh+600px)] bg-gradient-to-r from-slate-900/10 via-teal-900/40 to-zinc-900/10">
-            <Navbar />
-            <slot />
-          </div>
-        )
-      }
-      {
-        location === "/about/" && (
-          <div class="h-[calc(100vh+100px)] bg-gradient-to-r from-slate-900/10 via-indigo-900/40 to-zinc-900/10">
-            <Navbar />
-            <slot />
-          </div>
-        )
-      }
-      {
-        location === "/" && (
-          <div class="h-screen bg-gradient-to-r from-slate-900/10 via-cyan-900/40 to-zinc-900/10">
-            <slot />
-          </div>
-        )
+        (() => {
+          switch (location.slice(1, -1)) {
+            case "extras": {
+              return (
+                <div class="h-[calc(100vh+5000px)] bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-lime-900 to-gray-900 dark:bg-gradient-to-r dark:from-slate-900/10 dark:via-lime-800/40 dark:to-zinc-900/10">
+                  <Navbar />
+                  <slot />
+                </div>
+              );
+            }
+
+            case "projects": {
+              return (
+                <div class="h-[calc(100vh+300px)] bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-fuchsia-900 to-gray-900 dark:bg-gradient-to-r dark:from-slate-900/10 dark:via-fuchsia-900/30 dark:to-zinc-900/10">
+                  <Navbar />
+                  <slot />
+                </div>
+              );
+            }
+
+            case "skills": {
+              return (
+                <div class="h-[calc(100vh+600px)] bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-teal-900 to-gray-900 dark:bg-gradient-to-r dark:from-slate-900/10 dark:via-teal-900/40 dark:to-zinc-900/10">
+                  <Navbar />
+                  <slot />
+                </div>
+              );
+            }
+
+            case "about": {
+              return (
+                <div class="h-[calc(100vh+1000px)] bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-indigo-900 to-gray-900 dark:bg-gradient-to-r dark:from-slate-900/10 dark:via-indigo-900/40 dark:to-zinc-900/10">
+                  <Navbar />
+                  <slot />
+                </div>
+              );
+            }
+
+            default: {
+              return (
+                <div class="h-screen bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-50 to-gray-900 dark:bg-gradient-to-r dark:from-slate-900/10 dark:via-cyan-900/40 dark:to-zinc-900/10">
+                  <slot />
+                </div>
+              );
+            }
+          }
+        })()
       }
     </main>
   </body>
