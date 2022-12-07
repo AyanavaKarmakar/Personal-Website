@@ -23,12 +23,14 @@ export const SkillsTexts: SkillText[] = [
     heading: "Languages",
     para1: "1. JavaScript",
     para2: "2. TypeScript",
+    para3: "3. Rust",
   },
   {
     id: 2,
     heading: "Frameworks",
     para1: "1. Next.js",
     para2: "2. Astro",
+    para3: "3. Tauri",
   },
   {
     id: 3,
