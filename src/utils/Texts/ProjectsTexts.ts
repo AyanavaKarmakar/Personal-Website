@@ -20,6 +20,15 @@ export type ProjectText = z.infer<typeof ProjectTextValidator>;
 export const ProjectsTexts: ProjectText[] = [
   {
     id: 1,
+    heading: "tauri-t3-app",
+    para1: "Clean and simple starter repo using the T3 Stack in Tauri",
+    para2: "— Open Source @ ",
+    para3: "— Docs @ ",
+    para4: "https://github.com/AyanavaKarmakar/tauri-t3-app",
+    para5: "https://ayanavakarmakar.github.io/tauri-t3-app",
+  },
+  {
+    id: 2,
     heading: "Guestbook",
     para1:
       "Guestbook is a simple web application that allows users to sign in and leave a message. It is built using the T3 Stack (Next.js, tRPC, Tailwind CSS, TypeScript, Prisma, and NextAuth.js).",
@@ -29,15 +38,7 @@ export const ProjectsTexts: ProjectText[] = [
     para5: "https://guestbook.ayanavakarmakar.software/",
   },
   {
-    id: 2,
-    heading: "CatchApp",
-    para1:
-      "CatchApp is a real-time chat application that allows users to create rooms and chat with other users. It is built using React Native, Expo, and Firebase.",
-    para2: "— Open Source @ ",
-    para4: "https://github.com/AyanavaKarmakar/CatchApp-v2",
-  },
-  {
-    id: 3,
+    id: 4,
     heading: "ARID",
     para1:
       'ARID is a cross-platform application for checking "Dry Days" in India. It is built using React Native, Expo, and React Native Paper and is available for Android and as a Web App.',
@@ -47,7 +48,7 @@ export const ProjectsTexts: ProjectText[] = [
     para5: "https://arid.ayanavakarmakar.software/",
   },
   {
-    id: 4,
+    id: 5,
     heading: "Portfolio",
     para1:
       "This is the portfolio website you are currently viewing. It is built using Astro with React and Tailwind CSS integrations.",
