@@ -36,13 +36,13 @@ export const SkillsTexts: SkillText[] = [
     id: 3,
     heading: "Libraries",
     para1: "1. React.js, React Native, and Expo",
-    para2: "2. Redux Toolkit, React Query, Zustand, Zod, and NextAuth.js",
-    para3: "3. Framer Motion, React ECharts, and Storybook",
+    para2: "2. Redux Toolkit, React Query, Zustand, and Zod",
+    para3: "3. Framer Motion, Apache ECharts, and Storybook",
   },
   {
     id: 4,
-    heading: "UI Frameworks",
-    para1: "Tailwind CSS, daisyUI, Material UI, and Bootstrap",
+    heading: "UI",
+    para1: "Tailwind CSS, daisy UI, Material UI, and Bootstrap",
   },
   {
     id: 5,
