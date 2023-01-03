@@ -27,7 +27,7 @@ export const AboutTexts: AboutText[] = [
   {
     id: 2,
     heading: "Work Experience",
-    para1: "1. Frontend Intern at GeeksForGeeks — 3 months (Current)",
+    para1: "1. Frontend Intern at GeeksForGeeks — 5 months (Current)",
     para2: "2. Web Developer at Manufac Analytics — 1 month",
     para3: "3. ADM .NET Intern at Cognizant Technology Solutions — 6 months",
   },
