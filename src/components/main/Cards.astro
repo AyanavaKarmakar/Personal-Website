@@ -60,7 +60,11 @@ const location = Astro.url.pathname;
               {para3}
               <a href={para5} target="_blank" rel="noreferrer">
                 <span class="bg-clip-text font-semibold text-transparent bg-gradient-to-r from-sky-100/95 to-emerald-100/95 hover:from-orange-300 hover:to-red-400/90 hover:motion-safe:animate-pulse">{`${
-                  location === "/projects/" && id !== 1 ? "Vercel" : location === "/projects/" ? "GitHub Pages": ""
+                  location === "/projects/" && id !== 1
+                    ? "Vercel"
+                    : location === "/projects/"
+                    ? "GitHub Pages"
+                    : ""
                 }`}</span>
               </a>
               <a href={para10} target="_blank" rel="noreferrer">
