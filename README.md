@@ -6,6 +6,6 @@
 
 ![image](https://user-images.githubusercontent.com/89210438/203785537-4eb22915-034e-4803-bdbb-2207f23f03be.png)
 
-### You can also check it out in [Astro Showcase](https://astro.build/showcase/)!
+### You can also check it out in [Astro Showcase](https://astro.build/showcase/), and [Replit](https://replit.com/@AyanavaKarmakar/Personal-Website?v=1)!
 
 </div>
