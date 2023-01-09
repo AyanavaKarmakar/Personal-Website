@@ -1,18 +1,17 @@
 name: Prevent Repl.it Coldstart
 
 on:
-  schedule: [{cron: "*/5 * * * *"}]
+  schedule:
+    - cron: '*/1 * * * *'
 
 jobs:
-  check-website:
+  ping_site:
     runs-on: ubuntu-latest
+    name: Ping the site
     steps:
-      - name: Check website
-        uses: actions/http-request@v1
-        with:
-          url: 'https://personal-website.ayanavakarmakar.repl.co/'
-      - name: Check if website is up
-        if: steps.http-request.outputs.status-code == 200
-        run: echo "Website is up!"
-      - name: Print response headers
-        run: echo "${steps.http-request.outputs.headers}"
+    - name: Check the site
+      id: hello
+      uses: srt32/uptime@master
+      with:
+        url-to-hit: "https://personal-website.ayanavakarmakar.repl.co/"
+        expected-statuses: "200,301"
