@@ -1,0 +1,19 @@
+name: Prevent Repl.it Coldstart
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+
+jobs:
+  check-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check website
+        uses: actions/http-request@v1
+        with:
+          url: 'https://personal-website.ayanavakarmakar.repl.co/'
+      - name: Check if website is up
+        if: steps.http-request.outputs.status-code == 200
+        run: echo "Website is up!"
+      - name: Print response headers
+        run: echo "${steps.http-request.outputs.headers}"
