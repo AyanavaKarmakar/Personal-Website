@@ -1,8 +1,7 @@
 name: Prevent Repl.it Coldstart
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'
+  schedule: [{cron: "*/5 * * * *"}]
 
 jobs:
   check-website:
