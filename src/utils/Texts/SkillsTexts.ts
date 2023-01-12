@@ -48,7 +48,7 @@ export const SkillsTexts: SkillText[] = [
     id: 5,
     heading: "Backend",
     para1:
-      "Prisma, tRPC, PostgreSQL, Firebase Cloud Firestore, Railway, and PlanetScale",
+      "Prisma, tRPC, MySQL, PostgreSQL, Firebase Cloud Firestore, Railway, and PlanetScale",
   },
   {
     id: 6,
