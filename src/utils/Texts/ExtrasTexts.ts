@@ -98,7 +98,7 @@ export const ExtrasTexts: ExtraText[] = [
     para4:
       "— ReLIFE (リライフ) written by Yayoi Sou (Manga), and adapted by TMS Entertainment",
     para5:
-      "— Spy X Family (スパイファミリー) written by Endou Tatsuya (Manga), and adapted by Wit Studio & CloverWorks",
+      "— Code Geass (コードギアス 反逆のルルーシュ) by Sunrise (OG)",
     para6:
       "— Kabaneri of the Iron Fortress (甲鉄城のカバネリ) by Wit Studio (OG)",
     para7:
