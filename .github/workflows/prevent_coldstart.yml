@@ -19,13 +19,4 @@ jobs:
       with:
         url-to-hit: "https://service-ticketing-system-api.onrender.com/welcome/api"
         expected-statuses: "200,301"
-  ping_site2:
-    runs-on: ubuntu-latest
-    name: Ping the site2
-    steps:
-    - name: Check the site
-      id: hello
-      uses: srt32/uptime@master
-      with:
-        url-to-hit: "https://trippins.ayanavakarmakar.repl.co"
-        expected-statuses: "200,301"
+  
