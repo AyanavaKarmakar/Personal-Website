@@ -6,22 +6,24 @@ import Navigation from "./Navigation.astro";
 <div
   class="flex flex-col gap-5 h-screen items-center justify-center text-center"
 >
-  <h1 class="font-extrabold text-6xl">
+  <h1 class="font-extrabold lg:text-7xl text-6xl">
     <span
       class="text-slate-900 dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-r dark:from-cyan-50/90 dark:to-indigo-300/90"
       >Ayanava Karmakar</span
     >
   </h1>
+
+  <!-- my job title -->
   <div
-    class="flex flex-col text-justify lg:flex-row gap-0 lg:gap-2 text-2xl lg:text-3xl font-extrabold tracking-wide"
+    class="flex flex-col text-center lg:flex-row gap-0 lg:gap-2 text-3xl lg:text-4xl font-extrabold tracking-wide lg:pt-0 pt-5"
   >
-    <p class="text-slate-900 dark:text-sky-200/90">Frontend Developer</p>
+    <p class="text-slate-900 dark:text-sky-200/90">Software Engineer <span class="lg:hidden">{" & "}</span></p>
     <p
       class="hidden lg:inline lg:py-0 motion-safe:animate-pulse text-slate-900 dark:text-inherit"
     >
-      {" "}+{" "}
+      {" | "}
     </p>
-    <p class="text-slate-900 dark:text-violet-200/90">Electrical Engineer</p>
+    <p class="text-slate-900 dark:text-violet-200/90">Open Source Contributor</p>
   </div>
   
   <!-- all my social links -->
@@ -60,5 +62,6 @@ import Navigation from "./Navigation.astro";
       </p>
     </div>
   </div>
+
   <Navigation />
 </div>
