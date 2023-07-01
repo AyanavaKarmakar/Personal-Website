@@ -33,5 +33,5 @@ export const SocialLinks: SocialLink[] = [
     id: 5,
     linkName: "Leetcode",
     linkUrl: "https://leetcode.com/AyanavaKarmakar/",
-  }
+  },
 ];
