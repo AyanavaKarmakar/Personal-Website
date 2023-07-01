@@ -29,4 +29,9 @@ export const SocialLinks: SocialLink[] = [
     linkName: "Linktree",
     linkUrl: "https://linktree.ayanavakarmakar.software",
   },
+  {
+    id: 5,
+    linkName: "Leetcode",
+    linkUrl: "https://leetcode.com/AyanavaKarmakar/",
+  },
 ];

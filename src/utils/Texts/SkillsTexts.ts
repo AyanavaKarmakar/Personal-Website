@@ -23,37 +23,38 @@ export const SkillsTexts: SkillText[] = [
     heading: "Languages",
     para1: "1. JavaScript",
     para2: "2. TypeScript",
-    para3: "3. Rust",
+    para3: "3. Java",
   },
   {
     id: 2,
     heading: "Frameworks",
     para1: "1. Next.js",
-    para2: "2. Astro",
-    para3: "3. Tauri",
+    para2: "2. Express.js",
+    para3: "3. Angular",
+    para4: "4. React Native",
   },
   {
     id: 3,
     heading: "Libraries",
-    para1: "1. React.js, React Native, and Expo",
+    para1: "1. React.js, Expo, React Router, and React Native Router",
     para2: "2. Redux Toolkit, React Query, Zustand, and Zod",
     para3: "3. Framer Motion, Apache ECharts, and Storybook",
   },
   {
     id: 4,
     heading: "UI",
-    para1: "Tailwind CSS, daisy UI, Material UI, and Bootstrap",
+    para1: "Vanilla CSS, Tailwind CSS, daisy UI, Material UI, and Bootstrap",
   },
   {
     id: 5,
     heading: "Backend",
     para1:
-      "Prisma, tRPC, MySQL, PostgreSQL, Firebase Cloud Firestore, Railway, and PlanetScale",
+      "Node.js, Prisma, tRPC, MySQL, PostgreSQL, Firebase Cloud Firestore, Railway, and PlanetScale",
   },
   {
     id: 6,
     heading: "Authentication",
-    para1: "NextAuth.js, Firebase Authentication, and Auth0",
+    para1: "NextAuth.js, and Firebase Authentication",
   },
   {
     id: 7,
@@ -63,7 +64,7 @@ export const SkillsTexts: SkillText[] = [
   {
     id: 8,
     heading: "Tools",
-    para1: "1. VS Code, GitHub, GitPod, and CodeSpaces",
-    para2: "2. Eslint, Prettier, and Husky",
+    para1: "1. Visual Studio Code, IntelliJ IDEA, GitKraken, GitLab and GitHub",
+    para2: "2. Git, Eslint, Prettier, and Husky",
   },
 ];

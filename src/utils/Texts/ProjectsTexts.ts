@@ -21,7 +21,7 @@ export const ProjectsTexts: ProjectText[] = [
   {
     id: 1,
     heading: "tauri-t3-app",
-    para1: "Clean and simple starter repo using the T3 Stack in Tauri",
+    para1: "Clean and simple starter repo using the T3 Stack in Tauri.",
     para2: "— Open Source @ ",
     para3: "— Docs @ ",
     para4: "https://github.com/AyanavaKarmakar/tauri-t3-app",
@@ -29,6 +29,16 @@ export const ProjectsTexts: ProjectText[] = [
   },
   {
     id: 2,
+    heading: "Service Ticketing System",
+    para1:
+      "User Authentication, Customer Support Request Creation and Administration Action Capability for a Service Ticketing System. It is built using the MERN stack.",
+    para2: "— Open Source @ ",
+    para3: "— Live @ ",
+    para4: "https://github.com/AyanavaKarmakar/service-ticketing-system",
+    para5: "https://service-ticketing-system.vercel.app/",
+  },
+  {
+    id: 4,
     heading: "Guestbook",
     para1:
       "Guestbook is a simple web application that allows users to sign in and leave a message. It is built using the T3 Stack (Next.js, tRPC, Tailwind CSS, TypeScript, Prisma, and NextAuth.js).",
@@ -36,16 +46,6 @@ export const ProjectsTexts: ProjectText[] = [
     para3: "— Live @ ",
     para4: "https://github.com/AyanavaKarmakar/Guestbook",
     para5: "https://guestbook.ayanavakarmakar.software/",
-  },
-  {
-    id: 4,
-    heading: "ARID",
-    para1:
-      'ARID is a cross-platform application for checking "Dry Days" in India. It is built using React Native, Expo, and React Native Paper and is available for Android and as a Web App.',
-    para2: "— Open Source @ ",
-    para3: "— Live @ ",
-    para4: "https://github.com/AyanavaKarmakar/ARID",
-    para5: "https://arid.ayanavakarmakar.software/",
   },
   {
     id: 5,
