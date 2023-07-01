@@ -82,7 +82,7 @@ export const ExtrasTexts: ExtraText[] = [
     id: 8,
     heading: "Manga I Like",
     para1: "Here's a list of my favorite manga I have read so far:",
-    para2: "— Vinland Saga (ヴィンランド・サガ) by Yukimura Makoto", 
+    para2: "— Vinland Saga (ヴィンランド・サガ) by Yukimura Makoto",
     para3: "— Look Back (ルックバック) by Fujimoto Tatsuki",
     para4: "— A Town Where You Live (小镇有你) by Seo Kouji",
     para5: "— Soul Eater (ソウルイーター) by Atsushi Ohkubo",
@@ -97,8 +97,7 @@ export const ExtrasTexts: ExtraText[] = [
     para3: "— Tsuki ga Kirei (月がきれい) by Studio Feel (OG)",
     para4:
       "— ReLIFE (リライフ) written by Yayoi Sou (Manga), and adapted by TMS Entertainment",
-    para5:
-      "— Code Geass (コードギアス 反逆のルルーシュ) by Sunrise (OG)",
+    para5: "— Code Geass (コードギアス 反逆のルルーシュ) by Sunrise (OG)",
     para6:
       "— Kabaneri of the Iron Fortress (甲鉄城のカバネリ) by Wit Studio (OG)",
     para7:
