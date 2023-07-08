@@ -35,8 +35,8 @@ export const AboutTexts: AboutText[] = [
     id: 3,
     heading: "Education",
     para1: "1. Bachelor of Technology, GPA: 8.7 — (2018-2022)",
-    para2: "2. Higher Secondary, Stream: PCMCs, GPA: 9.2 — (2016-2018)",
-    para3: "3. Secondary, GPA: 9.3 — (2015-2016)",
+    para2: "2. Higher Secondary, Stream: PCMCs, GPA: 9.2",
+    para3: "3. Secondary, GPA: 9.3",
   },
   {
     id: 4,

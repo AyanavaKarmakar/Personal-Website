@@ -28,10 +28,9 @@ export const SkillsTexts: SkillText[] = [
   {
     id: 2,
     heading: "Frameworks",
-    para1: "1. Next.js",
-    para2: "2. Express.js",
-    para3: "3. Angular",
-    para4: "4. React Native",
+    para1: "1. Web: Next.js, and Angular",
+    para2: "2. Mobile: React Native",
+    para3: "3. Backend: Express.js, and Spring Boot",
   },
   {
     id: 3,
@@ -64,7 +63,7 @@ export const SkillsTexts: SkillText[] = [
   {
     id: 8,
     heading: "Tools",
-    para1: "1. Visual Studio Code, IntelliJ IDEA, GitKraken, GitLab and GitHub",
-    para2: "2. Git, Eslint, Prettier, and Husky",
+    para1: "1. VS Code, IntelliJ IDEA, WebStorm, GitKraken, GitLab, and GitHub",
+    para2: "2. Git, Eslint, Prettier, Husky, and Maven",
   },
 ];
