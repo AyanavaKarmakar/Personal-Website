@@ -15,6 +15,19 @@ const location = Astro.url.pathname;
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G39TYXHRES"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-G39TYXHRES");
+    </script>
+
     <script is:inline>
       // Ref: https://github.com/t3-oss/create-t3-app/blob/next/www/src/layouts/docs.astro
       const html = document.documentElement;
