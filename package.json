@@ -36,6 +36,7 @@
     "zod": "^3.19.1"
   },
   "devDependencies": {
+    "@astrojs/partytown": "^1.2.3",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.7.0"
   }
