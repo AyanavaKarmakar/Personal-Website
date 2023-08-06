@@ -8,25 +8,13 @@ const location = Astro.url.pathname;
 
 <html lang="en" class="dark">
   <head>
+    <script async src="https://analytics.umami.is/script.js" data-website-id="a2080362-2fef-46d8-87b5-78b0f93f694a"></script>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="description" content="Ayanava Karmakar's Portfolio Website" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G39TYXHRES"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-G39TYXHRES");
-    </script>
 
     <script is:inline>
       // Ref: https://github.com/t3-oss/create-t3-app/blob/next/www/src/layouts/docs.astro
