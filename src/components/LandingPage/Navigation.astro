@@ -4,7 +4,11 @@ import ThemeToggleButton from "../Others/ThemeToggleButton.astro";
 
 <div class="grid grid-cols-2 gap-5 mt-10 motion-safe:animate-bounce">
   <div>
-    <a href="/about/" aria-label="Explore Website">
+    <a
+      href="/about/"
+      aria-label="Explore Website"
+      data-umami-event="Clicked Nav - Redirect to /about page"
+    >
       <label class="cursor-pointer text-slate-900 dark:text-slate-50">
         <svg
           xmlns="http://www.w3.org/2000/svg"
