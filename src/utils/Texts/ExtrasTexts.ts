@@ -94,7 +94,7 @@ export const ExtrasTexts: ExtraText[] = [
     para1: "Here's a list of my favourite anime I have watched so far:",
     para2:
       "— Durarara!! (デュラララ!!) written by Narita Ryohgo (LN), and adapted by Brain's Base",
-    para3: "Clannad (クラナド) developed by Key (VN), and adapted by Kyoto Animation",
+    para3: "— Clannad (クラナド) developed by Key (VN), and adapted by Kyoto Animation",
     para4:
       "— 5 Centimeters Per Second (秒速5センチメートル) written, and directed by Makoto Shinkai (OG)",
     para5: "— Code Geass (コードギアス 反逆のルルーシュ) by Sunrise (OG)",
