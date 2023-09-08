@@ -91,16 +91,16 @@ export const ExtrasTexts: ExtraText[] = [
   {
     id: 9,
     heading: "Anime I Like",
-    para1: "Here's a list of my favorite anime I have watched so far:",
+    para1: "Here's a list of my favourite anime I have watched so far:",
     para2:
       "— Durarara!! (デュラララ!!) written by Narita Ryohgo (LN), and adapted by Brain's Base",
-    para3: "— Tsuki ga Kirei (月がきれい) by Studio Feel (OG)",
+    para3: "Clannad (クラナド) developed by Key (VN), and adapted by Kyoto Animation",
     para4:
-      "— ReLIFE (リライフ) written by Yayoi Sou (Manga), and adapted by TMS Entertainment",
+      "— 5 Centimeters Per Second (秒速5センチメートル) written, and directed by Makoto Shinkai (OG)",
     para5: "— Code Geass (コードギアス 反逆のルルーシュ) by Sunrise (OG)",
     para6:
-      "— Kabaneri of the Iron Fortress (甲鉄城のカバネリ) by Wit Studio (OG)",
+      "— ReLIFE (リライフ) written by Yayoi Sou (Manga), and adapted by TMS Entertainment",
     para7:
-      "— Fire Force (炎炎ノ消防隊) by Atsushi Ohkubo (Manga), and adapted by David Production",
+      "— Tsuki ga Kirei (月がきれい) by Studio Feel (OG)",
   },
 ];
