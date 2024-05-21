@@ -22,14 +22,14 @@ export const AboutTexts: AboutText[] = [
     id: 1,
     heading: "About Me",
     para1:
-      "Hey, I'm Ayanava Karmakar, a Software Engineer working at RapidKenAI! I have a passion for developing simple and responsive fullstack web apps. I have also recently started contributing to Open Source projects on GitHub.",
+      "Hey, I'm Ayanava Karmakar, a Software Engineer with 1+ years of experience   working at RapidKenAI! I have a passion for developing simple and responsive fullstack web apps. I have also recently started contributing to Open Source projects on GitHub.",
   },
   {
     id: 2,
     heading: "Work Experience",
-    para1: "1. SWE @ RapidKenAI — 5 months (current)",
-    para2: "2. SWE Intern @ GFG — 6 months",
-    para3: "3. SWE Intern @ CTS — 6 months",
+    para1: "1. SWE @ RapidKen.AI (present)",
+    para2: "2. Intern @ GeeksForGeeks",
+    para3: "3. Intern @ Cognizant",
   },
   {
     id: 3,
@@ -42,6 +42,6 @@ export const AboutTexts: AboutText[] = [
     id: 4,
     heading: "Hobbies",
     para1: "1. Aesthetic Photography ( Curious? Take a peek at ",
-    para2: "2. Open Source Contribution",
+    para2: "2. Cycling",
   },
 ];

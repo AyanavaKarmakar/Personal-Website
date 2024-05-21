@@ -45,7 +45,7 @@ export const ProjectsTexts: ProjectText[] = [
     para2: "— Open Source @ ",
     para3: "— Live @ ",
     para4: "https://github.com/AyanavaKarmakar/Guestbook",
-    para5: "https://guestbook.ayanavakarmakar.software/",
+    para5: "https://ayanava-karmakar-guestbook.vercel.app/",
   },
   {
     id: 5,
@@ -55,6 +55,6 @@ export const ProjectsTexts: ProjectText[] = [
     para2: "— Open Source @ ",
     para3: "— Live @ ",
     para4: "https://github.com/AyanavaKarmakar/Personal-Website",
-    para5: "https://ayanavakarmakar.software/",
+    para5: "https://ayanava-karmakar.vercel.app/",
   },
 ];
