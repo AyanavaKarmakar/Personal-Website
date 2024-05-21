@@ -22,7 +22,7 @@ export const SocialLinks: SocialLink[] = [
   {
     id: 3,
     linkName: "Linktree",
-    linkUrl: "http://ayan-k-linktree.vercel.app",
+    linkUrl: "https://ayan-k-linktree.vercel.app",
   },
   {
     id: 4,
