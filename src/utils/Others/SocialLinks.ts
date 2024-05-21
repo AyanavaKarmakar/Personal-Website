@@ -21,16 +21,11 @@ export const SocialLinks: SocialLink[] = [
   },
   {
     id: 3,
-    linkName: "Guestbook",
-    linkUrl: "https://guestbook.ayanavakarmakar.software/",
+    linkName: "Linktree",
+    linkUrl: "https://ayan-k-linktree.vercel.app",
   },
   {
     id: 4,
-    linkName: "Linktree",
-    linkUrl: "https://linktree.ayanavakarmakar.software",
-  },
-  {
-    id: 5,
     linkName: "Leetcode",
     linkUrl: "https://leetcode.com/AyanavaKarmakar/",
   },
