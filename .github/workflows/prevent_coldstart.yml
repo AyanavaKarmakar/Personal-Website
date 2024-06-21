@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: ["*"]
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/9999 * * * *'
 
 jobs:
   ping_site:
